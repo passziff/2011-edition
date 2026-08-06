@@ -35,7 +35,7 @@ The latest additions have not been deeply tested yet.
 
 #### Flint progression
 
-Flint now forms the first tool tier before Stone.
+Flint now forms the first tool tier for Pickaxes and Axes before Stone.
 
 ![Flint Pebbles on different surfaces](docs/images/flint-rocks-1.png)
 
