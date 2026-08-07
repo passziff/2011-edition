@@ -6,6 +6,8 @@ The first update for Minecraft: The Other Update.
 
 **Status:** Feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
 
+The current balance is intentionally documented here as a baseline for later tuning and external playtesting.
+
 ### Part 1: Beds, but Endgame adaptation
 
 A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/beds-but-endgame).
@@ -44,9 +46,6 @@ A nightmare locks sleeping again until daytime. A Glowstone Lamp on the Bedside 
 
 ### Part 2: Flint & Copper
 
-Feature-complete for now.
-
-The current balance is intentionally documented here as a baseline for later tuning and external playtesting.
 
 #### Flint progression
 
