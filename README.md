@@ -6,7 +6,9 @@ An unofficial alternative continuation of Minecraft Java Edition, built from Rel
 
 Early development. No public build is available yet.
 
-The first update, **Proper Progression Update**, is in development. Current progress is tracked in [DEVLOG.md](DEVLOG.md).
+The first update, **Proper Progression Update**, is in development. Parts 1 and 2 are feature-complete for now, with broader Survival and multiplayer testing planned later.
+
+Current progress is tracked in [DEVLOG.md](DEVLOG.md).
 
 ## Development
 
