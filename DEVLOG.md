@@ -112,10 +112,6 @@ The current pickaxe harvest progression is:
 
 Copper forms a complete tool and armor tier between Stone and Iron.
 
-![Copper Ore generation](docs/images/copperore-gen-1.png)
-
-![Copper in a cave](docs/images/copperore-gen-2.png)
-
 ![Copper compared with existing metal blocks and ores](docs/images/copper-comparing.png)
 
 ![Copper and Iron Ingots](docs/images/copper-iron-dropped-compared.png)
@@ -129,6 +125,8 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 ##### Copper tools
 
 ![Copper tools](docs/images/copper-tools.png)
+
+Example recipe:
 
 ![Copper Pickaxe recipe](docs/images/copperpickaxe-recipe-example.png)
 
@@ -169,6 +167,10 @@ Copper armor uses a durability multiplier of 10 and enchantability of 12.
 
 #### Current ore generation
 
+![Copper Ore generation](docs/images/copperore-gen-1.png)
+
+![Copper in a cave](docs/images/copperore-gen-2.png)
+
 These are the current generation values after the first progression balance pass:
 
 | Ore | Attempts / chance | Vein size | Height |
@@ -206,6 +208,8 @@ Gold has been rebalanced into a real post-Iron armor tier while intentionally ke
 Chainmail can now be obtained through normal Survival gameplay.
 
 ![Dropped Chain Links](docs/images/chainlinks-dropped.png)
+
+Example recipe:
 
 ![Chainmail Chestplate recipe](docs/images/chainmail-chestplate-recipe-example.png)
 
