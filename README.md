@@ -6,7 +6,7 @@ An unofficial alternative continuation of Minecraft Java Edition, built from Rel
 
 Early development. No public build is available yet.
 
-The first update, **Proper Progression Update**, is in development. Parts 1 and 2 are feature-complete for now. Part 3, **Go Go Gadgets!**, is in progress, with Crystal and the Spyglass complete for now. Tested in singleplayer. Not tested in multiplayer.
+The first update, **Proper Progression Update**, is in development. Parts 1 and 2 are feature-complete for now. Part 3, **Go Go Gadgets!**, is in progress. Tested in singleplayer. Not tested in multiplayer.
 
 Current progress is tracked in [DEVLOG.md](DEVLOG.md).
 
@@ -14,7 +14,8 @@ Current progress is tracked in [DEVLOG.md](DEVLOG.md).
 
 Built with RetroMCP-Java and Java 8.
 
-This repository contains only original project files, assets and patches. It does not include Minecraft source code, Minecraft assets or a Minecraft JAR.
+This repository contains the project files, assets and patches. It does not include Minecraft source code or a Minecraft JAR.
+Some backported assets are based on assets from modern Minecraft.
 
 ## License
 
