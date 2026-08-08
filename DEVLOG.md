@@ -51,15 +51,19 @@ A nightmare locks sleeping again until daytime. A Glowstone Lamp on the Bedside 
 
 Flint forms the first tool tier before Stone.
 
+(But only Flint Pickaxes and Axes replace their wooden equivalents)
+
+
 ![Flint Pebbles on different surfaces](docs/images/flint-rocks-1.png)
 
 - Flint can be placed as small pebbles
 - Flint Pebbles generate naturally on the surface and around exposed underground sediment
 - Breaking a Flint Pebble returns one Flint
-- Flint Pickaxes and Axes replace their wooden equivalents
 - All Stone tools require smelted Stone instead of Cobblestone
 
 ##### Flint Pebbles
+
+(There are 3 different variants for visual diversity.)
 
 ![Flint Pebble variants](docs/images/flint-rocks-allvariants.png)
 
@@ -343,7 +347,7 @@ A backport of the modern Spyglass, adapted to the look and controls of Release 1
 - Hold use to zoom through the Spyglass
 - Includes the scope view, use sounds and a dedicated player pose
 - The default held-item look is a flat 1.0-style sprite
-- An optional 3D model can be enabled under `Video Settings → 3D Items...`
+- An original 3D model can be enabled under `Video Settings → 3D Items...`
 
 ![3D Items setting](docs/images/videosetting-new-3ditems.png)
 
