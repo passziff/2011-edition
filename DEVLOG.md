@@ -4,9 +4,7 @@
 
 The first update for Minecraft: The Other Update.
 
-**Status:** Feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
-
-The current balance is intentionally documented here as a baseline for later tuning and external playtesting.
+**Status:** In development. Parts 1 and 2 are feature-complete for now. Part 3 is in progress. Tested in singleplayer. Not tested in multiplayer.
 
 ### Part 1: Beds, but Endgame adaptation
 
@@ -31,7 +29,8 @@ A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/be
 
 ![Glowstone Lamp recipe](docs/images/theotherupdate_glowstonelamp_recipe.png)
 
-#### Current nightmare values
+<details>
+<summary>Current nightmare balance</summary>
 
 | Setting | Current value |
 | --- | ---: |
@@ -42,10 +41,11 @@ A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/be
 
 A nightmare locks sleeping again until daytime. A Glowstone Lamp on the Bedside Table prevents it.
 
+</details>
+
 ---
 
 ### Part 2: Flint & Copper
-
 
 #### Flint progression
 
@@ -63,12 +63,15 @@ Flint forms the first tool tier before Stone.
 
 ![Flint Pebble variants](docs/images/flint-rocks-allvariants.png)
 
-Current generation notes:
+<details>
+<summary>Current Flint Pebble generation</summary>
 
 - Shoreline Flint is limited to 25% of eligible shoreline chunks
 - Underground Flint is limited to at most 2 pebbles per chunk
 - Underground generation favors gravel, then dirt/sand and sediment-adjacent stone
 - Isolated ordinary cave stone does not generate Flint Pebbles
+
+</details>
 
 ##### Flint tools
 
@@ -82,6 +85,9 @@ Current generation notes:
 
 ![Flint Pickaxe recipe](docs/images/flintpickaxe-recipe.png)
 
+<details>
+<summary>Flint tool stats</summary>
+
 Flint keeps the old Wood-tier statistics:
 
 | Stat | Flint |
@@ -92,11 +98,14 @@ Flint keeps the old Wood-tier statistics:
 | Material damage bonus | 0 |
 | Enchantability | 15 |
 
+</details>
+
 #### Stone progression
 
 Cobblestone must be smelted into Stone before Stone tools can be crafted.
 
-The current pickaxe harvest progression is:
+<details>
+<summary>Current pickaxe harvest progression</summary>
 
 | Tier | Harvest level | Unlocks |
 | --- | ---: | --- |
@@ -106,6 +115,8 @@ The current pickaxe harvest progression is:
 | Iron | 3 | Gold |
 | Gold | 4 | Diamond |
 | Diamond | 5 | Obsidian |
+
+</details>
 
 #### Copper progression
 
@@ -129,7 +140,8 @@ Example recipe:
 
 ![Copper Pickaxe recipe](docs/images/copperpickaxe-recipe-example.png)
 
-Current Copper tool material:
+<details>
+<summary>Copper tool stats</summary>
 
 | Stat | Copper |
 | --- | ---: |
@@ -139,11 +151,16 @@ Current Copper tool material:
 | Material damage bonus | 1 |
 | Enchantability | 10 |
 
+</details>
+
 ##### Copper armor
 
 ![Dropped Copper armor](docs/images/copper-armor-dropped.png)
 
 ![Copper armor equipped](docs/images/copper-armor.png)
+
+<details>
+<summary>Copper armor stats</summary>
 
 | Piece | Protection | Durability |
 | --- | ---: | ---: |
@@ -155,7 +172,10 @@ Current Copper tool material:
 
 Copper armor uses a durability multiplier of 10 and enchantability of 12.
 
-##### Copper block hardness
+</details>
+
+<details>
+<summary>Copper block hardness</summary>
 
 | Block | Hardness |
 | --- | ---: |
@@ -164,11 +184,16 @@ Copper armor uses a durability multiplier of 10 and enchantability of 12.
 | Block of Copper | 4.0 |
 | Block of Iron | 5.0 |
 
-#### Current ore generation
+</details>
+
+#### Ore generation
 
 ![Copper Ore generation](docs/images/copperore-gen-1.png)
 
 ![Copper in a cave](docs/images/copperore-gen-2.png)
+
+<details>
+<summary>Current ore generation values</summary>
 
 These are the current generation values after the first progression balance pass:
 
@@ -187,9 +212,14 @@ These are the current generation values after the first progression balance pass
 
 Rare upper Iron uses terrain-aware placement so its attempt is limited by the terrain height at the selected position.
 
+</details>
+
 #### Armor progression
 
-The current protection ladder is:
+Gold has been rebalanced into a real post-Iron armor tier while intentionally keeping its low durability and high enchantability.
+
+<details>
+<summary>Current armor progression</summary>
 
 | Material | Full-set protection | Durability multiplier | Enchantability |
 | --- | ---: | ---: | ---: |
@@ -200,7 +230,7 @@ The current protection ladder is:
 | Gold | 16 | 7 | 25 |
 | Diamond | 20 | 33 | 10 |
 
-Gold has been rebalanced into a real post-Iron armor tier while intentionally keeping its low durability and high enchantability.
+</details>
 
 #### Chainmail
 
@@ -212,12 +242,18 @@ Example recipe:
 
 ![Chainmail Chestplate recipe](docs/images/chainmail-chestplate-recipe-example.png)
 
+- Chainmail uses the normal armor recipe shapes with Chain Links
+- Chainmail's existing protection and durability values are unchanged
+
+<details>
+<summary>Current Chain Link balance</summary>
+
 - Any Zombie has a 20% chance to drop Chain Links
 - A successful drop gives 1-3 Chain Links
 - Looting currently does not modify the Chain Links drop
-- Chainmail uses the normal armor recipe shapes with Chain Links
 - A full Chainmail set costs 24 Chain Links
-- Chainmail's existing protection and durability values are unchanged
+
+</details>
 
 #### Mutton and Wool
 
@@ -225,12 +261,19 @@ Sheep now provide food instead of an immediate source of Wool.
 
 ![Dropped Raw and Cooked Mutton](docs/images/mutton-dropped.png)
 
-- Sheep drop 1-2 Mutton before Looting instead of Wool when killed
 - Burning sheep drop Cooked Mutton
-- Shearing remains the main source of Wool and gives the normal 2-4 Wool
+- Shearing remains the main source of Wool
 - Nine String can be crafted into one Wool
+
+<details>
+<summary>Current Mutton and Wool balance</summary>
+
+- Sheep drop 1-2 Mutton before Looting instead of Wool when killed
+- Shearing gives the normal 2-4 Wool
 - Raw Mutton restores 2 hunger with 0.3 saturation
 - Cooked Mutton restores 6 hunger with 0.8 saturation
+
+</details>
 
 #### Achievements
 
@@ -250,4 +293,85 @@ Additional guidance:
 
 ---
 
-Texture credits: copper armor item sprites based on axy's Traditional Armour. Copper ingot and block textures based on artwork by JM140628. Chain Links texture inspired by [Better Than Adventure](https://www.betterthanadventure.net/).
+### Part 3: Go Go Gadgets!
+
+New equipment and utility items for different playstyles, including alternate takes on features added much later in Minecraft.
+
+#### Crystal
+
+Crystal is a new utility material used for gadgets rather than another tool or armor tier.
+
+![Crystal Ore and Deposits](docs/images/crystals-showcase.png)
+
+![Natural Crystal Deposit](docs/images/crystal-generation-banner.png)
+
+- Rare Crystal Ore generates underground in small veins
+- Exposed Crystal Ore can grow a Crystal Deposit on any open face
+- Crystal Ore and Deposits require a Copper Pickaxe or better to harvest
+- Silk Touch gives the Crystal Ore block or a full Crystal from a Deposit
+- Fortune affects Crystal Shard drops
+- Four Crystal Shards craft into one Crystal, and a Crystal can be split back into four Shards
+- Crystals can be placed as Crystal Deposits
+
+![Crystal recipe](docs/images/crystal-recipe.png)
+
+![Crystal Shards from a Crystal](docs/images/crystalshard-recipe.png)
+
+<details>
+<summary>Current Crystal generation and drop values</summary>
+
+| Setting | Current value |
+| --- | --- |
+| Ore attempts | 2 per chunk |
+| Maximum vein size | 3 |
+| Generation height | Y 0-96 |
+| Deposit chance on exposed ore | 50% |
+| Crystal Ore drop | 1-2 Crystal Shards |
+| Crystal Deposit drop | 2-4 Crystal Shards |
+| Minimum harvest tier | Copper |
+
+A Deposit only generates into air and at most one is placed per exposed Crystal Ore block. Player-placed Deposits use the same harvesting rules as natural ones.
+
+</details>
+
+#### Spyglass
+
+A backport of the modern Spyglass, adapted to the look and controls of Release 1.0.
+
+![Spyglass recipe](docs/images/spyglass-recipe.png)
+
+- Hold use to zoom through the Spyglass
+- Includes the scope view, use sounds and a dedicated player pose
+- The default held-item look is a flat 1.0-style sprite
+- An optional 3D model can be enabled under `Video Settings → 3D Items...`
+
+![3D Items setting](docs/images/videosetting-new-3ditems.png)
+
+<details>
+<summary>Spyglass views</summary>
+
+First person:
+
+![Spyglass held in first person](docs/images/spyglass-1st-sprite-idle.png)
+
+![Spyglass scope](docs/images/spyglass-1st-sprite-use.png)
+
+Third-person sprite:
+
+<p>
+  <img src="docs/images/spyglass-3rd-sprite-idle.png" alt="Sprite Spyglass idle" width="240">
+  <img src="docs/images/spyglass-3rd-sprite-use.png" alt="Sprite Spyglass in use" width="240">
+</p>
+
+Third-person 3D model:
+
+<p>
+  <img src="docs/images/spyglass-3rd-3d-idle.png" alt="3D Spyglass idle" width="240">
+  <img src="docs/images/spyglass-3rd-3d-use.png" alt="3D Spyglass in use" width="240">
+</p>
+
+</details>
+
+---
+
+Texture credits: copper armor item sprites based on axy's Traditional Armour. Copper ingot and block textures based on artwork by JM140628. Chain Links texture inspired by [Better Than Adventure](https://www.betterthanadventure.net/). Crystal textures based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848).
