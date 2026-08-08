@@ -2,7 +2,7 @@
 
 ## Proper Progression Update
 
-The first update for Minecraft: The Other Update.
+The first update for TOU.
 
 **Status:** In development. Parts 1 and 2 are feature-complete for now. Part 3 is in progress. Tested in singleplayer. Not tested in multiplayer.
 
@@ -295,7 +295,7 @@ Additional guidance:
 
 ### Part 3: Go Go Gadgets!
 
-New equipment and utility items for different playstyles, including alternate takes on features added much later in Minecraft.
+New equipment and utility items for different playstyles, including backports and alternate takes on features added much later in Minecraft.
 
 #### Crystal
 
@@ -306,7 +306,7 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 ![Natural Crystal Deposit](docs/images/crystal-generation-banner.png)
 
 - Rare Crystal Ore generates underground in small veins
-- Exposed Crystal Ore can grow a Crystal Deposit on any open face
+- Exposed Crystal Ore can generate with a Crystal Deposit on any open face
 - Crystal Ore and Deposits require a Copper Pickaxe or better to harvest
 - Silk Touch gives the Crystal Ore block or a full Crystal from a Deposit
 - Fortune affects Crystal Shard drops
