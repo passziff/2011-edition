@@ -360,7 +360,7 @@ A backport of the modern Spyglass, adapted to the look and controls of Release 1
 - Hold use to zoom through the Spyglass
 - Includes the scope view, use sounds and a dedicated player pose
 - The default held-item look is a flat 1.0-style sprite
-- An original 3D model can be enabled under `Video Settings → 3D Items...`
+- The original 3D model can be enabled under `Video Settings → 3D Items...`
 
 ![3D Items setting](docs/images/videosetting-new-3ditems.png)
 
@@ -391,7 +391,7 @@ Third-person 3D model:
 
 #### Pouch
 
-A Release 1.0-style adaptation of the modern Bundle for carrying mixed small stacks without adding another inventory row.
+A backport of the modern of the modern Bundle for carrying mixed small stacks without adding another inventory row.
 
 <p>
   <img src="docs/images/pouch-held.png" alt="Pouch held in first person" width="240">
