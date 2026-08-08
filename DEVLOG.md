@@ -222,6 +222,19 @@ Rare upper Iron uses terrain-aware placement so its attempt is limited by the te
 
 Gold has been rebalanced into a real post-Iron armor tier while intentionally keeping its low durability and high enchantability.
 
+Armor visuals also received a small consistency pass:
+
+- The Leather Helmet no longer shows the nose guard used by the heavier helmets
+- Iron, Gold, Diamond and Copper helmet item sprites now match their worn helmet shapes more closely
+- Copper armor item sprites were adjusted to better match the Release 1.0 item style
+
+![Updated helmet item sprites](docs/images/helmet-visuals-fixed.png)
+
+<p>
+  <img src="docs/images/leatherhelmet-model-fix.png" alt="Leather Helmet worn without nose guard" width="240">
+  <img src="docs/images/copper-armor-sprites-1.0-like.png" alt="Updated Copper armor item sprites" width="320">
+</p>
+
 <details>
 <summary>Current armor progression</summary>
 
@@ -253,8 +266,8 @@ Example recipe:
 <summary>Current Chain Link balance</summary>
 
 - Any Zombie has a 20% chance to drop Chain Links
-- A successful drop gives 1-3 Chain Links
-- Looting currently does not modify the Chain Links drop
+- A successful drop gives 1-3 Chain Links before Looting
+- Looting increases the amount from a successful Chain Link drop
 - A full Chainmail set costs 24 Chain Links
 
 </details>
@@ -376,6 +389,37 @@ Third-person 3D model:
 
 </details>
 
+#### Pouch
+
+A Release 1.0-style adaptation of the modern Bundle for carrying mixed small stacks without adding another inventory row.
+
+<p>
+  <img src="docs/images/pouch-held.png" alt="Pouch held in first person" width="240">
+  <img src="docs/images/pouch-dropped.png" alt="Dropped Pouch" width="240">
+</p>
+
+- Stores up to one stack's worth of mixed items
+- Items can be inserted and removed directly from the inventory
+- Scrolling while hovering the Pouch selects which stored item to remove
+- The tooltip shows stored items and current fullness
+- Pouches cannot be stored inside other Pouches
+- The normal Pouch is intended as the base for more specialized Pouches later
+
+![Pouch contents](docs/images/pouch-usage-visuals.png)
+
+![Pouch recipe](docs/images/pouch-recipe.png)
+
+<details>
+<summary>Current Pouch capacity rules</summary>
+
+- Total capacity is 64 units
+- An item that normally stacks to 64 uses 1 unit each
+- An item that normally stacks to 16 uses 4 units each
+- An unstackable item uses the full Pouch capacity
+- The contents preview shows up to 12 stored item types at once
+
+</details>
+
 ---
 
-Texture credits: copper armor item sprites based on axy's Traditional Armour. Copper ingot and block textures based on artwork by JM140628. Chain Links texture inspired by [Better Than Adventure](https://www.betterthanadventure.net/). Crystal textures based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848).
+Texture credits: copper armor item sprites based on axy's Traditional Armour. Copper ingot and block textures based on artwork by JM140628. Chain Links texture inspired by [Better Than Adventure](https://www.betterthanadventure.net/). Crystal textures based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848). Pouch assets are adapted from the modern Minecraft Bundle assets.
