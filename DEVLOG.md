@@ -391,7 +391,7 @@ Third-person 3D model:
 
 #### Pouch
 
-A backport of the modern of the modern Bundle for carrying mixed small stacks without adding another inventory row.
+A backport of the modern Bundle for carrying mixed small stacks without adding another inventory row.
 
 <p>
   <img src="docs/images/pouch-held.png" alt="Pouch held in first person" width="240">
