@@ -1,4 +1,8 @@
-# Minecraft: The Other Update
+<p align="center">
+  <img src="docs/images/1-0-plus-banner.png" alt="Minecraft 1.0+" width="500">
+</p>
+
+# Minecraft 1.0+
 
 An unofficial alternative continuation of Minecraft Java Edition, built from Release 1.0.0.
 
@@ -10,9 +14,7 @@ The first update, **Proper Progression Update**, is in development. Parts 1 and 
 
 Current progress is tracked in [DEVLOG.md](DEVLOG.md).
 
-## Development
-
-Built with RetroMCP-Java and Java 8.
+## Repository
 
 This repository contains the project files, assets and patches. It does not include Minecraft source code or a Minecraft JAR.
 Some backported assets are based on assets from modern Minecraft.

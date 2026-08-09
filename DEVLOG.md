@@ -1,12 +1,24 @@
 # Development Log
 
-## Proper Progression Update
+<p align="center">
+  <img src="docs/images/1-0-plus-banner.png" alt="Minecraft 1.0+" width="500">
+</p>
 
-The first update for TOU.
+## Update #1 — Proper Progression
+
+<p align="center">
+  <img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
+</p>
 
 **Status:** In development. Parts 1 and 2 are feature-complete for now. Part 3 is in progress. Tested in singleplayer. Not tested in multiplayer.
 
-### Part 1: Beds, but Endgame adaptation
+---
+
+### Part 1 — Beds, but Endgame
+
+<p align="center">
+  <img src="docs/images/part-1-beds-but-endgame.png" alt="Beds, but Endgame" width="700">
+</p>
 
 A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/beds-but-endgame).
 
@@ -19,15 +31,17 @@ A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/be
 
 #### Bedside Table
 
-![Bedside Table](docs/images/bedside-table.png)
-
-![Bedside Table recipe](docs/images/theotherupdate_bedsidetable_recipe.png)
+<p align="center">
+  <img src="docs/images/bedside-table.png" alt="Bedside Table" width="430">
+  <img src="docs/images/theotherupdate_bedsidetable_recipe.png" alt="Bedside Table recipe" width="300">
+</p>
 
 #### Glowstone Lamp
 
-![Glowstone Lamp on a Bedside Table](docs/images/glowstonelamp-on-bedsidetable.png)
-
-![Glowstone Lamp recipe](docs/images/theotherupdate_glowstonelamp_recipe.png)
+<p align="center">
+  <img src="docs/images/glowstonelamp-on-bedsidetable.png" alt="Glowstone Lamp on a Bedside Table" width="430">
+  <img src="docs/images/theotherupdate_glowstonelamp_recipe.png" alt="Glowstone Lamp recipe" width="300">
+</p>
 
 <details>
 <summary>Current nightmare balance</summary>
@@ -45,16 +59,19 @@ A nightmare locks sleeping again until daytime. A Glowstone Lamp on the Bedside 
 
 ---
 
-### Part 2: Flint & Copper
+### Part 2 — Flint & Copper
+
+<p align="center">
+  <img src="docs/images/part-2-flint-copper.png" alt="Flint & Copper" width="700">
+</p>
 
 #### Flint progression
 
-Flint forms the first tool tier before Stone.
+Flint forms the first tool tier before Stone. Only Flint Pickaxes and Axes replace their wooden equivalents.
 
-(But only Flint Pickaxes and Axes replace their wooden equivalents)
-
-
-![Flint Pebbles on different surfaces](docs/images/flint-rocks-1.png)
+<p align="center">
+  <img src="docs/images/flint-rocks-1.png" alt="Flint Pebbles on different surfaces" width="520">
+</p>
 
 - Flint can be placed as small pebbles
 - Flint Pebbles generate naturally on the surface and around exposed underground sediment
@@ -63,9 +80,11 @@ Flint forms the first tool tier before Stone.
 
 ##### Flint Pebbles
 
-(There are 3 different variants for visual diversity.)
+There are three variants for visual diversity.
 
-![Flint Pebble variants](docs/images/flint-rocks-allvariants.png)
+<p align="center">
+  <img src="docs/images/flint-rocks-allvariants.png" alt="Flint Pebble variants" width="420">
+</p>
 
 <details>
 <summary>Current Flint Pebble generation</summary>
@@ -79,15 +98,24 @@ Flint forms the first tool tier before Stone.
 
 ##### Flint tools
 
-![Dropped Flint tools](docs/images/flint-tools-dropped.png)
+<p align="center">
+  <img src="docs/images/flint-tools-dropped.png" alt="Dropped Flint tools" width="460">
+</p>
 
-![Flint Axe equipped](docs/images/flintaxe-equipped.png)
+<details>
+<summary>More Flint tool visuals</summary>
 
-![Flint Axe recipe](docs/images/flintaxe-recipe.png)
+<p align="center">
+  <img src="docs/images/flintaxe-equipped.png" alt="Flint Axe equipped" width="260">
+  <img src="docs/images/flintaxe-recipe.png" alt="Flint Axe recipe" width="260">
+</p>
 
-![Flint Pickaxe equipped](docs/images/flintpickaxe-equipped.png)
+<p align="center">
+  <img src="docs/images/flintpickaxe-equipped.png" alt="Flint Pickaxe equipped" width="260">
+  <img src="docs/images/flintpickaxe-recipe.png" alt="Flint Pickaxe recipe" width="260">
+</p>
 
-![Flint Pickaxe recipe](docs/images/flintpickaxe-recipe.png)
+</details>
 
 <details>
 <summary>Flint tool stats</summary>
@@ -126,9 +154,10 @@ Cobblestone must be smelted into Stone before Stone tools can be crafted.
 
 Copper forms a complete tool and armor tier between Stone and Iron.
 
-![Copper compared with existing metal blocks and ores](docs/images/copper-comparing.png)
-
-![Copper and Iron Ingots](docs/images/copper-iron-dropped-compared.png)
+<p align="center">
+  <img src="docs/images/copper-comparing.png" alt="Copper compared with existing metal blocks and ores" width="470">
+  <img src="docs/images/copper-iron-dropped-compared.png" alt="Copper and Iron Ingots" width="260">
+</p>
 
 - Copper Ore drops itself and smelts into one Copper Ingot
 - Nine Copper Ingots craft into a Block of Copper and can be crafted back
@@ -138,11 +167,10 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 
 ##### Copper tools
 
-![Copper tools](docs/images/copper-tools.png)
-
-Example recipe:
-
-![Copper Pickaxe recipe](docs/images/copperpickaxe-recipe-example.png)
+<p align="center">
+  <img src="docs/images/copper-tools.png" alt="Copper tools" width="430">
+  <img src="docs/images/copperpickaxe-recipe-example.png" alt="Copper Pickaxe recipe" width="280">
+</p>
 
 <details>
 <summary>Copper tool stats</summary>
@@ -159,9 +187,10 @@ Example recipe:
 
 ##### Copper armor
 
-![Dropped Copper armor](docs/images/copper-armor-dropped.png)
-
-![Copper armor equipped](docs/images/copper-armor.png)
+<p align="center">
+  <img src="docs/images/copper-armor-dropped.png" alt="Dropped Copper armor" width="320">
+  <img src="docs/images/copper-armor.png" alt="Copper armor equipped" width="320">
+</p>
 
 <details>
 <summary>Copper armor stats</summary>
@@ -192,9 +221,10 @@ Copper armor uses a durability multiplier of 10 and enchantability of 12.
 
 #### Ore generation
 
-![Copper Ore generation](docs/images/copperore-gen-1.png)
-
-![Copper in a cave](docs/images/copperore-gen-2.png)
+<p align="center">
+  <img src="docs/images/copperore-gen-1.png" alt="Copper Ore generation" width="340">
+  <img src="docs/images/copperore-gen-2.png" alt="Copper in a cave" width="340">
+</p>
 
 <details>
 <summary>Current ore generation values</summary>
@@ -222,18 +252,27 @@ Rare upper Iron uses terrain-aware placement so its attempt is limited by the te
 
 Gold has been rebalanced into a real post-Iron armor tier while intentionally keeping its low durability and high enchantability.
 
-Armor visuals also received a small consistency pass:
+Armor visuals also received a consistency pass:
 
 - The Leather Helmet no longer shows the nose guard used by the heavier helmets
 - Iron, Gold, Diamond and Copper helmet item sprites now match their worn helmet shapes more closely
 - Copper armor item sprites were adjusted to better match the Release 1.0 item style
+- Leather armor was recolored to match normal Leather more closely and distinguish it from Copper
 
-![Updated helmet item sprites](docs/images/helmet-visuals-fixed.png)
+<p align="center">
+  <img src="docs/images/leather-armor-new-color.png" alt="Updated Leather armor color" width="320">
+  <img src="docs/images/helmet-visuals-fixed.png" alt="Updated helmet item sprites" width="320">
+</p>
 
-<p>
+<details>
+<summary>More armor visual changes</summary>
+
+<p align="center">
   <img src="docs/images/leatherhelmet-model-fix.png" alt="Leather Helmet worn without nose guard" width="240">
   <img src="docs/images/copper-armor-sprites-1.0-like.png" alt="Updated Copper armor item sprites" width="320">
 </p>
+
+</details>
 
 <details>
 <summary>Current armor progression</summary>
@@ -253,11 +292,10 @@ Armor visuals also received a small consistency pass:
 
 Chainmail can now be obtained through normal Survival gameplay.
 
-![Dropped Chain Links](docs/images/chainlinks-dropped.png)
-
-Example recipe:
-
-![Chainmail Chestplate recipe](docs/images/chainmail-chestplate-recipe-example.png)
+<p align="center">
+  <img src="docs/images/chainlinks-dropped.png" alt="Dropped Chain Links" width="340">
+  <img src="docs/images/chainmail-chestplate-recipe-example.png" alt="Chainmail Chestplate recipe" width="300">
+</p>
 
 - Chainmail uses the normal armor recipe shapes with Chain Links
 - Chainmail's existing protection and durability values are unchanged
@@ -276,7 +314,9 @@ Example recipe:
 
 Sheep now provide food instead of an immediate source of Wool.
 
-![Dropped Raw and Cooked Mutton](docs/images/mutton-dropped.png)
+<p align="center">
+  <img src="docs/images/mutton-dropped.png" alt="Dropped Raw and Cooked Mutton" width="420">
+</p>
 
 - Burning sheep drop Cooked Mutton
 - Shearing remains the main source of Wool
@@ -296,7 +336,9 @@ Sheep now provide food instead of an immediate source of Wool.
 
 The achievement tree now guides the changed progression and sleeping mechanics without requiring an outside guide.
 
-![Updated achievement progression](docs/images/achievements-showcase.png)
+<p align="center">
+  <img src="docs/images/achievements-showcase.png" alt="Updated achievement progression" width="620">
+</p>
 
 Main progression:
 
@@ -310,7 +352,11 @@ Additional guidance:
 
 ---
 
-### Part 3: Go Go Gadgets!
+### Part 3 — Go Go Gadgets!
+
+<p align="center">
+  <img src="docs/images/part-3-go-go-gadgets.png" alt="Go Go Gadgets!" width="700">
+</p>
 
 New equipment and utility items for different playstyles, including backports and alternate takes on features added much later in Minecraft.
 
@@ -318,9 +364,10 @@ New equipment and utility items for different playstyles, including backports an
 
 Crystal is a new utility material used for gadgets rather than another tool or armor tier.
 
-![Crystal Ore and Deposits](docs/images/crystals-showcase.png)
-
-![Natural Crystal Deposit](docs/images/crystal-generation-banner.png)
+<p align="center">
+  <img src="docs/images/crystals-showcase.png" alt="Crystal Ore and Deposits" width="440">
+  <img src="docs/images/crystal-generation-banner.png" alt="Natural Crystal Deposit" width="300">
+</p>
 
 - Rare Crystal Ore generates underground in small veins
 - Exposed Crystal Ore can generate with a Crystal Deposit on any open face
@@ -329,10 +376,12 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 - Fortune affects Crystal Shard drops
 - Four Crystal Shards craft into one Crystal, and a Crystal can be split back into four Shards
 - Crystals can be placed as Crystal Deposits
+- Crystal Deposits use directional collision matching the face they are attached to
 
-![Crystal recipe](docs/images/crystal-recipe.png)
-
-![Crystal Shards from a Crystal](docs/images/crystalshard-recipe.png)
+<p align="center">
+  <img src="docs/images/crystal-recipe.png" alt="Crystal recipe" width="280">
+  <img src="docs/images/crystalshard-recipe.png" alt="Crystal Shards from a Crystal" width="280">
+</p>
 
 <details>
 <summary>Current Crystal generation and drop values</summary>
@@ -355,34 +404,36 @@ A Deposit only generates into air and at most one is placed per exposed Crystal 
 
 A backport of the modern Spyglass, adapted to the look and controls of Release 1.0.
 
-![Spyglass recipe](docs/images/spyglass-recipe.png)
+<p align="center">
+  <img src="docs/images/spyglass-recipe.png" alt="Spyglass recipe" width="280">
+  <img src="docs/images/videosetting-new-3ditems.png" alt="3D Items setting" width="320">
+</p>
 
 - Hold use to zoom through the Spyglass
 - Includes the scope view, use sounds and a dedicated player pose
 - The default held-item look is a flat 1.0-style sprite
 - The original 3D model can be enabled under `Video Settings → 3D Items...`
 
-![3D Items setting](docs/images/videosetting-new-3ditems.png)
-
 <details>
 <summary>Spyglass views</summary>
 
 First person:
 
-![Spyglass held in first person](docs/images/spyglass-1st-sprite-idle.png)
-
-![Spyglass scope](docs/images/spyglass-1st-sprite-use.png)
+<p align="center">
+  <img src="docs/images/spyglass-1st-sprite-idle.png" alt="Spyglass held in first person" width="320">
+  <img src="docs/images/spyglass-1st-sprite-use.png" alt="Spyglass scope" width="320">
+</p>
 
 Third-person sprite:
 
-<p>
+<p align="center">
   <img src="docs/images/spyglass-3rd-sprite-idle.png" alt="Sprite Spyglass idle" width="240">
   <img src="docs/images/spyglass-3rd-sprite-use.png" alt="Sprite Spyglass in use" width="240">
 </p>
 
 Third-person 3D model:
 
-<p>
+<p align="center">
   <img src="docs/images/spyglass-3rd-3d-idle.png" alt="3D Spyglass idle" width="240">
   <img src="docs/images/spyglass-3rd-3d-use.png" alt="3D Spyglass in use" width="240">
 </p>
@@ -393,7 +444,7 @@ Third-person 3D model:
 
 A backport of the modern Bundle for carrying mixed small stacks without adding another inventory row.
 
-<p>
+<p align="center">
   <img src="docs/images/pouch-held.png" alt="Pouch held in first person" width="240">
   <img src="docs/images/pouch-dropped.png" alt="Dropped Pouch" width="240">
 </p>
@@ -401,13 +452,18 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 - Stores up to one stack's worth of mixed items
 - Items can be inserted and removed directly from the inventory
 - Scrolling while hovering the Pouch selects which stored item to remove
-- The tooltip shows stored items and current fullness
+- The tooltip shows up to 12 item types at once and shifts through additional contents while scrolling
 - Pouches cannot be stored inside other Pouches
+- Backpacks cannot be stored inside Pouches
 - The normal Pouch is intended as the base for more specialized Pouches later
 
-![Pouch contents](docs/images/pouch-usage-visuals.png)
+<p align="center">
+  <img src="docs/images/pouch-usage-visuals.png" alt="Pouch contents" width="520">
+</p>
 
-![Pouch recipe](docs/images/pouch-recipe.png)
+<p align="center">
+  <img src="docs/images/pouch-recipe.png" alt="Pouch recipe" width="320">
+</p>
 
 <details>
 <summary>Current Pouch capacity rules</summary>
@@ -416,10 +472,76 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 - An item that normally stacks to 64 uses 1 unit each
 - An item that normally stacks to 16 uses 4 units each
 - An unstackable item uses the full Pouch capacity
-- The contents preview shows up to 12 stored item types at once
+- The contents preview shows up to 12 stored item types at once, while selection can scroll through all stored types
+
+</details>
+
+#### Backpack
+
+<p align="center">
+  <img src="docs/images/backpack-banner.png" alt="Backpack" width="650">
+</p>
+
+A wearable and placeable nine-slot container built around a physical Backpack rather than a permanent inventory expansion.
+
+- Equips in the chest armor slot and provides no armor protection
+- Adds nine persistent storage slots while worn
+- Worn storage appears as a separate 3×3 panel beside the normal player inventory
+- If the normal inventory is full, item pickups can overflow into the worn Backpack
+- Can be placed in the world and opened as a 3×3 container
+- Placement follows the player's rotation with 16 possible directions
+- The placed flap uses a chest-style opening and closing animation with custom bag sounds
+- Breaking or dropping a filled Backpack preserves its contents, including across relogs
+- Backpacks cannot contain other Backpacks
+- A placed Backpack broken in Creative drops nothing, matching normal Creative behavior
+
+<p align="center">
+  <img src="docs/images/backpack-placed-dropped.png" alt="Placed and dropped Backpack" width="330">
+  <img src="docs/images/backpack-worn-back.png" alt="Backpack worn from behind" width="330">
+</p>
+
+<p align="center">
+  <img src="docs/images/backpack-placed-inventory.png" alt="Placed Backpack inventory" width="310">
+  <img src="docs/images/backpack-worn-inventory.png" alt="Worn Backpack inventory" width="360">
+</p>
+
+##### Hard Leather
+
+Hard Leather is the Backpack's main material. It has been added as an item, but its Survival source is still planned for later in Part 3.
+
+<p align="center">
+  <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
+  <img src="docs/images/backpack-recipe.png" alt="Backpack recipe" width="360">
+</p>
+
+The Backpack recipe is:
+
+`GGG / H H / HHH` — `G` = Gold Ingot, `H` = Hard Leather.
+
+<details>
+<summary>More Backpack views</summary>
+
+<p align="center">
+  <img src="docs/images/backpack-placed-open.png" alt="Opened placed Backpack" width="330">
+  <img src="docs/images/backpack-view-front.png" alt="Backpack worn from the front" width="300">
+</p>
+
+<p align="center">
+  <img src="docs/images/backpack-render.png" alt="Backpack model render" width="240">
+  <img src="docs/images/backpack-render2.png" alt="Backpack model render from another angle" width="240">
+</p>
 
 </details>
 
 ---
 
-Texture credits: copper armor item sprites based on axy's Traditional Armour. Copper ingot and block textures based on artwork by JM140628. Chain Links texture inspired by [Better Than Adventure](https://www.betterthanadventure.net/). Crystal textures based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848). Pouch assets are adapted from the modern Minecraft Bundle assets.
+## Credits
+
+- Copper armor item sprites are based on axy's Traditional Armour
+- Copper ingot and block textures are based on artwork by JM140628
+- Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
+- Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
+- Pouch assets are adapted from the modern Minecraft Bundle assets
+- Backpack item sprite was inspired by [Nemo's Backpacks](https://modrinth.com/mod/nemos-backpacks/gallery)
+- Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
+- Backpack close sound: [Bag Drop and Remove](https://pixabay.com/sound-effects/film-special-effects-bag-drop-and-remove-70142/) on Pixabay
