@@ -29,4 +29,4 @@
 
 ### Project
 
-- Renamed the project to **Minecraft 1.0+**
+- Renamed the project to **Minecraft: Release+**

@@ -1,6 +1,6 @@
 # Development Log
 
-Minecraft 1.0+, continued through larger updates and smaller feature parts. This log follows the project by update, then by feature.
+Minecraft: Release+, continued through larger updates and smaller feature parts. This log follows the project by update, then by feature.
 
 ## Update #1
 

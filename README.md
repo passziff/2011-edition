@@ -1,8 +1,7 @@
 <p align="center">
-  <img src="docs/images/1-0-plus-banner.png" alt="Minecraft 1.0+" width="500">
+  <img src="docs/images/release-plus-banner.png" alt="Minecraft: Release+" width="560">
 </p>
 
-# Minecraft 1.0+
 
 An unofficial alternative continuation of Minecraft Java Edition, built from Release 1.0.0.
 
@@ -24,5 +23,9 @@ Some backported assets are based on assets from modern Minecraft.
 Licensed under the MIT License.
 
 Minecraft is owned by Mojang Studios. This project is unofficial and is not affiliated with or endorsed by Mojang Studios or Microsoft.
+
+<p align="center">
+  <img src="docs/images/release-plus-logo.png" alt="Release+ logo" width="90">
+</p>
 
 Created by passo.
