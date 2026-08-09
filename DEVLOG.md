@@ -1,8 +1,6 @@
 # Development Log
 
-<img src="docs/images/1-0-plus-banner.png" alt="Minecraft 1.0+" width="500">
-
-Minecraft 1.0+, continued through larger updates and smaller feature parts. This log follows the project by update, then by feature, rather than as a day-by-day diary.
+Minecraft 1.0+, continued through larger updates and smaller feature parts. This log follows the project by update, then by feature.
 
 ## Update #1
 
@@ -283,7 +281,7 @@ Armor visuals also received a consistency pass:
 - The Leather Helmet no longer shows the nose guard used by the heavier helmets
 - Iron, Gold, Diamond and Copper helmet item sprites now match their worn helmet shapes more closely
 - Copper armor item sprites were adjusted to better match the Release 1.0 item style
-- Leather armor was recolored to match normal Leather more closely and distinguish it from Copper
+- Leather armor was recolored to match normal Leather more closely and distinguish it from Hard Leather
 
 <img src="docs/images/leather-armor-new-color.png" alt="Updated Leather armor color" width="320">
 
@@ -515,7 +513,6 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 - The placed flap uses a chest-style opening and closing animation with custom bag sounds
 - Breaking or dropping a filled Backpack preserves its contents, including across relogs
 - Backpacks cannot contain other Backpacks
-- A placed Backpack broken in Creative drops nothing, matching normal Creative behavior
 
 ##### Worn and placed
 
@@ -564,7 +561,7 @@ The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is H
 - Copper ingot and block textures are based on artwork by JM140628
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
-- Pouch assets are adapted from the modern Minecraft Bundle assets
+- Pouch & Spyglass assets are adapted from the modern Minecraft Bundle assets
 - Backpack item sprite was inspired by [Nemo's Backpacks](https://modrinth.com/mod/nemos-backpacks/gallery)
 - Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
 - Backpack close sound: [Bag Drop and Remove](https://pixabay.com/sound-effects/film-special-effects-bag-drop-and-remove-70142/) on Pixabay
