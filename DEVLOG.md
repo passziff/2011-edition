@@ -519,7 +519,7 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 <img src="docs/images/backpack-worn-back.png" alt="Backpack worn from behind" width="320">
 <img src="docs/images/backpack-placed-dropped.png" alt="Placed and dropped Backpack" width="320">
 
-*The same Backpack worn, placed and dropped.*
+*Worn, placed and dropped.*
 
 ##### Inventory
 
@@ -561,7 +561,7 @@ The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is H
 - Copper ingot and block textures are based on artwork by JM140628
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
-- Pouch & Spyglass assets are adapted from the modern Minecraft Bundle assets
+- Pouch & Spyglass assets are adapted from more modern Minecraft assets
 - Backpack item sprite was inspired by [Nemo's Backpacks](https://modrinth.com/mod/nemos-backpacks/gallery)
 - Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
 - Backpack close sound: [Bag Drop and Remove](https://pixabay.com/sound-effects/film-special-effects-bag-drop-and-remove-70142/) on Pixabay
