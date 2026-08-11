@@ -532,7 +532,7 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 
 ##### Hard Leather
 
-Hard Leather is the Backpack's main material. It has been added as an item, but its Survival source is still planned for later in Part 3.
+Hard Leather is the Backpack's main material. Normal Leather can now be smelted into Hard Leather in a Furnace.
 
 <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
@@ -553,6 +553,59 @@ The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is H
 
 </details>
 
+#### Stone of Return
+
+The Stone of Return is a post-End utility item that turns Ender teleportation into a long-range return home.
+
+<img src="docs/images/stone-of-return-banner.png" alt="Stone of Return" width="500">
+
+- Crafted from End Stone, Ender Pearls and an Eye of Ender
+- The crafted stone is inert until it is calibrated at an Enchanting Table
+- Calibration I, II and III cost 10, 20 and 30 levels and improve the accuracy of the return
+- Using a calibrated stone instantly teleports the player toward their current respawn point
+- Departure and arrival use Ender-style portal clouds and teleport sounds
+- The teleport deals the same damage as an Ender Pearl
+- Every calibrated Stone of Return is single-use
+- If the player's bed is no longer valid, the return falls back to world spawn
+
+<details>
+<summary>Recipe</summary>
+
+<img src="docs/images/stone-of-return-recipe.png" alt="Stone of Return recipe" width="360">
+
+</details>
+
+<details>
+<summary>Calibration</summary>
+
+<img src="docs/images/stone-of-return-enchantment.png" alt="Stone of Return calibration" width="360">
+
+| Enchantment | Cost | Return accuracy |
+| --- | ---: | --- |
+| Calibration I | 10 levels | Safe position within 256 blocks of the respawn point |
+| Calibration II | 20 levels | Safe position within 64 blocks of the respawn point |
+| Calibration III | 30 levels | Exact respawn point |
+
+Calibration I is available without bookshelves. Higher Calibration levels require progressively stronger bookshelf setups.
+
+</details>
+
+<details>
+<summary>More Stone of Return views</summary>
+
+<img src="docs/images/stone-of-return-first-person.png" alt="Stone of Return held in first person" width="520">
+
+</details>
+
+#### Bottle o' Enchanting
+
+The Bottle o' Enchanting has been backported as a throwable source of experience.
+
+<img src="docs/images/bottle-o-enchanting.png" alt="Bottle o' Enchanting" width="300">
+<img src="docs/images/bottle-o-enchanting-dropped.png" alt="Dropped Bottle o' Enchanting" width="300">
+
+It is currently available in Creative only. A Survival implementation has not been added yet.
+
 ---
 
 ## Credits
@@ -561,7 +614,8 @@ The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is H
 - Copper ingot and block textures are based on artwork by JM140628
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
-- Pouch & Spyglass assets are adapted from more modern Minecraft assets
+- Pouch, Spyglass and Bottle o' Enchanting assets are adapted from more modern Minecraft assets
+- Stone of Return item sprite is inspired by [Hearthstone](https://www.curseforge.com/minecraft/mc-mods/hearthstone)
 - Backpack item sprite was inspired by [Nemo's Backpacks](https://modrinth.com/mod/nemos-backpacks/gallery)
 - Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
 - Backpack close sound: [Bag Drop and Remove](https://pixabay.com/sound-effects/film-special-effects-bag-drop-and-remove-70142/) on Pixabay
