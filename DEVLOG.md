@@ -530,14 +530,6 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 
 *Worn and placed Backpack storage.*
 
-##### Hard Leather
-
-Hard Leather is the Backpack's main material. Normal Leather can now be smelted into Hard Leather in a Furnace.
-
-<img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
-
-*Normal Leather beside Hard Leather.*
-
 The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is Hard Leather.
 
 <img src="docs/images/backpack-recipe.png" alt="Backpack recipe" width="360">
@@ -552,6 +544,12 @@ The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is H
 <img src="docs/images/backpack-render2.png" alt="Backpack model render from another angle" width="240">
 
 </details>
+
+##### Hard Leather
+
+Hard Leather is the Backpack's main material. Normal Leather can now be smelted into Hard Leather in a Furnace.
+
+<img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
 #### Stone of Return
 
