@@ -22,8 +22,6 @@ A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/be
 - Beds still set the player's respawn point when sleep is denied
 - A Glowstone Lamp on a Bedside Table prevents nightmares
 - Nightmares wake the player and block sleeping again until daytime
-- F6 cycles the time of day in singleplayer Creative
-- F7 can temporarily switch a singleplayer Creative session to Survival for testing and back again
 
 #### Bedside Table
 
@@ -88,7 +86,6 @@ Flint forms the first tool tier before Stone. Only Flint Pickaxes and Axes repla
 - Flint can be placed as small pebbles
 - Flint Pebbles generate naturally on the surface and around exposed underground sediment
 - Breaking a Flint Pebble returns one Flint
-- All Stone tools require smelted Stone instead of Cobblestone
 
 ##### Flint Pebbles
 
@@ -140,7 +137,7 @@ Flint keeps the old Wood-tier statistics:
 
 #### Stone progression
 
-Cobblestone must be smelted into Stone before Stone tools can be crafted.
+Cobblestone must be smelted into Stone before any Stone tools can be crafted.
 
 <details>
 <summary>Current pickaxe harvest progression</summary>
@@ -268,7 +265,7 @@ These are the current generation values after the first progression balance pass
 | Diamond | 1 attempt/chunk | 7 | Y 0-15 |
 | Lapis | Vanilla | Vanilla | Vanilla |
 
-Rare upper Iron uses terrain-aware placement so its attempt is limited by the terrain height at the selected position.
+Rare upper Iron generation is limited by the local terrain height.
 
 </details>
 
@@ -279,8 +276,7 @@ Gold has been rebalanced into a real post-Iron armor tier while intentionally ke
 Armor visuals also received a consistency pass:
 
 - The Leather Helmet no longer shows the nose guard used by the heavier helmets
-- Iron, Gold, Diamond and Copper helmet item sprites now match their worn helmet shapes more closely
-- Copper armor item sprites were adjusted to better match the Release 1.0 item style
+- Iron, Gold, Diamond and Copper helmet item sprites were adjusted to better match their worn shapes and the Release 1.0 item style
 - Leather armor was recolored to match normal Leather more closely and distinguish it from Hard Leather
 
 <img src="docs/images/leather-armor-new-color.png" alt="Updated Leather armor color" width="320">
@@ -366,7 +362,7 @@ Main progression:
 
 `Time to Mine!` → `Hot Topic` → `Getting an Upgrade` → `Copper Age` → `Acquire Hardware` → `Gold Rush` → `DIAMONDS!`
 
-Additional guidance:
+Side achievements:
 
 - `Home Sweet Home` branches from `Benchmarking`
 - `Bedside Manners` branches from `DIAMONDS!`
@@ -395,7 +391,7 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 - Fortune affects Crystal Shard drops
 - Four Crystal Shards craft into one Crystal, and a Crystal can be split back into four Shards
 - Crystals can be placed as Crystal Deposits
-- Crystal Deposits use directional collision matching the face they are attached to
+- Crystal Deposits can attach to exposed faces and use matching collision
 
 <details>
 <summary>Crystal visuals and recipes</summary>
@@ -472,7 +468,6 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 - The tooltip shows up to 12 item types at once and shifts through additional contents while scrolling
 - Pouches cannot be stored inside other Pouches
 - Backpacks cannot be stored inside Pouches
-- The normal Pouch is intended as the base for more specialized Pouches later
 
 <img src="docs/images/pouch-usage-visuals.png" alt="Pouch contents" width="520">
 
@@ -509,7 +504,7 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 - Worn storage appears as a separate 3×3 panel beside the normal player inventory
 - If the normal inventory is full, item pickups can overflow into the worn Backpack
 - Can be placed in the world and opened as a 3×3 container
-- Placement follows the player's rotation with 16 possible directions
+- Placement follows the player's rotation
 - The placed flap uses a chest-style opening and closing animation with custom bag sounds
 - Breaking or dropping a filled Backpack preserves its contents, including across relogs
 - Backpacks cannot contain other Backpacks
@@ -530,6 +525,14 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 
 *Worn and placed Backpack storage.*
 
+##### Hard Leather
+
+Hard Leather is the Backpack's main material. Normal Leather can now be smelted into Hard Leather in a Furnace.
+
+<img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
+
+*Normal Leather beside Hard Leather.*
+
 The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is Hard Leather.
 
 <img src="docs/images/backpack-recipe.png" alt="Backpack recipe" width="360">
@@ -545,22 +548,16 @@ The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is H
 
 </details>
 
-##### Hard Leather
-
-Hard Leather is the Backpack's main material. Normal Leather can now be smelted into Hard Leather in a Furnace.
-
-<img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
-
 #### Stone of Return
 
-The Stone of Return is a post-End utility item that turns Ender teleportation into a long-range return home.
+The Stone of Return is an endgame utility item that turns Ender teleportation into a long-range way home.
 
 <img src="docs/images/stone-of-return-banner.png" alt="Stone of Return" width="500">
 
 - Crafted from End Stone, Ender Pearls and an Eye of Ender
 - The crafted stone is inert until it is calibrated at an Enchanting Table
 - Calibration I, II and III cost 10, 20 and 30 levels and improve the accuracy of the return
-- Using a calibrated stone instantly teleports the player toward their current respawn point
+- Using a calibrated stone instantly returns the player toward their current respawn point, with accuracy determined by its Calibration level
 - Departure and arrival use Ender-style portal clouds and teleport sounds
 - The teleport deals the same damage as an Ender Pearl
 - Every calibrated Stone of Return is single-use
@@ -578,13 +575,11 @@ The Stone of Return is a post-End utility item that turns Ender teleportation in
 
 <img src="docs/images/stone-of-return-enchantment.png" alt="Stone of Return calibration" width="360">
 
-| Enchantment | Cost | Return accuracy |
-| --- | ---: | --- |
-| Calibration I | 10 levels | Safe position within 256 blocks of the respawn point |
-| Calibration II | 20 levels | Safe position within 64 blocks of the respawn point |
-| Calibration III | 30 levels | Exact respawn point |
-
-Calibration I is available without bookshelves. Higher Calibration levels require progressively stronger bookshelf setups.
+| Enchantment | Cost | Bookshelves | Return accuracy |
+| --- | ---: | ---: | --- |
+| Calibration I | 10 levels | 0 | Safe position within 256 blocks of the respawn point |
+| Calibration II | 20 levels | 15 | Safe position within 64 blocks of the respawn point |
+| Calibration III | 30 levels | 30 | Exact respawn point |
 
 </details>
 
@@ -597,12 +592,9 @@ Calibration I is available without bookshelves. Higher Calibration levels requir
 
 #### Bottle o' Enchanting
 
-The Bottle o' Enchanting has been backported as a throwable source of experience.
+The Bottle o' Enchanting has also been backported as a throwable source of experience. It is currently Creative-only; a place in Survival progression has not been decided yet.
 
 <img src="docs/images/bottle-o-enchanting.png" alt="Bottle o' Enchanting" width="300">
-<img src="docs/images/bottle-o-enchanting-dropped.png" alt="Dropped Bottle o' Enchanting" width="300">
-
-It is currently available in Creative only. A Survival implementation has not been added yet.
 
 ---
 
@@ -612,7 +604,7 @@ It is currently available in Creative only. A Survival implementation has not be
 - Copper ingot and block textures are based on artwork by JM140628
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
-- Pouch, Spyglass and Bottle o' Enchanting assets are adapted from more modern Minecraft assets
+- Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
 - Stone of Return item sprite is inspired by [Hearthstone](https://www.curseforge.com/minecraft/mc-mods/hearthstone)
 - Backpack item sprite was inspired by [Nemo's Backpacks](https://modrinth.com/mod/nemos-backpacks/gallery)
 - Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
