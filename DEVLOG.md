@@ -428,13 +428,10 @@ A backport of the modern Spyglass, adapted to the look and controls of Release 1
 
 - Hold use to zoom through the Spyglass
 - Includes the scope view, use sounds and a dedicated player pose
-- The default held-item look is a flat 1.0-style sprite
-- The original 3D model can be enabled under `Video Settings → 3D Items...`
+- Its held-item appearance can be switched between a flat 1.0-style sprite and the original 3D model
 
 <details>
-<summary>3D Items setting and Spyglass views</summary>
-
-<img src="docs/images/videosetting-new-3ditems.png" alt="3D Items setting" width="320">
+<summary>Spyglass views</summary>
 
 **First person**
 
@@ -452,6 +449,16 @@ A backport of the modern Spyglass, adapted to the look and controls of Release 1
 <img src="docs/images/spyglass-3rd-3d-use.png" alt="3D Spyglass in use" width="240">
 
 </details>
+
+#### Item Customization
+
+Optional item visuals are grouped under `Video Settings → Item Customization...`.
+
+<img src="docs/images/item-customization.png" alt="Item Customization settings" width="360">
+
+- Spyglass: Sprite or 3D
+- Tarot of Undying: Default, Red Uno-Card or Minecraft Uno-Card
+- These options are cosmetic only
 
 #### Pouch
 
@@ -491,6 +498,14 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 
 </details>
 
+#### Hard Leather
+
+Hard Leather is a new crafting material used by the Backpack. Normal Leather can be smelted into Hard Leather in a Furnace.
+
+<img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
+
+*Normal Leather beside Hard Leather.*
+
 #### Backpack
 
 A wearable and placeable nine-slot container built around a physical Backpack rather than a permanent inventory expansion.
@@ -509,6 +524,13 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 - Breaking or dropping a filled Backpack preserves its contents, including across relogs
 - Backpacks cannot contain other Backpacks
 
+<details>
+<summary>Recipe</summary>
+
+<img src="docs/images/backpack-recipe.png" alt="Backpack recipe" width="360">
+
+</details>
+
 ##### Worn and placed
 
 <img src="docs/images/backpack-worn-back.png" alt="Backpack worn from behind" width="320">
@@ -524,18 +546,6 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 <img src="docs/images/backpack-placed-inventory.png" alt="Placed Backpack inventory" width="310">
 
 *Worn and placed Backpack storage.*
-
-##### Hard Leather
-
-Hard Leather is the Backpack's main material. Normal Leather can now be smelted into Hard Leather in a Furnace.
-
-<img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
-
-*Normal Leather beside Hard Leather.*
-
-The Backpack recipe is `GGG / H H / HHH`, where `G` is a Gold Ingot and `H` is Hard Leather.
-
-<img src="docs/images/backpack-recipe.png" alt="Backpack recipe" width="360">
 
 <details>
 <summary>More Backpack views</summary>
@@ -596,6 +606,61 @@ The Bottle o' Enchanting has also been backported as a throwable source of exper
 
 <img src="docs/images/bottle-o-enchanting.png" alt="Bottle o' Enchanting" width="300">
 
+#### Rope
+
+Rope is a placeable climbing tool that hangs downward from existing terrain.
+
+<img src="docs/images/rope-placed.png" alt="Placed Rope" width="500">
+
+*Rope hanging from different supports.*
+
+- Three String craft into two Rope
+- Rope can hang from full blocks and bottom slabs
+- Using its support or an existing Rope segment extends the line downward
+- Rope can be climbed like a Ladder and uses cloth step sounds while climbing
+- The lowest segment automatically uses a distinct loose-end texture
+- Breaking its support drops the hanging Rope chain
+
+<details>
+<summary>Item and recipe</summary>
+
+<img src="docs/images/rope-gui-item.png" alt="Rope item" width="260">
+<img src="docs/images/rope-recipe.png" alt="Rope recipe" width="360">
+
+</details>
+
+#### Tarot of Undying
+
+The Tarot of Undying takes a fatal hit in the player's place.
+
+<img src="docs/images/tarot-in-animation.png" alt="Tarot of Undying activation" width="620">
+
+*Tarot of Undying during its activation animation.*
+
+- Works from any of the nine hotbar slots, not only the currently held one
+- On activation, one Tarot is consumed and the player survives at 1 health
+- Clears current status effects and extinguishes the player
+- Gives Regeneration II and Fire Resistance for 10 seconds
+- Uses a dedicated activation animation rising from the hotbar, green and gold particles, and sound
+- Does not protect against void damage
+
+There is currently no way to obtain the Tarot of Undying in Survival.
+
+<details>
+<summary>More Tarot of Undying views</summary>
+
+**Held**
+
+<img src="docs/images/tarot-1stperson.png" alt="Tarot of Undying held in first person" width="500">
+<img src="docs/images/tarot-holding-3rdperson.png" alt="Tarot of Undying held in third person" width="300">
+
+**Optional textures**
+
+<img src="docs/images/tarot-uno-redcard.png" alt="Red Uno-Card Tarot texture" width="250">
+<img src="docs/images/tarot-uno-mcstyle.png" alt="Minecraft Uno-Card Tarot texture" width="250">
+
+</details>
+
 ---
 
 ## Credits
@@ -605,6 +670,9 @@ The Bottle o' Enchanting has also been backported as a throwable source of exper
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
+- Tarot of Undying uses an adapted Totem of Undying activation sound from later Minecraft versions
+- Rope item texture is heavily based on and recolored from [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
+- Placed Rope texture is heavily based on and recolored from [this NovaSkin Rope texture](https://minecraft.novaskin.me/post/5166333130/rope)
 - Stone of Return item sprite is inspired by [Hearthstone](https://www.curseforge.com/minecraft/mc-mods/hearthstone)
 - Backpack item sprite was inspired by [Nemo's Backpacks](https://modrinth.com/mod/nemos-backpacks/gallery)
 - Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
