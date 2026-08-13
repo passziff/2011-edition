@@ -29,7 +29,6 @@ The Bedside Table is the main requirement for sleeping and sits beside the head 
 
 <img src="docs/images/bedside-table.png" alt="Bedside Table" width="430">
 
-*Bedside Table placed beside a bed.*
 
 <details>
 <summary>Recipe</summary>
@@ -44,7 +43,6 @@ A Glowstone Lamp placed on the Bedside Table prevents nightmares.
 
 <img src="docs/images/glowstonelamp-on-bedsidetable.png" alt="Glowstone Lamp on a Bedside Table" width="430">
 
-*Glowstone Lamp on a Bedside Table.*
 
 <details>
 <summary>Recipe</summary>
@@ -81,7 +79,6 @@ Flint forms the first tool tier before Stone. Only Flint Pickaxes and Axes repla
 
 <img src="docs/images/flint-rocks-1.png" alt="Flint Pebbles on different surfaces" width="520">
 
-*Flint Pebbles naturally placed across different surfaces.*
 
 - Flint can be placed as small pebbles
 - Flint Pebbles generate naturally on the surface and around exposed underground sediment
@@ -107,7 +104,6 @@ There are three variants for visual diversity.
 
 <img src="docs/images/flint-tools-dropped.png" alt="Dropped Flint tools" width="460">
 
-*Flint Pickaxe and Flint Axe.*
 
 <details>
 <summary>Tool views and recipes</summary>
@@ -159,7 +155,6 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 
 <img src="docs/images/copper-comparing.png" alt="Copper compared with existing metal blocks and ores" width="470">
 
-*Copper beside the existing Release 1.0 metal blocks and ores.*
 
 - Copper Ore drops itself and smelts into one Copper Ingot
 - Nine Copper Ingots craft into a Block of Copper and can be crafted back
@@ -202,7 +197,6 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 
 <img src="docs/images/copper-armor.png" alt="Copper armor equipped" width="340">
 
-*Copper armor worn by the player.*
 
 <details>
 <summary>More Copper armor visuals</summary>
@@ -245,7 +239,6 @@ Copper and the existing ores were rebalanced around the new progression.
 <img src="docs/images/copperore-gen-1.png" alt="Copper Ore generation" width="340">
 <img src="docs/images/copperore-gen-2.png" alt="Copper in a cave" width="340">
 
-*Copper generation above and inside cave terrain.*
 
 <details>
 <summary>Current ore generation values</summary>
@@ -281,7 +274,6 @@ Armor visuals also received a consistency pass:
 
 <img src="docs/images/leather-armor-new-color.png" alt="Updated Leather armor color" width="320">
 
-*Updated Leather armor color.*
 
 <details>
 <summary>More armor visual changes</summary>
@@ -374,7 +366,69 @@ Side achievements:
 
 <img src="docs/images/part-3-go-go-gadgets.png" alt="Go Go Gadgets!" width="650">
 
-New equipment and utility items for different playstyles, including backports and alternate takes on features added much later in Minecraft.
+New equipment, workshop systems and utility items for different playstyles, including backports and alternate takes on features added much later in Minecraft.
+
+#### Steel progression
+
+Steel adds a workshop-focused step beyond Iron without becoming another tool or armor tier.
+
+<img src="docs/images/steel-iron-ingot-comparison.png" alt="Steel and Iron Ingots" width="400">
+<img src="docs/images/steel-block-comparison.png" alt="Block of Steel beside other metal blocks" width="520">
+
+- Iron Ingots can be turned into Steel Ingots in a Blast Furnace
+- Nine Steel Ingots craft into a Block of Steel and can be crafted back
+- Flint and Steel now uses a Steel Ingot instead of Iron and has a matching Steel-colored sprite
+- Steel is used for workshop equipment including the Anvil and Steel Hammer
+
+<details>
+<summary>Flint and Steel recipe</summary>
+
+<img src="docs/images/flint-and-steel-recipe.png" alt="Flint and Steel recipe" width="360">
+
+</details>
+
+##### Blast Furnace
+
+The Blast Furnace is the main way to make Steel and a faster furnace for ores.
+
+<img src="docs/images/blast-furnace.png" alt="Blast Furnace" width="470">
+
+- Ores smelt at twice the speed of a normal Furnace
+- Iron Ingots become Steel Ingots only while the Blast Furnace is burning Charcoal
+- Charcoal has a distinct Release+ texture to separate it from Coal
+- Furnaces and Blast Furnaces have operating sounds that can be disabled in `Release+ Features`
+
+<img src="docs/images/charcoal-comparison.png" alt="Release+ Charcoal compared with Coal" width="400">
+
+<details>
+<summary>Recipe and GUI</summary>
+
+<img src="docs/images/blast-furnace-recipe.png" alt="Blast Furnace recipe" width="300">
+<img src="docs/images/blast-furnace-gui.png" alt="Blast Furnace GUI" width="330">
+
+</details>
+
+##### Anvil
+
+The Anvil backports later repair, renaming and enchantment-combining functionality into Release 1.0, with the Steel Hammer as its dedicated workshop tool.
+
+<img src="docs/images/anvil-hammer-showcase.png" alt="Anvil with an installed Steel Hammer" width="430">
+
+- A Steel Hammer must be installed in the Anvil before it can be used
+- The installed Hammer stays in the Anvil and is visible on the block in-world
+- Repairs, compatible enchantment combinations and renaming cost experience levels
+- Each successful operation damages the Steel Hammer; a fresh Hammer lasts 20 operations
+- The Anvil can become damaged and eventually break through use
+
+<details>
+<summary>Recipes, GUI and damage</summary>
+
+<img src="docs/images/anvil-recipe.png" alt="Anvil recipe" width="300">
+<img src="docs/images/steel-hammer-recipe.png" alt="Steel Hammer recipe" width="360">
+<img src="docs/images/anvil-gui.png" alt="Anvil GUI" width="330">
+<img src="docs/images/anvil-almostbroken.png" alt="Damaged Anvil" width="300">
+
+</details>
 
 #### Crystal
 
@@ -382,7 +436,6 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 
 <img src="docs/images/crystals-showcase.png" alt="Crystal Ore and Deposits" width="500">
 
-*Crystal Ore, Crystal Deposits and the material itself.*
 
 - Rare Crystal Ore generates underground in small veins
 - Exposed Crystal Ore can generate with a Crystal Deposit on any open face
@@ -450,15 +503,17 @@ A backport of the modern Spyglass, adapted to the look and controls of Release 1
 
 </details>
 
-#### Item Customization
+#### Release+ Features
 
-Optional item visuals are grouped under `Video Settings → Item Customization...`.
+Release+-specific visual and sound options are grouped under `Release+ Features` on the main Options screen.
 
-<img src="docs/images/item-customization.png" alt="Item Customization settings" width="360">
+<img src="docs/images/release-plus-features.png" alt="Release+ Features settings" width="360">
 
 - Spyglass: Sprite or 3D
-- Tarot of Undying: Default, Red Uno-Card or Minecraft Uno-Card
-- These options are cosmetic only
+- Tarot: three cosmetic texture variants
+- Charcoal: Release+ or Vanilla
+- Furnace Sounds: ON or OFF
+- These settings do not change gameplay
 
 #### Pouch
 
@@ -467,7 +522,6 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 <img src="docs/images/pouch-held.png" alt="Pouch held in first person" width="250">
 <img src="docs/images/pouch-dropped.png" alt="Dropped Pouch" width="250">
 
-*Pouch held and dropped.*
 
 - Stores up to one stack's worth of mixed items
 - Items can be inserted and removed directly from the inventory
@@ -478,7 +532,6 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 
 <img src="docs/images/pouch-usage-visuals.png" alt="Pouch contents" width="520">
 
-*Pouch contents and selection UI.*
 
 <details>
 <summary>Recipe</summary>
@@ -504,7 +557,6 @@ Hard Leather is a new crafting material used by the Backpack. Normal Leather can
 
 <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
-*Normal Leather beside Hard Leather.*
 
 #### Backpack
 
@@ -512,7 +564,6 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 
 <img src="docs/images/backpack-banner.png" alt="Backpack worn while exploring" width="650">
 
-*The Backpack worn in the world.*
 
 - Equips in the chest armor slot and provides no armor protection
 - Adds nine persistent storage slots while worn
@@ -536,7 +587,6 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 <img src="docs/images/backpack-worn-back.png" alt="Backpack worn from behind" width="320">
 <img src="docs/images/backpack-placed-dropped.png" alt="Placed and dropped Backpack" width="320">
 
-*Worn, placed and dropped.*
 
 ##### Inventory
 
@@ -545,7 +595,6 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 <img src="docs/images/backpack-worn-inventory.png" alt="Worn Backpack inventory" width="360">
 <img src="docs/images/backpack-placed-inventory.png" alt="Placed Backpack inventory" width="310">
 
-*Worn and placed Backpack storage.*
 
 <details>
 <summary>More Backpack views</summary>
@@ -612,7 +661,6 @@ Rope is a placeable climbing tool that hangs downward from existing terrain.
 
 <img src="docs/images/rope-placed.png" alt="Placed Rope" width="500">
 
-*Rope hanging from different supports.*
 
 - Three String craft into two Rope
 - Rope can hang from full blocks and bottom slabs
@@ -629,13 +677,12 @@ Rope is a placeable climbing tool that hangs downward from existing terrain.
 
 </details>
 
-#### Tarot of Undying
+#### Tarot of Death
 
-The Tarot of Undying takes a fatal hit in the player's place.
+The Tarot of Death is my version/backport of the modern Totem of Undying, adapted for Release 1.0. It takes a fatal hit in the player's place.
 
-<img src="docs/images/tarot-in-animation.png" alt="Tarot of Undying activation" width="620">
+<img src="docs/images/tarot-in-animation.png" alt="Tarot of Death activation" width="620">
 
-*Tarot of Undying during its activation animation.*
 
 - Works from any of the nine hotbar slots, not only the currently held one
 - On activation, one Tarot is consumed and the player survives at 1 health
@@ -644,15 +691,15 @@ The Tarot of Undying takes a fatal hit in the player's place.
 - Uses a dedicated activation animation rising from the hotbar, green and gold particles, and sound
 - Does not protect against void damage
 
-There is currently no way to obtain the Tarot of Undying in Survival.
+There is currently no way to obtain the Tarot of Death in Survival.
 
 <details>
-<summary>More Tarot of Undying views</summary>
+<summary>More Tarot of Death views</summary>
 
 **Held**
 
-<img src="docs/images/tarot-1stperson.png" alt="Tarot of Undying held in first person" width="500">
-<img src="docs/images/tarot-holding-3rdperson.png" alt="Tarot of Undying held in third person" width="300">
+<img src="docs/images/tarot-1stperson.png" alt="Tarot of Death held in first person" width="500">
+<img src="docs/images/tarot-holding-3rdperson.png" alt="Tarot of Death held in third person" width="300">
 
 **Optional textures**
 
@@ -667,13 +714,16 @@ There is currently no way to obtain the Tarot of Undying in Survival.
 
 - Copper armor item sprites are based on axy's Traditional Armour
 - Copper ingot and block textures are based on artwork by JM140628
+- Block of Steel texture is based on [this NovaSkin Steel Block texture](https://minecraft.novaskin.me/post/4893925167/steel-block)
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
-- Tarot of Undying uses an adapted Totem of Undying activation sound from later Minecraft versions
+- Tarot of Death uses an adapted Totem of Undying activation sound from later Minecraft versions
 - Rope item texture is heavily based on and recolored from [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
 - Placed Rope texture is heavily based on and recolored from [this NovaSkin Rope texture](https://minecraft.novaskin.me/post/5166333130/rope)
 - Stone of Return item sprite is inspired by [Hearthstone](https://www.curseforge.com/minecraft/mc-mods/hearthstone)
 - Backpack item sprite was inspired by [Nemo's Backpacks](https://modrinth.com/mod/nemos-backpacks/gallery)
 - Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
 - Backpack close sound: [Bag Drop and Remove](https://pixabay.com/sound-effects/film-special-effects-bag-drop-and-remove-70142/) on Pixabay
+
+If an original creator would prefer an inspired, adapted or recolored asset not be used here, I am happy to change or remove it.
