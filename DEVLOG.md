@@ -378,12 +378,20 @@ Steel adds a workshop-focused step beyond Iron without becoming another tool or 
 - Iron Ingots can be turned into Steel Ingots in a Blast Furnace
 - Nine Steel Ingots craft into a Block of Steel and can be crafted back
 - Flint and Steel now uses a Steel Ingot instead of Iron and has a matching Steel-colored sprite
+- The Cauldron now uses Steel Ingots instead of Iron Ingots
 - Steel is used for workshop equipment including the Anvil and Steel Hammer
 
 <details>
 <summary>Flint and Steel recipe</summary>
 
 <img src="docs/images/flint-and-steel-recipe.png" alt="Flint and Steel recipe" width="360">
+
+</details>
+
+<details>
+<summary>Cauldron recipe</summary>
+
+<img src="docs/images/cauldron-steel-recipe.png" alt="Cauldron recipe using Steel Ingots" width="360">
 
 </details>
 
@@ -418,7 +426,8 @@ The Anvil backports later repair, renaming and enchantment-combining functionali
 - The installed Hammer stays in the Anvil and is visible on the block in-world
 - Repairs, compatible enchantment combinations and renaming cost experience levels
 - Each successful operation damages the Steel Hammer; a fresh Hammer lasts 20 operations
-- The Anvil can become damaged and eventually break through use
+- Unsupported Anvils fall like Sand or Gravel, damage entities on impact and can damage or break themselves from a fall
+- The Anvil can become damaged and eventually break through use or impact
 
 <details>
 <summary>Recipes, GUI and damage</summary>
@@ -427,6 +436,55 @@ The Anvil backports later repair, renaming and enchantment-combining functionali
 <img src="docs/images/steel-hammer-recipe.png" alt="Steel Hammer recipe" width="360">
 <img src="docs/images/anvil-gui.png" alt="Anvil GUI" width="330">
 <img src="docs/images/anvil-almostbroken.png" alt="Damaged Anvil" width="300">
+
+</details>
+
+#### Grindstone
+
+The Grindstone adds a dedicated repair and disenchanting workstation alongside the Anvil.
+
+<img src="docs/images/grindstone-floor.png" alt="Grindstone placed on the floor" width="360">
+
+- Two matching damageable items can be combined for a stronger repair than the crafting grid
+- Combining items in the Grindstone removes enchantments and returns experience from them
+- A custom name from the upper input item is kept on the result
+- It can be mounted on the floor, walls or ceiling and drops if its support is removed
+- The recipe uses a Sandstone Slab and accepts any vanilla Log; the model uses Oak Log for its wooden supports
+- Using the Grindstone plays dedicated use sounds
+
+<details>
+<summary>Recipe, GUI and placements</summary>
+
+<img src="docs/images/grindstone-recipe.png" alt="Grindstone recipe" width="300">
+<img src="docs/images/grindstone-gui.png" alt="Grindstone GUI" width="330">
+<img src="docs/images/grindstone-wall-ceiling.png" alt="Wall- and ceiling-mounted Grindstones" width="360">
+
+</details>
+
+<details>
+<summary>Current repair system</summary>
+
+| Method | Repair amount | Enchantments | Custom name | Cost / role |
+| --- | --- | --- | --- | --- |
+| Crafting grid | Remaining durability of both items + **5%** of maximum durability | Removed | Removed | Free basic repair |
+| Grindstone | Remaining durability of both items + **10%** of maximum durability | Removed; XP is returned | Upper item's name is kept | Dedicated destructive repair / disenchanting |
+| Anvil, item + item | Remaining durability of both items + **12%** of maximum durability | Preserved and compatible enchantments can be combined | Preserved / can be changed | Costs XP, Steel Hammer durability and Anvil wear |
+| Anvil, item + material | Up to **25%** of maximum durability per material | Preserved | Preserved / can be changed | Only the materials actually needed are consumed |
+
+Current Anvil repair materials:
+
+| Equipment | Repair material |
+| --- | --- |
+| Wooden tools | Wooden Planks |
+| Flint tools | Flint |
+| Stone tools | Stone |
+| Leather armor | Leather |
+| Chainmail | Chain Links |
+| Copper equipment | Copper Ingot |
+| Iron equipment and Shears | Iron Ingot |
+| Gold equipment | Gold Ingot |
+| Diamond equipment | Diamond |
+| Flint and Steel / Steel Hammer | Steel Ingot |
 
 </details>
 
@@ -553,10 +611,32 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 
 #### Hard Leather
 
-Hard Leather is a new crafting material used by the Backpack. Normal Leather can be smelted into Hard Leather in a Furnace.
+Hard Leather is a reinforced form of Leather used for sturdier utility equipment. Normal Leather can be smelted into Hard Leather in a Furnace.
 
 <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
+- Hard Leather is used by the Backpack and Fishing Hat
+- Books now use Hard Leather instead of normal Leather
+
+#### Fishing Hat
+
+The Fishing Hat is a reinforced Leather Helmet for players who spend time fishing.
+
+<img src="docs/images/fishing-hat-showcase.png" alt="Fishing Hat worn while fishing" width="390">
+
+- Provides the same armor protection as a Leather Helmet
+- Has **90 durability**, placing it above Leather but below Iron
+- A successful catch has a **25% chance not to consume Fishing Rod durability**
+- Uses the normal helmet enchantments available to Leather armor
+- Can be repaired with Hard Leather at an Anvil
+
+<details>
+<summary>Recipe and inventory view</summary>
+
+<img src="docs/images/fishing-hat-recipe.png" alt="Fishing Hat recipe" width="360">
+<img src="docs/images/fishing-hat-inventory.png" alt="Fishing Hat equipped in the inventory" width="360">
+
+</details>
 
 #### Backpack
 
@@ -715,6 +795,9 @@ There is currently no way to obtain the Tarot of Death in Survival.
 - Copper armor item sprites are based on axy's Traditional Armour
 - Copper ingot and block textures are based on artwork by JM140628
 - Block of Steel texture is based on [this NovaSkin Steel Block texture](https://minecraft.novaskin.me/post/4893925167/steel-block)
+- Blast Furnace, Anvil and Steel Hammer visuals are recolored/retextured vanilla Minecraft assets
+- Grindstone model, GUI and sounds are adapted from later vanilla Minecraft assets, with its textures reworked/recolored for Release+
+- Fishing Hat item sprite is based on the Angler's Hat from [Artifacts](https://modrinth.com/mod/artifacts)
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
