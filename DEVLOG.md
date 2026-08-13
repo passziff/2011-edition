@@ -427,6 +427,7 @@ The Anvil backports later repair, renaming and enchantment-combining functionali
 - Repairs, compatible enchantment combinations and renaming cost experience levels
 - Each successful operation damages the Steel Hammer; a fresh Hammer lasts 20 operations
 - Unsupported Anvils fall like Sand or Gravel, damage entities on impact and can damage or break themselves from a fall
+- The installed Steel Hammer, Anvil damage stage and facing are preserved while the Anvil falls
 - The Anvil can become damaged and eventually break through use or impact
 
 <details>
