@@ -2,11 +2,58 @@
 
 Minecraft: Release+, continued through larger updates and smaller feature parts. This log follows the project by update, then by feature.
 
+## Contents
+
+- [Update #1](#update-1)
+  - [Part 1 — Beds, but Endgame](#part-1)
+    - [Bedside Table](#bedside-table)
+    - [Glowstone Lamp](#glowstone-lamp)
+  - [Part 2 — Flint & Copper](#part-2)
+    - [Flint progression](#flint-progression)
+      - [Flint Pebbles](#flint-pebbles)
+      - [Flint tools](#flint-tools)
+    - [Stone progression](#stone-progression)
+    - [Copper progression](#copper-progression)
+      - [Copper tools](#copper-tools)
+      - [Copper armor](#copper-armor)
+    - [Ore generation](#ore-generation)
+    - [Armor progression](#armor-progression)
+    - [Chainmail](#chainmail)
+    - [Mutton and Wool](#mutton-and-wool)
+    - [Achievements](#achievements)
+  - [Part 3 — Go Go Gadgets!](#part-3)
+    - [Steel progression](#steel-progression)
+      - [Blast Furnace](#blast-furnace)
+      - [Anvil](#anvil)
+    - [Grindstone](#grindstone)
+    - [Crystal](#crystal)
+    - [Spyglass](#spyglass)
+    - [Release+ Features](#release-features)
+    - [Pouch](#pouch)
+    - [Hard Leather](#hard-leather)
+    - [Fishing Hat](#fishing-hat)
+    - [Backpack](#backpack)
+      - [Worn and placed](#worn-and-placed)
+      - [Inventory](#inventory)
+    - [Stone of Return](#stone-of-return)
+    - [Bottle o' Enchanting](#bottle-o-enchanting)
+    - [Rope](#rope)
+    - [Tarot of Death](#tarot-of-death)
+- [Credits](#credits)
+
+---
+
 ## Update #1
 
-<img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
+![Proper Progression Update](docs/images/proper-progression-banner.png)
 
-**Status:** In development. Parts 1 and 2 are feature-complete for now. Part 3 is in progress. Tested in singleplayer. Not tested in multiplayer.
+| Part | Status |
+| --- | --- |
+| Part 1 | Feature-complete |
+| Part 2 | Feature-complete |
+| Part 3 | In progress |
+
+Tested in singleplayer. Not tested in multiplayer.
 
 Proper Progression rebuilds early-game progression and then expands it with utility equipment that still feels at home in Release 1.0.
 
@@ -14,9 +61,11 @@ Proper Progression rebuilds early-game progression and then expands it with util
 
 ### Part 1
 
-<img src="docs/images/part-1-beds-but-endgame.png" alt="Beds, but Endgame" width="650">
+![Beds, but Endgame](docs/images/part-1-beds-but-endgame.png)
 
 A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/beds-but-endgame).
+
+**What's new:**
 
 - A Bedside Table beside the head of the bed is required to sleep
 - Beds still set the player's respawn point when sleep is denied
@@ -27,35 +76,26 @@ A Minecraft 1.0 adaptation of [Beds, but Endgame](https://github.com/passziff/be
 
 The Bedside Table is the main requirement for sleeping and sits beside the head of the bed.
 
-<img src="docs/images/bedside-table.png" alt="Bedside Table" width="430">
+![Bedside Table](docs/images/bedside-table.png)
 
+**Recipe**
 
-<details>
-<summary>Recipe</summary>
-
-<img src="docs/images/theotherupdate_bedsidetable_recipe.png" alt="Bedside Table recipe" width="300">
-
-</details>
+![Bedside Table recipe](docs/images/theotherupdate_bedsidetable_recipe.png)
 
 #### Glowstone Lamp
 
 A Glowstone Lamp placed on the Bedside Table prevents nightmares.
 
-<img src="docs/images/glowstonelamp-on-bedsidetable.png" alt="Glowstone Lamp on a Bedside Table" width="430">
+![Glowstone Lamp on a Bedside Table](docs/images/glowstonelamp-on-bedsidetable.png)
 
+**Recipe**
 
-<details>
-<summary>Recipe</summary>
+![Glowstone Lamp recipe](docs/images/theotherupdate_glowstonelamp_recipe.png)
 
-<img src="docs/images/theotherupdate_glowstonelamp_recipe.png" alt="Glowstone Lamp recipe" width="300">
+**Current nightmare balance**
 
-</details>
-
-<details>
-<summary>Current nightmare balance</summary>
-
-| Setting | Current value |
-| --- | ---: |
+| Setting | Value |
+| --- | --- |
 | Nightmare chance | 40% |
 | No nightmare when dawn is within | 1200 ticks |
 | Time advanced by a nightmare | 600 ticks |
@@ -63,22 +103,29 @@ A Glowstone Lamp placed on the Bedside Table prevents nightmares.
 
 A nightmare locks sleeping again until daytime. A Glowstone Lamp on the Bedside Table prevents it.
 
-</details>
-
 ---
 
 ### Part 2
 
-<img src="docs/images/part-2-flint-copper.png" alt="Flint & Copper" width="650">
+![Flint & Copper](docs/images/part-2-flint-copper.png)
 
 This part rebuilds the early mining ladder around Flint, Stone and Copper, while tightening the progression into Iron, Gold and Diamond.
+
+**What's new:**
+
+- A new Flint tool tier slots in before Stone
+- Copper becomes a full tool and armor tier between Stone and Iron
+- Existing ore generation was rebalanced around the new progression
+- Gold was rebalanced into a real post-Iron armor tier
+- Chainmail is now obtainable through normal Survival gameplay
+- Sheep now drop Mutton instead of Wool when killed
+- The achievement tree was updated to guide the new progression
 
 #### Flint progression
 
 Flint forms the first tool tier before Stone. Only Flint Pickaxes and Axes replace their wooden equivalents.
 
-<img src="docs/images/flint-rocks-1.png" alt="Flint Pebbles on different surfaces" width="520">
-
+![Flint Pebbles on different surfaces](docs/images/flint-rocks-1.png)
 
 - Flint can be placed as small pebbles
 - Flint Pebbles generate naturally on the surface and around exposed underground sediment
@@ -88,58 +135,46 @@ Flint forms the first tool tier before Stone. Only Flint Pickaxes and Axes repla
 
 There are three variants for visual diversity.
 
-<img src="docs/images/flint-rocks-allvariants.png" alt="Flint Pebble variants" width="420">
+![Flint Pebble variants](docs/images/flint-rocks-allvariants.png)
 
-<details>
-<summary>Current Flint Pebble generation</summary>
+**Current Flint Pebble generation**
 
 - Shoreline Flint is limited to 25% of eligible shoreline chunks
 - Underground Flint is limited to at most 2 pebbles per chunk
 - Underground generation favors gravel, then dirt/sand and sediment-adjacent stone
 - Isolated ordinary cave stone does not generate Flint Pebbles
 
-</details>
-
 ##### Flint tools
 
-<img src="docs/images/flint-tools-dropped.png" alt="Dropped Flint tools" width="460">
+![Dropped Flint tools](docs/images/flint-tools-dropped.png)
 
+**Tool views and recipes**
 
-<details>
-<summary>Tool views and recipes</summary>
+![Flint Axe equipped](docs/images/flintaxe-equipped.png)
+![Flint Axe recipe](docs/images/flintaxe-recipe.png)
+![Flint Pickaxe equipped](docs/images/flintpickaxe-equipped.png)
+![Flint Pickaxe recipe](docs/images/flintpickaxe-recipe.png)
 
-<img src="docs/images/flintaxe-equipped.png" alt="Flint Axe equipped" width="260">
-<img src="docs/images/flintaxe-recipe.png" alt="Flint Axe recipe" width="260">
-
-<img src="docs/images/flintpickaxe-equipped.png" alt="Flint Pickaxe equipped" width="260">
-<img src="docs/images/flintpickaxe-recipe.png" alt="Flint Pickaxe recipe" width="260">
-
-</details>
-
-<details>
-<summary>Flint tool stats</summary>
+**Flint tool stats**
 
 Flint keeps the old Wood-tier statistics:
 
 | Stat | Flint |
-| --- | ---: |
+| --- | --- |
 | Harvest level | 0 |
 | Durability | 59 |
 | Mining speed | 2.0 |
 | Material damage bonus | 0 |
 | Enchantability | 15 |
 
-</details>
-
 #### Stone progression
 
 Cobblestone must be smelted into Stone before any Stone tools can be crafted.
 
-<details>
-<summary>Current pickaxe harvest progression</summary>
+**Current pickaxe harvest progression**
 
 | Tier | Harvest level | Unlocks |
-| --- | ---: | --- |
+| --- | --- | --- |
 | Flint | 0 | Stone / basic mining |
 | Stone | 1 | Copper |
 | Copper | 2 | Iron |
@@ -147,14 +182,11 @@ Cobblestone must be smelted into Stone before any Stone tools can be crafted.
 | Gold | 4 | Diamond |
 | Diamond | 5 | Obsidian |
 
-</details>
-
 #### Copper progression
 
 Copper forms a complete tool and armor tier between Stone and Iron.
 
-<img src="docs/images/copper-comparing.png" alt="Copper compared with existing metal blocks and ores" width="470">
-
+![Copper compared with existing metal blocks and ores](docs/images/copper-comparing.png)
 
 - Copper Ore drops itself and smelts into one Copper Ingot
 - Nine Copper Ingots craft into a Block of Copper and can be crafted back
@@ -162,54 +194,40 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 - Copper tools are stronger than Stone and weaker than Iron
 - Copper armor sits between Leather and Chainmail
 
-<details>
-<summary>More Copper visuals</summary>
+**More Copper visuals**
 
-<img src="docs/images/copper-iron-dropped-compared.png" alt="Copper and Iron Ingots" width="260">
-
-</details>
+![Copper and Iron Ingots](docs/images/copper-iron-dropped-compared.png)
 
 ##### Copper tools
 
-<img src="docs/images/copper-tools.png" alt="Copper tools" width="430">
+![Copper tools](docs/images/copper-tools.png)
 
-<details>
-<summary>Example recipe</summary>
+**Example recipe**
 
-<img src="docs/images/copperpickaxe-recipe-example.png" alt="Copper Pickaxe recipe" width="280">
+![Copper Pickaxe recipe](docs/images/copperpickaxe-recipe-example.png)
 
-</details>
-
-<details>
-<summary>Copper tool stats</summary>
+**Copper tool stats**
 
 | Stat | Copper |
-| --- | ---: |
+| --- | --- |
 | Harvest level | 2 |
 | Durability | 190 |
 | Mining speed | 5.0 |
 | Material damage bonus | 1 |
 | Enchantability | 10 |
 
-</details>
-
 ##### Copper armor
 
-<img src="docs/images/copper-armor.png" alt="Copper armor equipped" width="340">
+![Copper armor equipped](docs/images/copper-armor.png)
 
+**More Copper armor visuals**
 
-<details>
-<summary>More Copper armor visuals</summary>
+![Dropped Copper armor](docs/images/copper-armor-dropped.png)
 
-<img src="docs/images/copper-armor-dropped.png" alt="Dropped Copper armor" width="320">
-
-</details>
-
-<details>
-<summary>Copper armor stats</summary>
+**Copper armor stats**
 
 | Piece | Protection | Durability |
-| --- | ---: | ---: |
+| --- | --- | --- |
 | Helmet | 2 | 110 |
 | Chestplate | 4 | 160 |
 | Leggings | 2 | 150 |
@@ -218,35 +236,28 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 
 Copper armor uses a durability multiplier of 10 and enchantability of 12.
 
-</details>
-
-<details>
-<summary>Copper block hardness</summary>
+**Copper block hardness**
 
 | Block | Hardness |
-| --- | ---: |
+| --- | --- |
 | Copper Ore | 2.5 |
 | Iron Ore | 3.0 |
 | Block of Copper | 4.0 |
 | Block of Iron | 5.0 |
 
-</details>
-
 #### Ore generation
 
 Copper and the existing ores were rebalanced around the new progression.
 
-<img src="docs/images/copperore-gen-1.png" alt="Copper Ore generation" width="340">
-<img src="docs/images/copperore-gen-2.png" alt="Copper in a cave" width="340">
+![Copper Ore generation](docs/images/copperore-gen-1.png)
+![Copper in a cave](docs/images/copperore-gen-2.png)
 
-
-<details>
-<summary>Current ore generation values</summary>
+**Current ore generation values**
 
 These are the current generation values after the first progression balance pass:
 
 | Ore | Attempts / chance | Vein size | Height |
-| --- | --- | ---: | --- |
+| --- | --- | --- | --- |
 | Coal | 20 attempts/chunk | 16 | Y 0-127 |
 | Copper, main | 22 attempts/chunk | 7 | Y 0-55 |
 | Copper, upper | 22 attempts/chunk | 6 | Y 56-127 |
@@ -260,8 +271,6 @@ These are the current generation values after the first progression balance pass
 
 Rare upper Iron generation is limited by the local terrain height.
 
-</details>
-
 #### Armor progression
 
 Gold has been rebalanced into a real post-Iron armor tier while intentionally keeping its low durability and high enchantability.
@@ -272,23 +281,18 @@ Armor visuals also received a consistency pass:
 - Iron, Gold, Diamond and Copper helmet item sprites were adjusted to better match their worn shapes and the Release 1.0 item style
 - Leather armor was recolored to match normal Leather more closely and distinguish it from Hard Leather
 
-<img src="docs/images/leather-armor-new-color.png" alt="Updated Leather armor color" width="320">
+![Updated Leather armor color](docs/images/leather-armor-new-color.png)
 
+**More armor visual changes**
 
-<details>
-<summary>More armor visual changes</summary>
+![Updated helmet item sprites](docs/images/helmet-visuals-fixed.png)
+![Leather Helmet worn without nose guard](docs/images/leatherhelmet-model-fix.png)
+![Updated Copper armor item sprites](docs/images/copper-armor-sprites-1.0-like.png)
 
-<img src="docs/images/helmet-visuals-fixed.png" alt="Updated helmet item sprites" width="320">
-<img src="docs/images/leatherhelmet-model-fix.png" alt="Leather Helmet worn without nose guard" width="240">
-<img src="docs/images/copper-armor-sprites-1.0-like.png" alt="Updated Copper armor item sprites" width="320">
-
-</details>
-
-<details>
-<summary>Current armor progression</summary>
+**Current armor progression**
 
 | Material | Full-set protection | Durability multiplier | Enchantability |
-| --- | ---: | ---: | ---: |
+| --- | --- | --- | --- |
 | Leather | 7 | 5 | 15 |
 | Copper | 9 | 10 | 12 |
 | Chainmail | 12 | 15 | 12 |
@@ -296,59 +300,48 @@ Armor visuals also received a consistency pass:
 | Gold | 16 | 7 | 25 |
 | Diamond | 20 | 33 | 10 |
 
-</details>
-
 #### Chainmail
 
 Chainmail can now be obtained through normal Survival gameplay.
 
-<img src="docs/images/chainlinks-dropped.png" alt="Dropped Chain Links" width="340">
+![Dropped Chain Links](docs/images/chainlinks-dropped.png)
 
 - Chainmail uses the normal armor recipe shapes with Chain Links
 - Chainmail's existing protection and durability values are unchanged
 
-<details>
-<summary>Example recipe</summary>
+**Example recipe**
 
-<img src="docs/images/chainmail-chestplate-recipe-example.png" alt="Chainmail Chestplate recipe" width="300">
+![Chainmail Chestplate recipe](docs/images/chainmail-chestplate-recipe-example.png)
 
-</details>
-
-<details>
-<summary>Current Chain Link balance</summary>
+**Current Chain Link balance**
 
 - Any Zombie has a 20% chance to drop Chain Links
 - A successful drop gives 1-3 Chain Links before Looting
 - Looting increases the amount from a successful Chain Link drop
 - A full Chainmail set costs 24 Chain Links
 
-</details>
-
 #### Mutton and Wool
 
 Sheep now provide food instead of an immediate source of Wool.
 
-<img src="docs/images/mutton-dropped.png" alt="Dropped Raw and Cooked Mutton" width="420">
+![Dropped Raw and Cooked Mutton](docs/images/mutton-dropped.png)
 
 - Burning sheep drop Cooked Mutton
 - Shearing remains the main source of Wool
 - Nine String can be crafted into one Wool
 
-<details>
-<summary>Current Mutton and Wool balance</summary>
+**Current Mutton and Wool balance**
 
 - Sheep drop 1-2 Mutton before Looting instead of Wool when killed
 - Shearing gives the normal 2-4 Wool
 - Raw Mutton restores 2 hunger with 0.3 saturation
 - Cooked Mutton restores 6 hunger with 0.8 saturation
 
-</details>
-
 #### Achievements
 
 The achievement tree now guides the changed progression and sleeping mechanics without requiring an outside guide.
 
-<img src="docs/images/achievements-showcase.png" alt="Updated achievement progression" width="620">
+![Updated achievement progression](docs/images/achievements-showcase.png)
 
 Main progression:
 
@@ -364,16 +357,25 @@ Side achievements:
 
 ### Part 3
 
-<img src="docs/images/part-3-go-go-gadgets.png" alt="Go Go Gadgets!" width="650">
+![Go Go Gadgets!](docs/images/part-3-go-go-gadgets.png)
 
 New equipment, workshop systems and utility items for different playstyles, including backports and alternate takes on features added much later in Minecraft.
+
+**What's new:**
+
+- Steel joins as a workshop-focused material beyond Iron
+- The Anvil and Grindstone add repair, renaming and disenchanting workstations
+- Crystal is a new utility material for gadgets
+- Spyglass, Pouch, Backpack, Rope and Stone of Return backport later Minecraft utility items
+- Fishing Hat and Hard Leather add reinforced gear options
+- Tarot of Death backports the Totem of Undying (Creative-only for now)
 
 #### Steel progression
 
 Steel adds a workshop-focused step beyond Iron without becoming another tool or armor tier.
 
-<img src="docs/images/steel-iron-ingot-comparison.png" alt="Steel and Iron Ingots" width="400">
-<img src="docs/images/steel-block-comparison.png" alt="Block of Steel beside other metal blocks" width="520">
+![Steel and Iron Ingots](docs/images/steel-iron-ingot-comparison.png)
+![Block of Steel beside other metal blocks](docs/images/steel-block-comparison.png)
 
 - Iron Ingots can be turned into Steel Ingots in a Blast Furnace
 - Nine Steel Ingots craft into a Block of Steel and can be crafted back
@@ -381,46 +383,37 @@ Steel adds a workshop-focused step beyond Iron without becoming another tool or 
 - The Cauldron now uses Steel Ingots instead of Iron Ingots
 - Steel is used for workshop equipment including the Anvil and Steel Hammer
 
-<details>
-<summary>Flint and Steel recipe</summary>
+**Flint and Steel recipe**
 
-<img src="docs/images/flint-and-steel-recipe.png" alt="Flint and Steel recipe" width="360">
+![Flint and Steel recipe](docs/images/flint-and-steel-recipe.png)
 
-</details>
+**Cauldron recipe**
 
-<details>
-<summary>Cauldron recipe</summary>
-
-<img src="docs/images/cauldron-steel-recipe.png" alt="Cauldron recipe using Steel Ingots" width="360">
-
-</details>
+![Cauldron recipe using Steel Ingots](docs/images/cauldron-steel-recipe.png)
 
 ##### Blast Furnace
 
 The Blast Furnace is the main way to make Steel and a faster furnace for ores.
 
-<img src="docs/images/blast-furnace.png" alt="Blast Furnace" width="470">
+![Blast Furnace](docs/images/blast-furnace.png)
 
 - Ores smelt at twice the speed of a normal Furnace
 - Iron Ingots become Steel Ingots only while the Blast Furnace is burning Charcoal
 - Charcoal has a distinct Release+ texture to separate it from Coal
 - Furnaces and Blast Furnaces have operating sounds that can be disabled in `Release+ Features`
 
-<img src="docs/images/charcoal-comparison.png" alt="Release+ Charcoal compared with Coal" width="400">
+![Release+ Charcoal compared with Coal](docs/images/charcoal-comparison.png)
 
-<details>
-<summary>Recipe and GUI</summary>
+**Recipe and GUI**
 
-<img src="docs/images/blast-furnace-recipe.png" alt="Blast Furnace recipe" width="300">
-<img src="docs/images/blast-furnace-gui.png" alt="Blast Furnace GUI" width="330">
-
-</details>
+![Blast Furnace recipe](docs/images/blast-furnace-recipe.png)
+![Blast Furnace GUI](docs/images/blast-furnace-gui.png)
 
 ##### Anvil
 
 The Anvil backports later repair, renaming and enchantment-combining functionality into Release 1.0, with the Steel Hammer as its dedicated workshop tool.
 
-<img src="docs/images/anvil-hammer-showcase.png" alt="Anvil with an installed Steel Hammer" width="430">
+![Anvil with an installed Steel Hammer](docs/images/anvil-hammer-showcase.png)
 
 - A Steel Hammer must be installed in the Anvil before it can be used
 - The installed Hammer stays in the Anvil and is visible on the block in-world
@@ -430,21 +423,18 @@ The Anvil backports later repair, renaming and enchantment-combining functionali
 - The installed Steel Hammer, Anvil damage stage and facing are preserved while the Anvil falls
 - The Anvil can become damaged and eventually break through use or impact
 
-<details>
-<summary>Recipes, GUI and damage</summary>
+**Recipes, GUI and damage**
 
-<img src="docs/images/anvil-recipe.png" alt="Anvil recipe" width="300">
-<img src="docs/images/steel-hammer-recipe.png" alt="Steel Hammer recipe" width="360">
-<img src="docs/images/anvil-gui.png" alt="Anvil GUI" width="330">
-<img src="docs/images/anvil-almostbroken.png" alt="Damaged Anvil" width="300">
-
-</details>
+![Anvil recipe](docs/images/anvil-recipe.png)
+![Steel Hammer recipe](docs/images/steel-hammer-recipe.png)
+![Anvil GUI](docs/images/anvil-gui.png)
+![Damaged Anvil](docs/images/anvil-almostbroken.png)
 
 #### Grindstone
 
 The Grindstone adds a dedicated repair and disenchanting workstation alongside the Anvil.
 
-<img src="docs/images/grindstone-floor.png" alt="Grindstone placed on the floor" width="360">
+![Grindstone placed on the floor](docs/images/grindstone-floor.png)
 
 - Two matching damageable items can be combined for a stronger repair than the crafting grid
 - Combining items in the Grindstone removes enchantments and returns experience from them
@@ -453,17 +443,13 @@ The Grindstone adds a dedicated repair and disenchanting workstation alongside t
 - The recipe uses a Sandstone Slab and accepts any vanilla Log; the model uses Oak Log for its wooden supports
 - Using the Grindstone plays dedicated use sounds
 
-<details>
-<summary>Recipe, GUI and placements</summary>
+**Recipe, GUI and placements**
 
-<img src="docs/images/grindstone-recipe.png" alt="Grindstone recipe" width="300">
-<img src="docs/images/grindstone-gui.png" alt="Grindstone GUI" width="330">
-<img src="docs/images/grindstone-wall-ceiling.png" alt="Wall- and ceiling-mounted Grindstones" width="360">
+![Grindstone recipe](docs/images/grindstone-recipe.png)
+![Grindstone GUI](docs/images/grindstone-gui.png)
+![Wall- and ceiling-mounted Grindstones](docs/images/grindstone-wall-ceiling.png)
 
-</details>
-
-<details>
-<summary>Current repair system</summary>
+**Current repair system**
 
 | Method | Repair amount | Enchantments | Custom name | Cost / role |
 | --- | --- | --- | --- | --- |
@@ -487,14 +473,11 @@ Current Anvil repair materials:
 | Diamond equipment | Diamond |
 | Flint and Steel / Steel Hammer | Steel Ingot |
 
-</details>
-
 #### Crystal
 
 Crystal is a new utility material used for gadgets rather than another tool or armor tier.
 
-<img src="docs/images/crystals-showcase.png" alt="Crystal Ore and Deposits" width="500">
-
+![Crystal Ore and Deposits](docs/images/crystals-showcase.png)
 
 - Rare Crystal Ore generates underground in small veins
 - Exposed Crystal Ore can generate with a Crystal Deposit on any open face
@@ -505,20 +488,15 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 - Crystals can be placed as Crystal Deposits
 - Crystal Deposits can attach to exposed faces and use matching collision
 
-<details>
-<summary>Crystal visuals and recipes</summary>
+**Crystal visuals and recipes**
 
-<img src="docs/images/crystal-generation-banner.png" alt="Natural Crystal Deposit" width="340">
+![Natural Crystal Deposit](docs/images/crystal-generation-banner.png)
+![Crystal recipe](docs/images/crystal-recipe.png)
+![Crystal Shards from a Crystal](docs/images/crystalshard-recipe.png)
 
-<img src="docs/images/crystal-recipe.png" alt="Crystal recipe" width="280">
-<img src="docs/images/crystalshard-recipe.png" alt="Crystal Shards from a Crystal" width="280">
+**Current Crystal generation and drop values**
 
-</details>
-
-<details>
-<summary>Current Crystal generation and drop values</summary>
-
-| Setting | Current value |
+| Setting | Value |
 | --- | --- |
 | Ore attempts | 2 per chunk |
 | Maximum vein size | 3 |
@@ -530,58 +508,52 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 
 A Deposit only generates into air and at most one is placed per exposed Crystal Ore block. Player-placed Deposits use the same harvesting rules as natural ones.
 
-</details>
-
 #### Spyglass
 
 A backport of the modern Spyglass, adapted to the look and controls of Release 1.0.
 
-<img src="docs/images/spyglass-recipe.png" alt="Spyglass recipe" width="300">
+![Spyglass recipe](docs/images/spyglass-recipe.png)
 
 - Hold use to zoom through the Spyglass
 - Includes the scope view, use sounds and a dedicated player pose
 - Its held-item appearance can be switched between a flat 1.0-style sprite and the original 3D model
 
-<details>
-<summary>Spyglass views</summary>
+**Spyglass views**
 
-**First person**
+*First person*
 
-<img src="docs/images/spyglass-1st-sprite-idle.png" alt="Spyglass held in first person" width="320">
-<img src="docs/images/spyglass-1st-sprite-use.png" alt="Spyglass scope" width="320">
+![Spyglass held in first person](docs/images/spyglass-1st-sprite-idle.png)
+![Spyglass scope](docs/images/spyglass-1st-sprite-use.png)
 
-**Third-person sprite**
+*Third-person sprite*
 
-<img src="docs/images/spyglass-3rd-sprite-idle.png" alt="Sprite Spyglass idle" width="240">
-<img src="docs/images/spyglass-3rd-sprite-use.png" alt="Sprite Spyglass in use" width="240">
+![Sprite Spyglass idle](docs/images/spyglass-3rd-sprite-idle.png)
+![Sprite Spyglass in use](docs/images/spyglass-3rd-sprite-use.png)
 
-**Third-person 3D model**
+*Third-person 3D model*
 
-<img src="docs/images/spyglass-3rd-3d-idle.png" alt="3D Spyglass idle" width="240">
-<img src="docs/images/spyglass-3rd-3d-use.png" alt="3D Spyglass in use" width="240">
-
-</details>
+![3D Spyglass idle](docs/images/spyglass-3rd-3d-idle.png)
+![3D Spyglass in use](docs/images/spyglass-3rd-3d-use.png)
 
 #### Release+ Features
 
 Release+-specific visual and sound options are grouped under `Release+ Features` on the main Options screen.
 
-<img src="docs/images/release-plus-features.png" alt="Release+ Features settings" width="360">
+![Release+ Features settings](docs/images/release-plus-features.png)
 
 - Spyglass: Sprite or 3D
 - Tarot: three cosmetic texture variants
 - Charcoal: Release+ or Vanilla
 - Furnace Sounds: ON or OFF
-- Belt Item Display: ON or OFF (default ON)
-- These settings do not change gameplay
+
+These settings do not change gameplay.
 
 #### Pouch
 
 A backport of the modern Bundle for carrying mixed small stacks without adding another inventory row.
 
-<img src="docs/images/pouch-held.png" alt="Pouch held in first person" width="250">
-<img src="docs/images/pouch-dropped.png" alt="Dropped Pouch" width="250">
-
+![Pouch held in first person](docs/images/pouch-held.png)
+![Dropped Pouch](docs/images/pouch-dropped.png)
 
 - Stores up to one stack's worth of mixed items
 - Items can be inserted and removed directly from the inventory
@@ -590,18 +562,13 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 - Pouches cannot be stored inside other Pouches
 - Backpacks cannot be stored inside Pouches
 
-<img src="docs/images/pouch-usage-visuals.png" alt="Pouch contents" width="520">
+![Pouch contents](docs/images/pouch-usage-visuals.png)
 
+**Recipe**
 
-<details>
-<summary>Recipe</summary>
+![Pouch recipe](docs/images/pouch-recipe.png)
 
-<img src="docs/images/pouch-recipe.png" alt="Pouch recipe" width="320">
-
-</details>
-
-<details>
-<summary>Current Pouch capacity rules</summary>
+**Current Pouch capacity rules**
 
 - Total capacity is 64 units
 - An item that normally stacks to 64 uses 1 unit each
@@ -609,22 +576,20 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 - An unstackable item uses the full Pouch capacity
 - The contents preview shows up to 12 stored item types at once, while selection can scroll through all stored types
 
-</details>
-
 #### Hard Leather
 
 Hard Leather is a reinforced form of Leather used for sturdier utility equipment. Normal Leather can be smelted into Hard Leather in a Furnace.
 
-<img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
+![Leather and Hard Leather](docs/images/hard-leather-comparison.png)
 
-- Hard Leather is used by the Backpack, Fishing Hat and Belt
+- Hard Leather is used by the Backpack and Fishing Hat
 - Books now use Hard Leather instead of normal Leather
 
 #### Fishing Hat
 
 The Fishing Hat is a reinforced Leather Helmet for players who spend time fishing.
 
-<img src="docs/images/fishing-hat-showcase.png" alt="Fishing Hat worn while fishing" width="390">
+![Fishing Hat worn while fishing](docs/images/fishing-hat-showcase.png)
 
 - Provides the same armor protection as a Leather Helmet
 - Has **90 durability**, placing it above Leather but below Iron
@@ -632,56 +597,16 @@ The Fishing Hat is a reinforced Leather Helmet for players who spend time fishin
 - Uses the normal helmet enchantments available to Leather armor
 - Can be repaired with Hard Leather at an Anvil
 
-<details>
-<summary>Recipe and inventory view</summary>
+**Recipe and inventory view**
 
-<img src="docs/images/fishing-hat-recipe.png" alt="Fishing Hat recipe" width="360">
-<img src="docs/images/fishing-hat-inventory.png" alt="Fishing Hat equipped in the inventory" width="360">
-
-</details>
-
-#### Belt
-
-The Belt is a lightweight Hard Leather equipment piece that gives up some leg protection in exchange for one dedicated carried-item slot.
-
-<img src="docs/images/belt-showcase.png" alt="Belt worn with a stored tool" width="500">
-
-- Equips in the leggings armor slot and provides **1 armor point**
-- Has **123 durability**
-- Holds one Sword, Axe, Pickaxe, Shovel, Hoe, pair of Shears or Steel Hammer
-- Its dedicated slot appears beside the player inventory and as a separate slot to the left of the hotbar while occupied
-- Pressing the configurable Belt key (`B` by default) switches to the stored item; pressing it again returns to the previous hotbar slot
-- A stowed item is visibly carried on the Belt in third person and disappears from the Belt while selected
-- `Belt Item Display` in `Release+ Features` can hide the visible stowed item without changing Belt mechanics
-- Normal item pickups do not automatically fill the Belt slot
-- If the Belt is removed or breaks while carrying an item, the stored item drops into the world
-
-<details>
-<summary>Recipe and inventory</summary>
-
-<img src="docs/images/belt-recipe.png" alt="Belt recipe" width="360">
-<img src="docs/images/belt-inventory-gui.png" alt="Belt equipped with its dedicated inventory slot" width="360">
-<img src="docs/images/belt-1stperson-hotbar.png" alt="Belt slot beside the hotbar" width="430">
-
-</details>
-
-<details>
-<summary>More worn Belt views</summary>
-
-<img src="docs/images/belt-item-sword.png" alt="Sword stored on the Belt" width="220">
-<img src="docs/images/belt-item-axe.png" alt="Axe stored on the Belt" width="220">
-<img src="docs/images/belt-item-sword-boots.png" alt="Belt worn with boots" width="220">
-<img src="docs/images/belt-item-sword-boots-chestplate.png" alt="Belt worn with boots and a chestplate" width="220">
-<img src="docs/images/belt-item-sword-boots-backpack.png" alt="Belt worn together with a Backpack" width="220">
-
-</details>
+![Fishing Hat recipe](docs/images/fishing-hat-recipe.png)
+![Fishing Hat equipped in the inventory](docs/images/fishing-hat-inventory.png)
 
 #### Backpack
 
 A wearable and placeable nine-slot container built around a physical Backpack rather than a permanent inventory expansion.
 
-<img src="docs/images/backpack-banner.png" alt="Backpack worn while exploring" width="650">
-
+![Backpack worn while exploring](docs/images/backpack-banner.png)
 
 - Equips in the chest armor slot and provides no armor protection
 - Adds nine persistent storage slots while worn
@@ -693,43 +618,34 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 - Breaking or dropping a filled Backpack preserves its contents, including across relogs
 - Backpacks cannot contain other Backpacks
 
-<details>
-<summary>Recipe</summary>
+**Recipe**
 
-<img src="docs/images/backpack-recipe.png" alt="Backpack recipe" width="360">
-
-</details>
+![Backpack recipe](docs/images/backpack-recipe.png)
 
 ##### Worn and placed
 
-<img src="docs/images/backpack-worn-back.png" alt="Backpack worn from behind" width="320">
-<img src="docs/images/backpack-placed-dropped.png" alt="Placed and dropped Backpack" width="320">
-
+![Backpack worn from behind](docs/images/backpack-worn-back.png)
+![Placed and dropped Backpack](docs/images/backpack-placed-dropped.png)
 
 ##### Inventory
 
 The same nine slots stay with the Backpack whether it is worn, carried or placed.
 
-<img src="docs/images/backpack-worn-inventory.png" alt="Worn Backpack inventory" width="360">
-<img src="docs/images/backpack-placed-inventory.png" alt="Placed Backpack inventory" width="310">
+![Worn Backpack inventory](docs/images/backpack-worn-inventory.png)
+![Placed Backpack inventory](docs/images/backpack-placed-inventory.png)
 
+**More Backpack views**
 
-<details>
-<summary>More Backpack views</summary>
-
-<img src="docs/images/backpack-placed-open.png" alt="Opened placed Backpack" width="330">
-<img src="docs/images/backpack-view-front.png" alt="Backpack worn from the front" width="300">
-
-<img src="docs/images/backpack-render.png" alt="Backpack model render" width="240">
-<img src="docs/images/backpack-render2.png" alt="Backpack model render from another angle" width="240">
-
-</details>
+![Opened placed Backpack](docs/images/backpack-placed-open.png)
+![Backpack worn from the front](docs/images/backpack-view-front.png)
+![Backpack model render](docs/images/backpack-render.png)
+![Backpack model render from another angle](docs/images/backpack-render2.png)
 
 #### Stone of Return
 
 The Stone of Return is an endgame utility item that turns Ender teleportation into a long-range way home.
 
-<img src="docs/images/stone-of-return-banner.png" alt="Stone of Return" width="500">
+![Stone of Return](docs/images/stone-of-return-banner.png)
 
 - Crafted from End Stone, Ender Pearls and an Eye of Ender
 - The crafted stone is inert until it is calibrated at an Enchanting Table
@@ -740,45 +656,35 @@ The Stone of Return is an endgame utility item that turns Ender teleportation in
 - Every calibrated Stone of Return is single-use
 - If the player's bed is no longer valid, the return falls back to world spawn
 
-<details>
-<summary>Recipe</summary>
+**Recipe**
 
-<img src="docs/images/stone-of-return-recipe.png" alt="Stone of Return recipe" width="360">
+![Stone of Return recipe](docs/images/stone-of-return-recipe.png)
 
-</details>
+**Calibration**
 
-<details>
-<summary>Calibration</summary>
-
-<img src="docs/images/stone-of-return-enchantment.png" alt="Stone of Return calibration" width="360">
+![Stone of Return calibration](docs/images/stone-of-return-enchantment.png)
 
 | Enchantment | Cost | Bookshelves | Return accuracy |
-| --- | ---: | ---: | --- |
+| --- | --- | --- | --- |
 | Calibration I | 10 levels | 0 | Safe position within 256 blocks of the respawn point |
 | Calibration II | 20 levels | 15 | Safe position within 64 blocks of the respawn point |
 | Calibration III | 30 levels | 30 | Exact respawn point |
 
-</details>
+**More Stone of Return views**
 
-<details>
-<summary>More Stone of Return views</summary>
-
-<img src="docs/images/stone-of-return-first-person.png" alt="Stone of Return held in first person" width="520">
-
-</details>
+![Stone of Return held in first person](docs/images/stone-of-return-first-person.png)
 
 #### Bottle o' Enchanting
 
 The Bottle o' Enchanting has also been backported as a throwable source of experience. It is currently Creative-only; a place in Survival progression has not been decided yet.
 
-<img src="docs/images/bottle-o-enchanting.png" alt="Bottle o' Enchanting" width="300">
+![Bottle o' Enchanting](docs/images/bottle-o-enchanting.png)
 
 #### Rope
 
 Rope is a placeable climbing tool that hangs downward from existing terrain.
 
-<img src="docs/images/rope-placed.png" alt="Placed Rope" width="500">
-
+![Placed Rope](docs/images/rope-placed.png)
 
 - Three String craft into two Rope
 - Rope can hang from full blocks and bottom slabs
@@ -787,20 +693,16 @@ Rope is a placeable climbing tool that hangs downward from existing terrain.
 - The lowest segment automatically uses a distinct loose-end texture
 - Breaking its support drops the hanging Rope chain
 
-<details>
-<summary>Item and recipe</summary>
+**Item and recipe**
 
-<img src="docs/images/rope-gui-item.png" alt="Rope item" width="260">
-<img src="docs/images/rope-recipe.png" alt="Rope recipe" width="360">
-
-</details>
+![Rope item](docs/images/rope-gui-item.png)
+![Rope recipe](docs/images/rope-recipe.png)
 
 #### Tarot of Death
 
 The Tarot of Death is my version/backport of the modern Totem of Undying, adapted for Release 1.0. It takes a fatal hit in the player's place.
 
-<img src="docs/images/tarot-in-animation.png" alt="Tarot of Death activation" width="620">
-
+![Tarot of Death activation](docs/images/tarot-in-animation.png)
 
 - Works from any of the nine hotbar slots, not only the currently held one
 - On activation, one Tarot is consumed and the player survives at 1 health
@@ -811,20 +713,17 @@ The Tarot of Death is my version/backport of the modern Totem of Undying, adapte
 
 There is currently no way to obtain the Tarot of Death in Survival.
 
-<details>
-<summary>More Tarot of Death views</summary>
+**More Tarot of Death views**
 
-**Held**
+*Held*
 
-<img src="docs/images/tarot-1stperson.png" alt="Tarot of Death held in first person" width="500">
-<img src="docs/images/tarot-holding-3rdperson.png" alt="Tarot of Death held in third person" width="300">
+![Tarot of Death held in first person](docs/images/tarot-1stperson.png)
+![Tarot of Death held in third person](docs/images/tarot-holding-3rdperson.png)
 
-**Optional textures**
+*Optional textures*
 
-<img src="docs/images/tarot-uno-redcard.png" alt="Red Uno-Card Tarot texture" width="250">
-<img src="docs/images/tarot-uno-mcstyle.png" alt="Minecraft Uno-Card Tarot texture" width="250">
-
-</details>
+![Red Uno-Card Tarot texture](docs/images/tarot-uno-redcard.png)
+![Minecraft Uno-Card Tarot texture](docs/images/tarot-uno-mcstyle.png)
 
 ---
 
@@ -836,7 +735,6 @@ There is currently no way to obtain the Tarot of Death in Survival.
 - Blast Furnace, Anvil and Steel Hammer visuals are recolored/retextured vanilla Minecraft assets
 - Grindstone model, GUI and sounds are adapted from later vanilla Minecraft assets, with its textures reworked/recolored for Release+
 - Fishing Hat item sprite is based on the Angler's Hat from [Artifacts](https://modrinth.com/mod/artifacts)
-- Belt item sprite is heavily based on and recolored from [Tool Belt Retextured](https://www.curseforge.com/minecraft/texture-packs/tool-belt-retextured)
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
