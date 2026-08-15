@@ -572,6 +572,7 @@ Release+-specific visual and sound options are grouped under `Release+ Features`
 - Tarot: three cosmetic texture variants
 - Charcoal: Release+ or Vanilla
 - Furnace Sounds: ON or OFF
+- Belt Item Display: ON or OFF (default ON)
 - These settings do not change gameplay
 
 #### Pouch
@@ -616,7 +617,7 @@ Hard Leather is a reinforced form of Leather used for sturdier utility equipment
 
 <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
-- Hard Leather is used by the Backpack and Fishing Hat
+- Hard Leather is used by the Backpack, Fishing Hat and Belt
 - Books now use Hard Leather instead of normal Leather
 
 #### Fishing Hat
@@ -636,6 +637,42 @@ The Fishing Hat is a reinforced Leather Helmet for players who spend time fishin
 
 <img src="docs/images/fishing-hat-recipe.png" alt="Fishing Hat recipe" width="360">
 <img src="docs/images/fishing-hat-inventory.png" alt="Fishing Hat equipped in the inventory" width="360">
+
+</details>
+
+#### Belt
+
+The Belt is a lightweight Hard Leather equipment piece that gives up some leg protection in exchange for one dedicated carried-item slot.
+
+<img src="docs/images/belt-showcase.png" alt="Belt worn with a stored tool" width="500">
+
+- Equips in the leggings armor slot and provides **1 armor point**
+- Has **123 durability**
+- Holds one Sword, Axe, Pickaxe, Shovel, Hoe, pair of Shears or Steel Hammer
+- Its dedicated slot appears beside the player inventory and as a separate slot to the left of the hotbar while occupied
+- Pressing the configurable Belt key (`B` by default) switches to the stored item; pressing it again returns to the previous hotbar slot
+- A stowed item is visibly carried on the Belt in third person and disappears from the Belt while selected
+- `Belt Item Display` in `Release+ Features` can hide the visible stowed item without changing Belt mechanics
+- Normal item pickups do not automatically fill the Belt slot
+- If the Belt is removed or breaks while carrying an item, the stored item drops into the world
+
+<details>
+<summary>Recipe and inventory</summary>
+
+<img src="docs/images/belt-recipe.png" alt="Belt recipe" width="360">
+<img src="docs/images/belt-inventory-gui.png" alt="Belt equipped with its dedicated inventory slot" width="360">
+<img src="docs/images/belt-1stperson-hotbar.png" alt="Belt slot beside the hotbar" width="430">
+
+</details>
+
+<details>
+<summary>More worn Belt views</summary>
+
+<img src="docs/images/belt-item-sword.png" alt="Sword stored on the Belt" width="220">
+<img src="docs/images/belt-item-axe.png" alt="Axe stored on the Belt" width="220">
+<img src="docs/images/belt-item-sword-boots.png" alt="Belt worn with boots" width="220">
+<img src="docs/images/belt-item-sword-boots-chestplate.png" alt="Belt worn with boots and a chestplate" width="220">
+<img src="docs/images/belt-item-sword-boots-backpack.png" alt="Belt worn together with a Backpack" width="220">
 
 </details>
 
@@ -799,6 +836,7 @@ There is currently no way to obtain the Tarot of Death in Survival.
 - Blast Furnace, Anvil and Steel Hammer visuals are recolored/retextured vanilla Minecraft assets
 - Grindstone model, GUI and sounds are adapted from later vanilla Minecraft assets, with its textures reworked/recolored for Release+
 - Fishing Hat item sprite is based on the Angler's Hat from [Artifacts](https://modrinth.com/mod/artifacts)
+- Belt item sprite is heavily based on and recolored from [Tool Belt Retextured](https://www.curseforge.com/minecraft/texture-packs/tool-belt-retextured)
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
