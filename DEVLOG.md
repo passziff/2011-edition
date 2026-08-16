@@ -32,10 +32,14 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Pouch](#pouch)
     - [Hard Leather](#hard-leather)
     - [Fishing Hat](#fishing-hat)
+    - [Fishing Trap](#fishing-trap)
+    - [Muffled Boots](#muffled-boots)
+    - [Ninja Boots](#ninja-boots)
     - [Belt](#belt)
     - [Backpack](#backpack)
       - [Worn and placed](#worn-and-placed)
       - [Inventory](#inventory)
+    - [Recipe Book](#recipe-book)
     - [Stone of Return](#stone-of-return)
     - [Bottle o' Enchanting](#bottle-o-enchanting)
     - [Rope](#rope)
@@ -442,7 +446,8 @@ The Blast Furnace is the main way to make Steel and a faster furnace for ores.
 <img src="docs/images/blast-furnace.png" alt="Blast Furnace" width="470">
 
 - Ores smelt at twice the speed of a normal Furnace
-- Iron Ingots become Steel Ingots only while the Blast Furnace is burning Charcoal
+- Iron Ingots become Steel Ingots only while the Blast Furnace is burning Charcoal, a Blaze Rod or a Lava Bucket
+- A Lava Bucket used for Steel leaves its empty Bucket behind
 - Charcoal has a distinct Release+ texture to separate it from Coal
 - Furnaces and Blast Furnaces have operating sounds that can be disabled in `Release+ Features`
 
@@ -520,6 +525,8 @@ Current Anvil repair materials:
 | Flint tools | Flint |
 | Stone tools | Stone |
 | Leather armor | Leather |
+| Fishing Hat / Muffled Boots | Hard Leather |
+| Ninja Boots | Steel Ingot |
 | Chainmail | Chain Links |
 | Copper equipment | Copper Ingot |
 | Iron equipment and Shears | Iron Ingot |
@@ -612,6 +619,7 @@ Release+-specific visual and sound options are grouped under `Release+ Features`
 - Tarot: three cosmetic texture variants
 - Charcoal: Release+ or Vanilla
 - Furnace Sounds: ON or OFF
+- Stealth Footsteps: ON or OFF (default ON)
 - Belt Item Display: ON or OFF (default ON)
 - These settings do not change gameplay
 
@@ -657,7 +665,7 @@ Hard Leather is a reinforced form of Leather used for sturdier utility equipment
 
 <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
-- Hard Leather is used by the Backpack, Fishing Hat and Belt
+- Hard Leather is used by the Backpack, Fishing Hat, Belt and Muffled Boots
 - Books now use Hard Leather instead of normal Leather
 
 #### Fishing Hat
@@ -677,6 +685,70 @@ The Fishing Hat is a reinforced Leather Helmet for players who spend time fishin
 
 <img src="docs/images/fishing-hat-recipe.png" alt="Fishing Hat recipe" width="360">
 <img src="docs/images/fishing-hat-inventory.png" alt="Fishing Hat equipped in the inventory" width="360">
+
+</details>
+
+#### Fishing Trap
+
+The Fishing Trap is a passive fishing tool that catches Raw Fish while set in suitable water.
+
+<img src="docs/images/fishing-trap-underwater.png" alt="Fishing Trap set underwater" width="430">
+
+- Can be placed dry on solid ground or directly into water, with water occupying the same block as the trap
+- Only catches while waterlogged with water at its open side
+- Stores up to **3 Raw Fish**
+- Bubble bursts show stored catches, and a dedicated catch sound plays when a new fish is caught
+- Right-clicking removes one caught fish at a time
+- Rain improves the catch rate
+- Breaking the trap drops any stored catches
+
+<details>
+<summary>Recipe and more views</summary>
+
+<img src="docs/images/fishing-trap-recipe.png" alt="Fishing Trap recipe" width="360">
+<img src="docs/images/fishing-trap-bubbles.png" alt="Fishing Trap bubbles showing stored catches" width="310">
+<img src="docs/images/fishing-trap-onland-dropped.png" alt="Placed and dropped Fishing Trap" width="310">
+
+</details>
+
+#### Muffled Boots
+
+Muffled Boots are padded Hard Leather utility boots for quieter movement and easier sneaking around hostile mobs.
+
+<img src="docs/images/muffled-boots.png" alt="Muffled Boots worn by the player" width="500">
+
+- Provide the same **1 armor point** as Leather Boots
+- Have **105 durability**
+- The recipe accepts any Wool color
+- While sneaking, an ordinary hostile mob's 16-block detection range is reduced to **14 blocks**
+- Use softened versions of the normal surface footstep sounds while worn
+- The custom footsteps can be disabled with `Stealth Footsteps` in `Release+ Features` without changing the stealth effect
+- Can be repaired with Hard Leather at an Anvil
+
+<details>
+<summary>Recipe</summary>
+
+<img src="docs/images/muffled-boots-recipe.png" alt="Muffled Boots recipe" width="360">
+
+</details>
+
+#### Ninja Boots
+
+Ninja Boots are the Steel-reinforced upgrade to Muffled Boots, trading a little more material investment for stronger stealth and protection.
+
+<img src="docs/images/ninja-boots.png" alt="Ninja Boots worn by the player" width="500">
+
+- Provide **2 armor points**
+- Have **125 durability**
+- While sneaking, an ordinary hostile mob's 16-block detection range is reduced to **10 blocks**
+- Use a stronger softened footstep treatment than Muffled Boots
+- Their custom footsteps use the same `Stealth Footsteps` setting
+- Can be repaired with a Steel Ingot at an Anvil
+
+<details>
+<summary>Recipe</summary>
+
+<img src="docs/images/ninja-boots-recipe.png" alt="Ninja Boots recipe" width="360">
 
 </details>
 
@@ -762,6 +834,32 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 
 <img src="docs/images/backpack-render.png" alt="Backpack model render" width="240">
 <img src="docs/images/backpack-render2.png" alt="Backpack model render from another angle" width="240">
+
+</details>
+
+#### Recipe Book
+
+The Recipe Book is an early-game reference item for learning what items are and how they fit into the current crafting and smelting systems. Its design is heavily inspired by the Knowledge Book from Minecraft Infinite.
+
+<img src="docs/images/recipe-book-diaaxe-about.png" alt="Recipe Book About page" width="300">
+<img src="docs/images/recipe-book-dropped.png" alt="Dropped Recipe Book" width="250">
+
+- Right-clicking the held book opens a dedicated Release 1.0-style book interface
+- Placing an item into the inspection slot shows a short custom description on its About page
+- The following pages show applicable **Smelting Recipes** and **Crafting Recipes**, including recipes that make the inspected item and recipes that use it
+- Empty recipe categories are omitted
+- Alternative ingredients and valid smelting fuels cycle in place; hovering pauses them and the mouse wheel can browse the available options
+- The displayed recipes use the game's current recipe data, including interchangeable ingredients such as Cobblestone and Cobbled Netherstone
+- Opening, closing and turning pages use dedicated book sounds
+
+<details>
+<summary>Recipe and GUI views</summary>
+
+<img src="docs/images/recipe-book-recipe.png" alt="Recipe Book recipe" width="360">
+<img src="docs/images/recipe-book-empty.png" alt="Empty Recipe Book interface" width="300">
+<img src="docs/images/recipe-book-diaaxe-crafting.png" alt="Recipe Book crafting recipe page" width="300">
+<img src="docs/images/recipe-book-smelting.png" alt="Recipe Book smelting recipe page" width="300">
+<img src="docs/images/recipe-book-multitooltip.png" alt="Recipe Book multiple-option ingredient tooltip" width="320">
 
 </details>
 
@@ -876,10 +974,14 @@ There is currently no way to obtain the Tarot of Death in Survival.
 - Blast Furnace, Anvil and Steel Hammer visuals are recolored/retextured vanilla Minecraft assets
 - Grindstone model, GUI and sounds are adapted from later vanilla Minecraft assets, with its textures reworked/recolored for Release+
 - Fishing Hat item sprite is based on the Angler's Hat from [Artifacts](https://modrinth.com/mod/artifacts)
+- Fishing Trap catch sounds are edited variants of [Bubble in Water](https://pixabay.com/sound-effects/nature-bubble-in-water-422579/) on Pixabay
+- Muffled Boots and Ninja Boots use recolored vanilla boot assets; their optional stealth footsteps are processed variants of vanilla footstep sounds
 - Belt item sprite is heavily based on and recolored from [Tool Belt Retextured](https://www.curseforge.com/minecraft/texture-packs/tool-belt-retextured)
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
+- The Recipe Book system is heavily inspired by the Knowledge Book from Minecraft Infinite (formerly Infdev+), part of [Legacy+](https://legacy-plus.dejvoss.cz/) by Yoniko
+- Recipe Book GUI/book visuals are adapted from the vanilla Enchantment Table book, and its open/close/page sounds are adapted from later vanilla Minecraft assets
 - Tarot of Death uses an adapted Totem of Undying activation sound from later Minecraft versions
 - Rope item texture is heavily based on and recolored from [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
 - Placed Rope texture is heavily based on and recolored from [this NovaSkin Rope texture](https://minecraft.novaskin.me/post/5166333130/rope)
