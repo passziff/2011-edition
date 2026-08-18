@@ -40,6 +40,8 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
       - [Worn and placed](#worn-and-placed)
       - [Inventory](#inventory)
     - [Recipe Book](#recipe-book)
+    - [Recipe Compendium](#recipe-compendium)
+    - [Lectern](#lectern)
     - [Stone of Return](#stone-of-return)
     - [Bottle o' Enchanting](#bottle-o-enchanting)
     - [Rope](#rope)
@@ -841,10 +843,10 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 
 The Recipe Book is an early-game reference item for learning what items are and how they fit into the current crafting and smelting systems. Its design is heavily inspired by the Knowledge Book from Minecraft Infinite.
 
+<img src="docs/images/recipebook-held.png" alt="Recipe Book held by the player" width="300">
 <img src="docs/images/recipe-book-diaaxe-about.png" alt="Recipe Book About page" width="300">
-<img src="docs/images/recipe-book-dropped.png" alt="Dropped Recipe Book" width="250">
 
-- Right-clicking the held book opens a dedicated Release 1.0-style book interface
+- Right-clicking the held book opens a dedicated Release 1.0-style book interface; it can also be placed on a Lectern and read there
 - Placing an item into the inspection slot shows a short custom description on its About page
 - The following pages show applicable **Smelting Recipes** and **Crafting Recipes**, including recipes that make the inspected item and recipes that use it
 - Empty recipe categories are omitted
@@ -860,6 +862,57 @@ The Recipe Book is an early-game reference item for learning what items are and 
 <img src="docs/images/recipe-book-diaaxe-crafting.png" alt="Recipe Book crafting recipe page" width="300">
 <img src="docs/images/recipe-book-smelting.png" alt="Recipe Book smelting recipe page" width="300">
 <img src="docs/images/recipe-book-multitooltip.png" alt="Recipe Book multiple-option ingredient tooltip" width="320">
+
+</details>
+
+#### Recipe Compendium
+
+The Recipe Compendium is a gilded upgrade to the Recipe Book that builds its own browsable index from items the player has inspected.
+
+<img src="docs/images/compendium-held.png" alt="Recipe Compendium held by the player" width="300">
+<img src="docs/images/compendium-index.png" alt="Recipe Compendium Index" width="300">
+
+- The Compendium can only be opened while placed on a Lectern
+- **Inspect** works like the Recipe Book: inserting an item opens its About and recipe pages and automatically records that item in that physical Compendium
+- **Index** shows remembered items in a **6×3 grid**, with 18 entries per page
+- The Index can be searched and filtered through **All, Natural, Building, Utility, Equipment, Food** and **Materials** categories
+- Entries can be sorted by **Newest, Oldest, A-Z** or **Z-A**
+- Selecting a remembered entry opens its About page first, followed by the same crafting and smelting pages used by Inspect
+- Remembered entries are stored on the Compendium itself, so its index survives world saves and follows the book between Lecterns
+- The physical Inspect item is returned when the interface closes; only the remembered entry remains in the Compendium
+
+<details>
+<summary>Recipe and GUI views</summary>
+
+<img src="docs/images/compendium-recipe.png" alt="Recipe Compendium recipe" width="360">
+<img src="docs/images/compendium-inspect-empty.png" alt="Empty Recipe Compendium Inspect page" width="300">
+<img src="docs/images/compendium-inspect-item.png" alt="Recipe Compendium inspecting an item" width="300">
+<img src="docs/images/compendium-index-category.png" alt="Recipe Compendium category filter" width="300">
+
+</details>
+
+#### Lectern
+
+The Lectern is a dedicated reading stand for the Recipe Book and the Recipe Compendium.
+
+<img src="docs/images/lectern-compendium.png" alt="Recipe Compendium resting on a Lectern" width="430">
+
+- Right-clicking an empty Lectern with a Recipe Book or Recipe Compendium places that exact book on the stand, including any Compendium index data
+- Right-clicking an occupied Lectern opens the book resting on it
+- Recipe Books remain usable by hand, while Recipe Compendiums require a Lectern
+- The book is rendered physically on the sloped stand; opening the interface and moving forward or backward through pages visibly animates the placed book
+- Closing the interface flips the book back toward its beginning
+- Each page turn produces a short **2-tick redstone pulse** from the Lectern
+- Punching an occupied Lectern knocks its book off toward the player, while breaking the Lectern drops the stored book normally
+- The stored book and its data persist through world saves
+
+<details>
+<summary>Recipe and book states</summary>
+
+<img src="docs/images/lectern-recipe.png" alt="Lectern recipe" width="300">
+<img src="docs/images/lectern-empty.png" alt="Empty Lectern" width="320">
+<img src="docs/images/lectern-recipebook.png" alt="Recipe Book on a Lectern" width="320">
+<img src="docs/images/lectern-compendium.png" alt="Recipe Compendium on a Lectern" width="320">
 
 </details>
 
@@ -980,8 +1033,9 @@ There is currently no way to obtain the Tarot of Death in Survival.
 - Chain Links texture is inspired by [Better Than Adventure](https://www.betterthanadventure.net/)
 - Crystal textures are based on artwork by [yptsh](https://x.com/yptsh/status/1623341389122510848)
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
-- The Recipe Book system is heavily inspired by the Knowledge Book from Minecraft Infinite (formerly Infdev+), part of [Legacy+](https://legacy-plus.dejvoss.cz/) by Yoniko
+- The Recipe Book system is heavily inspired by the Knowledge Book from Minecraft Infinite (formerly Infdev+), part of [Legacy+](https://legacy-plus.dejvoss.cz/) by Yoniko / VesuviusVenox
 - Recipe Book GUI/book visuals are adapted from the vanilla Enchantment Table book, and its open/close/page sounds are adapted from later vanilla Minecraft assets
+- The Lectern is adapted from the later vanilla Minecraft Lectern design and rendering behavior, with custom Release+ textures
 - Tarot of Death uses an adapted Totem of Undying activation sound from later Minecraft versions
 - Rope item texture is heavily based on and recolored from [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
 - Placed Rope texture is heavily based on and recolored from [this NovaSkin Rope texture](https://minecraft.novaskin.me/post/5166333130/rope)
