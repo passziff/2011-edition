@@ -1207,4 +1207,6 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 - Backpack open sound: [Open Bag Sound](https://pixabay.com/sound-effects/film-special-effects-open-bag-sound-39216/) on Pixabay
 - Backpack close sound: [Bag Drop and Remove](https://pixabay.com/sound-effects/film-special-effects-bag-drop-and-remove-70142/) on Pixabay
 
+- Quiver and Arrow visuals are recolored/retextured from existing Minecraft assets
+
 If an original creator would prefer an inspired, adapted or recolored asset not be used here, I am happy to change or remove it.
