@@ -20,6 +20,7 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Armor progression](#armor-progression)
     - [Chainmail](#chainmail)
     - [Mutton and Wool](#mutton-and-wool)
+    - [Cooked Egg](#cooked-egg)
     - [Achievements](#achievements)
   - [Part 3](#part-3)
     - [Steel progression](#steel-progression)
@@ -27,6 +28,8 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
       - [Anvil](#anvil)
     - [Grindstone](#grindstone)
     - [Crystal](#crystal)
+      - [Glowing Crystal](#glowing-crystal)
+    - [Brightvision Goggles](#brightvision-goggles)
     - [Spyglass](#spyglass)
     - [Release+ Features](#release-features)
     - [Pouch](#pouch)
@@ -390,6 +393,24 @@ Sheep now provide food instead of an immediate source of Wool.
 
 </details>
 
+#### Cooked Egg
+
+Eggs can now be cooked into a small renewable food source.
+
+<img src="docs/images/cookedegg-showcase.png" alt="Cooked Egg held by the player" width="300">
+
+- A raw Egg smelts into one Cooked Egg in a normal Furnace
+- Cooked Eggs restore **2 hunger points** with **0.6 saturation**
+- Cooked Eggs stack to 64; raw Eggs remain limited to 16 because they are throwable
+- Thrown Eggs now burst into Egg fragments instead of reusing Snowball fragments
+
+<details>
+<summary>Smelting recipe</summary>
+
+<img src="docs/images/cookedegg-recipe.png" alt="Cooked Egg furnace recipe" width="260">
+
+</details>
+
 #### Achievements
 
 The achievement tree now guides the changed progression and sleeping mechanics without requiring an outside guide.
@@ -529,6 +550,7 @@ Current Anvil repair materials:
 | Leather armor | Leather |
 | Fishing Hat / Muffled Boots | Hard Leather |
 | Ninja Boots | Steel Ingot |
+| Brightvision Goggles | Glowing Crystal |
 | Chainmail | Chain Links |
 | Copper equipment | Copper Ingot |
 | Iron equipment and Shears | Iron Ingot |
@@ -578,6 +600,69 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 | Minimum harvest tier | Copper |
 
 A Deposit only generates into air and at most one is placed per exposed Crystal Ore block. Player-placed Deposits use the same harvesting rules as natural ones.
+
+</details>
+
+##### Glowing Crystal
+
+Normal Crystal can be infused with Glowstone to create a luminous branch of the same Crystal system.
+
+<img src="docs/images/glowing-crystals-showcase.png" alt="Placed Glowing Crystal Deposits" width="420">
+
+- A Crystal surrounded by four Glowstone Dust crafts into one Glowing Crystal
+- Four Glowing Crystal Shards craft into one Glowing Crystal, and a Glowing Crystal splits back into four Shards
+- A Glowing Crystal Shard can be crafted back into Glowstone Dust
+- Placing a Glowing Crystal creates a Glowing Crystal Deposit, using the same attachment and collision rules as normal Crystal Deposits
+- Glowing Crystal Deposits emit **light level 8**
+- They currently do **not** generate naturally
+- Normal harvesting gives **2-4 Glowing Crystal Shards**, Fortune affects the amount, and Silk Touch returns a full Glowing Crystal
+
+<details>
+<summary>Glowing Crystal recipes</summary>
+
+<img src="docs/images/glowing-crystal-infusion-recipe.png" alt="Glowing Crystal infusion recipe" width="360">
+<img src="docs/images/glowing-crystal-shards-recipe.png" alt="Glowing Crystal Shards from a Glowing Crystal" width="320">
+<img src="docs/images/glowing-crystal-recombine-recipe.png" alt="Glowing Crystal recipe from four Shards" width="320">
+<img src="docs/images/glowing-crystal-dust-recipe.png" alt="Glowstone Dust from a Glowing Crystal Shard" width="320">
+
+</details>
+
+#### Brightvision Goggles
+
+Brightvision Goggles are a zero-armor utility head item that uses Glowstone-infused Crystal lenses to brighten nearby darkness.
+
+<img src="docs/images/brightvision-goggles-showcase.png" alt="Brightvision Goggles worn by the player" width="260">
+
+- Equip in the helmet slot and provide **0 armor points**
+- Have **100 durability**
+- Brightvision is intentionally weaker than the Night Vision potion effect and falls off with distance
+- The first-person view uses a warm yellow-orange tint and a dark goggle-style vignette around the edges
+- Hiding the HUD with F1 or switching to third person also disables the Brightvision boost, so the visibility benefit cannot be separated from its viewing limitation
+- The Goggles can be repaired with Glowing Crystals at an Anvil
+
+<details>
+<summary>Recipe and Brightvision comparison</summary>
+
+<img src="docs/images/brightvision-goggles-recipe.png" alt="Brightvision Goggles recipe" width="360">
+
+**Without Brightvision**
+
+<img src="docs/images/cave-nogoggles.png" alt="Dark cave without Brightvision Goggles" width="520">
+
+**With Brightvision**
+
+<img src="docs/images/cave-goggles.png" alt="The same cave viewed through Brightvision Goggles" width="520">
+
+</details>
+
+<details>
+<summary>Current Brightvision balance</summary>
+
+- Brightness amplification is currently about **75%** of the full Night Vision-style boost
+- Full effect is concentrated nearby, beginning to fall off around **12 blocks** and largely disappearing by about **24 blocks**
+- Distant darkness is deliberately allowed to become darker again rather than remaining full-bright
+
+These values and the exact visual falloff are still being tuned.
 
 </details>
 
