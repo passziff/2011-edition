@@ -29,6 +29,7 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Grindstone](#grindstone)
     - [Crystal](#crystal)
       - [Glowing Crystal](#glowing-crystal)
+      - [Crystal Arrows](#crystal-arrows)
     - [Brightvision Goggles](#brightvision-goggles)
     - [Spyglass](#spyglass)
     - [Release+ Features](#release-features)
@@ -42,6 +43,7 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Backpack](#backpack)
       - [Worn and placed](#worn-and-placed)
       - [Inventory](#inventory)
+    - [Quiver](#quiver)
     - [Recipe Book](#recipe-book)
     - [Recipe Compendium](#recipe-compendium)
     - [Lectern](#lectern)
@@ -49,13 +51,14 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Bottle o' Enchanting](#bottle-o-enchanting)
     - [Rope](#rope)
     - [Tarot of Death](#tarot-of-death)
+    - [Part 3 achievements](#part-3-achievements)
 - [Credits](#credits)
 
 ## Update #1
 
 <img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
 
-**Status:** In development. Parts 1 and 2 are feature-complete for now. Part 3 is in progress. Tested in singleplayer. Not tested in multiplayer.
+**Status:** In development. Parts 1, 2 and 3 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
 
 Proper Progression rebuilds early-game progression and then expands it with utility equipment that still feels at home in Release 1.0.
 
@@ -627,6 +630,27 @@ Normal Crystal can be infused with Glowstone to create a luminous branch of the 
 
 </details>
 
+##### Crystal Arrows
+
+Crystal Arrows are a harder-hitting but less reliable alternative to normal Arrows, using Crystal Shards in place of Flint.
+
+<img src="docs/images/crystal-flint-arrow-comparison.png" alt="Crystal Arrow and Flint-tipped Arrow" width="400">
+
+- Use the normal Arrow recipe with a Crystal Shard replacing Flint; one recipe makes **4 Crystal Arrows**
+- Deal **2 more damage points** than a normal Arrow at the same Bow draw strength, equal to one additional heart before armor
+- Have a **25% chance to shatter on block impact** instead of remaining recoverable
+- A shattered Crystal Arrow produces glass-like break sound and Crystal fragments
+- Bows visibly show whether the selected ammunition is a normal Arrow or Crystal Arrow while being drawn
+- Normal Arrow item, Bow and projectile visuals were also updated to use a more clearly Flint-tipped design
+
+<details>
+<summary>Recipe and Bow view</summary>
+
+<img src="docs/images/crystal-arrow-recipe.png" alt="Crystal Arrow recipe" width="300">
+<img src="docs/images/crystal-arrow-in-bow.png" alt="Crystal Arrow loaded in a Bow" width="300">
+
+</details>
+
 #### Brightvision Goggles
 
 Brightvision Goggles are a zero-armor utility head item that uses Glowstone-infused Crystal lenses to brighten nearby darkness.
@@ -752,7 +776,7 @@ Hard Leather is a reinforced form of Leather used for sturdier utility equipment
 
 <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
-- Hard Leather is used by the Backpack, Fishing Hat, Belt and Muffled Boots
+- Hard Leather is used by the Backpack, Quiver, Fishing Hat, Belt and Muffled Boots
 - Books now use Hard Leather instead of normal Leather
 
 #### Fishing Hat
@@ -921,6 +945,40 @@ The same nine slots stay with the Backpack whether it is worn, carried or placed
 
 <img src="docs/images/backpack-render.png" alt="Backpack model render" width="240">
 <img src="docs/images/backpack-render2.png" alt="Backpack model render from another angle" width="240">
+
+</details>
+
+#### Quiver
+
+The Quiver is a wearable nine-slot ammunition container built specifically for ranged combat.
+
+<img src="docs/images/quiver-showcase.png" alt="Quiver worn by the player" width="430">
+
+- Crafts from **8 Hard Leather** in a Chest-shaped recipe
+- Equips in the chest armor slot and provides **0 armor points**, making it an alternative to chest armor or the Backpack
+- Holds **9 stacks of arrow ammunition** and accepts only normal Arrows or Crystal Arrows
+- While worn, its 3×3 inventory panel appears beside the normal player inventory
+- Bows consume ammunition from the worn Quiver in slot order from **1 through 9**, then fall back to normal inventory ammunition
+- Picked-up Arrows and Crystal Arrows prefer available space in the worn Quiver
+- Right-clicking a held Quiver opens its contents without placing it in the world
+- Filled Quivers keep their contents when carried, dropped, unequipped or reloaded
+- The item sprite and worn model share three fullness states: empty, half-full and full
+
+<details>
+<summary>Recipe, inventory and fullness states</summary>
+
+<img src="docs/images/quiver-recipe.png" alt="Quiver recipe" width="300">
+<img src="docs/images/quiver-gui.png" alt="Worn Quiver inventory" width="360">
+
+<img src="docs/images/quiver-dropped-empty.png" alt="Empty Quiver item" width="220">
+<img src="docs/images/quiver-dropped-halffull.png" alt="Half-full Quiver item" width="220">
+<img src="docs/images/quiver-dropped-full.png" alt="Full Quiver item" width="220">
+
+| Stored arrows | Fullness state | Visible model arrows |
+| --- | --- | ---: |
+| 0 | Empty | 0 |
+| 1-288 | Half-full | 3 |
+| 289-576 | Full | 6 |
 
 </details>
 
@@ -1101,6 +1159,26 @@ There is currently no way to obtain the Tarot of Death in Survival.
 <img src="docs/images/tarot-uno-mcstyle.png" alt="Minecraft Uno-Card Tarot texture" width="250">
 
 </details>
+
+#### Part 3 achievements
+
+Part 3 extends the existing Release 1.0 achievement tree with a small set of progression and gadget milestones rather than giving every new item its own achievement.
+
+<img src="docs/images/new-achievements-steel-example.png" alt="Steel and Crystal achievement branches" width="390">
+<img src="docs/images/new-achievements-recipes-example.png" alt="Recipe Book and equipment achievement branches" width="390">
+
+| Achievement | Parent | Unlock |
+| --- | --- | --- |
+| `Steel Yourself` | `Acquire Hardware` | Take a Steel Ingot from a Blast Furnace |
+| `Hammer Time!` | `Steel Yourself` | Complete a successful Anvil operation using a Steel Hammer |
+| `Crystal Clear` | `Copper Age` | Obtain a Crystal Shard |
+| `A Closer Look` | `Crystal Clear` | Look through a Spyglass |
+| `Pack Rat` | `Cow Tipper` | Craft a Backpack |
+| `Bookworm` | `Benchmarking` | Inspect an item with a Recipe Book |
+| `Remember 'em All!` | `Bookworm` | Remember a new item in a Recipe Compendium |
+| `Homesick` | `The End?` | Successfully use a calibrated Stone of Return |
+
+`Homesick` uses the special achievement frame. The Steel path branches from `Acquire Hardware` as a workshop branch, leaving the existing Gold → Diamond mining progression unchanged.
 
 ---
 
