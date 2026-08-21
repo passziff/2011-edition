@@ -1199,7 +1199,7 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 
 <img src="docs/images/ores-beyond-banner.png" alt="Ores Beyond" width="650">
 
-Ores Beyond carries progression past Diamond and out into the dimensions. This first installment covers the Nether: a new material tier above Diamond, the mobs that guard it, and the blocks and structures that come with them.
+Ores Beyond carries progression past Diamond and out into other dimensions. The first installment covers the Nether: a new material tier above Diamond, new hostile mobs, and the blocks and structures that come with them.
 
 #### Netherstone
 
