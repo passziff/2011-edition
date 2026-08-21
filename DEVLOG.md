@@ -52,15 +52,30 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Rope](#rope)
     - [Tarot of Death](#tarot-of-death)
     - [Part 3 achievements](#part-3-achievements)
+  - [Part 4](#part-4)
+    - [Netherstone](#netherstone)
+    - [Ancient Scrap](#ancient-scrap)
+    - [Nethersteel](#nethersteel)
+      - [Nethersteel tools](#nethersteel-tools)
+      - [Nethersteel armor](#nethersteel-armor)
+    - [Nether Gold Ore](#nether-gold-ore)
+    - [Netherskulls](#netherskulls)
+      - [Netherskull Guard](#netherskull-guard)
+      - [Netherskull Helmet](#netherskull-helmet)
+    - [Ash](#ash)
+    - [Bone Bush](#bone-bush)
+    - [Soul Torch](#soul-torch)
+    - [Nether Dungeon](#nether-dungeon)
+    - [Part 4 achievements](#part-4-achievements)
 - [Credits](#credits)
 
 ## Update #1
 
 <img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
 
-**Status:** In development. Parts 1, 2 and 3 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
+**Status:** In development. Parts 1, 2 and 3 are feature-complete for now, and Part 4 is feature-complete for the Nether. Tested in singleplayer. Not tested in multiplayer.
 
-Proper Progression rebuilds early-game progression and then expands it with utility equipment that still feels at home in Release 1.0.
+Proper Progression rebuilds early-game progression, expands it with utility equipment that still feels at home in Release 1.0, and then carries it past Diamond and out into the dimensions.
 
 ---
 
@@ -1180,6 +1195,234 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 
 ---
 
+### Part 4
+
+<img src="docs/images/ores-beyond-banner.png" alt="Ores Beyond" width="650">
+
+Ores Beyond carries progression past Diamond and out into the dimensions. This first installment covers the Nether: a new material tier above Diamond, the mobs that guard it, and the blocks and structures that come with them.
+
+#### Netherstone
+
+Netherstone gives the Nether the same complete building set Stone gives the Overworld, instead of leaving Netherrack and Nether Brick as the only options down there.
+
+<img src="docs/images/netherstone.png" alt="Netherstone building set" width="560">
+
+- Netherstone, Cobbled Netherstone, Netherstone Bricks and Cracked Netherstone Bricks
+- Slabs for Netherstone, Cobbled Netherstone and Netherstone Bricks
+- Stairs for Cobbled Netherstone and Netherstone Bricks
+- Naming follows the vanilla Stone family: `Netherstone Bricks` as a block, but `Netherstone Brick Slab` and `Netherstone Brick Stairs` for what is built from it
+
+Netherstone can currently only be obtained from the Nether Dungeon.
+
+#### Ancient Scrap
+
+Ancient Scrap gates the entire Nethersteel line the way Diamond Ore gates the tier below it. It is meant to be found rarely and worked slowly.
+
+<img src="docs/images/ancient-scrap-and-dust.png" alt="Ancient Scrap and Ancient Dust" width="380">
+
+- Generates fully buried in Netherrack, never exposed to open air or lava
+- Two passes per chunk: a denser low band around **Y 8-22** and a sparser one across **Y 8-119**
+- Remnants are **1 to 3 blocks**, never a full vein
+- Requires a **Diamond Pickaxe** or better
+- Drops **3-5 Ancient Dust**, and Fortune applies
+- Hardness **37.5**, so it is slow to break even with a Diamond Pickaxe
+
+#### Nethersteel
+
+Nethersteel is the first conventional tier above Diamond. Refining it is the slowest part of the chain. Ancient Dust only becomes metal in a Blast Furnace, and only while that furnace burns a fuel from the Nether.
+
+<img src="docs/images/nethersteel-nugget-ingot.png" alt="Nethersteel Nugget and Ingot" width="300">
+<img src="docs/images/ancientdust-smelting.png" alt="Ancient Dust smelting into a Nethersteel Nugget" width="200">
+
+- Ancient Dust smelts into a **Nethersteel Nugget**, one nugget per dust
+- This only works in a Blast Furnace, and only while it burns a **Blaze Rod** or a **Lava Bucket**; Charcoal is enough for Steel but not for Nethersteel
+- Nine Nuggets craft into a Nethersteel Ingot, and an Ingot splits back into nine Nuggets
+- Nine Ingots craft into a Block of Nethersteel and can be crafted back
+- Dropped Nethersteel survives fire and lava and floats on the surface instead of burning away, so dying in the Nether does not cost a full set
+- Ancient Dust is not fireproof, since it has not been through the furnace yet
+
+<img src="docs/images/nethersteelblock-nexttodiamondblock.png" alt="Block of Nethersteel beside a Block of Diamond" width="440">
+
+##### Nethersteel tools
+
+<img src="docs/images/nethersteel-tools-rplus.png" alt="Nethersteel tools, Release+ style" width="420">
+
+- Mines everything Diamond can, plus Ancient Scrap and the Block of Nethersteel
+- **2000 uses**, against Diamond's 1561
+- Deals **one more damage point** than the Diamond equivalent
+- Mines faster than Diamond, though Gold keeps its own speed record
+- Enchantability stays at Diamond's 10, so Gold remains the enchantment-oriented material
+
+##### Nethersteel armor
+
+<img src="docs/images/nethersteel-armor-rplus.png" alt="Nethersteel armor, Release+ style" width="420">
+<img src="docs/images/nethersteel-worn-rplus.png" alt="Nethersteel armor worn" width="300">
+
+- Protection values are identical to Diamond. The tier shows in durability and resistance instead of armor points
+- Roughly **20% more durable** than Diamond armor
+- Each piece worn gives **10% knockback resistance**, so a full set gives **40%**
+- Knockback resistance applies to explosion knockback as well as melee, which matters most against Ghasts
+
+<details>
+<summary>Optional textures</summary>
+
+Nethersteel tools, armor and the worn set all have a Release+ design and a plainer vanilla-styled variant, switched with the `Texture Style` option.
+
+**Tools**
+
+<img src="docs/images/nethersteel-tools-vanilla.png" alt="Nethersteel tools, vanilla style" width="420">
+
+**Armor**
+
+<img src="docs/images/nethersteel-armor-vanilla.png" alt="Nethersteel armor, vanilla style" width="420">
+<img src="docs/images/nethersteel-worn-vanilla.png" alt="Nethersteel armor worn, vanilla style" width="300">
+
+</details>
+
+#### Nether Gold Ore
+
+Gold in the Nether gives the dimension a reason to be mined before Nethersteel is reachable, and gives Zombie Pigmen something to be protective of.
+
+<img src="docs/images/nethergoldore.png" alt="Nether Gold Ore in Netherrack" width="440">
+
+- **3 veins of up to 8** per chunk, between **Y 10 and Y 117**
+- Requires an **Iron Pickaxe** or better, the same as Overworld Gold Ore
+- Smelts into a Gold Ingot in a normal Furnace or a Blast Furnace
+- Mining it angers every Zombie Pigman within **8 blocks**
+- Wearing **any single piece of Gold armor** exempts you from that entirely
+
+It is called Nether Gold Ore rather than being given a new name of its own, because it is the same metal in different rock, and that is how Minecraft has always handled it.
+
+#### Netherskulls
+
+The Fortress previously held nothing but Blazes and wandering Pigmen. Netherskulls give it a garrison of its own.
+
+<img src="docs/images/fortress-groupof-netherskulls-and-guards.png" alt="Netherskulls and Guards on a Fortress bridge" width="500">
+
+- Spawn in Nether Fortresses in packs, and are immune to fire
+- **20 health**, dealing **3 damage** unarmed
+- Move at Skeleton speed rather than Zombie speed
+- Up to **8 can spawn per chunk** where most mobs allow 4, so a Fortress holds a real population
+- Drop **0-2 Ash**, and Coal about a third of the time
+- Count as undead, so Smite applies and healing potions harm them
+- Have their own idle, hurt and death sounds
+
+<details>
+<summary>More Netherskull views</summary>
+
+<img src="docs/images/fortress-netherskull.png" alt="A Netherskull inside a Fortress" width="520">
+
+</details>
+
+##### Netherskull Guard
+
+<img src="docs/images/fortress-netherskullguard.png" alt="A Netherskull Guard" width="290">
+<img src="docs/images/fortress-netherskullguards.png" alt="Two Netherskull Guards" width="360">
+
+- An uncommon elite version that spawns in much smaller packs alongside ordinary Netherskulls
+- Carries a **Stone Sword** and deals **5 damage** with it
+- Has **4 points of natural armor**, which no other Release 1.0 mob has
+- Worth **10 experience** instead of the usual 5
+- Wears a helm, which it can rarely drop
+
+##### Netherskull Helmet
+
+The Guard's helm is the only piece of Netherskull equipment a player can wear, and the only way to make the Fortress stop treating you as an intruder.
+
+<img src="docs/images/netherskull-worn-rplus.png" alt="Netherskull Helmet worn" width="300">
+
+- Drops from a Netherskull Guard **roughly 1 time in 50**, and never intact. It arrives **30-60% worn**
+- Gives the same **3 protection** as a Diamond Helmet
+- Adds **15% knockback resistance** and turns aside **15% of explosion damage**, which stacks with a Nethersteel set
+- While it is worn, **Netherskulls stay neutral** until you strike one
+- Striking a Netherskull angers every Netherskull within **16 blocks**, helm or not, though their anger does fade
+- Has low durability and can only be repaired with another Netherskull Helmet
+- Enchantability **18**, the highest of any armor in the mod
+
+<details>
+<summary>Optional texture</summary>
+
+<img src="docs/images/netherskull-worn-vanilla.png" alt="Netherskull Helmet worn, vanilla style" width="300">
+
+</details>
+
+#### Ash
+
+Ash is what a Netherskull leaves behind, and the Nether's own source of grey dye.
+
+<img src="docs/images/ash-dropped.png" alt="Dropped Ash" width="240">
+
+- Dropped by Netherskulls and found in Nether Dungeon chests
+- One Ash crafts into **2 Grey Dye**, which previously required Bone Meal and Ink Sacs
+- Netherskulls drop Ash rather than Bone on purpose, since Bone means Bone Meal, which belongs to Overworld farming
+
+#### Bone Bush
+
+<img src="docs/images/boneshrubs.png" alt="Bone Bushes growing on Soul Sand" width="440">
+
+- A dry scrub that generates on Soul Sand, with two random variants
+- Drops **0-1 Bone** when broken
+- Unlike Dead Bush it has no light or sky requirement, so it survives anywhere in the Nether
+- Gives Soul Sand something to grow, and gives the Nether a renewable Bone source
+
+#### Soul Torch
+
+<img src="docs/images/soultorch.png" alt="Soul Torch beside a normal Torch" width="400">
+
+- Crafted from a Torch and a block of Soul Sand
+- Burns with its own blue flame and particles, and gives **light level 9** against a normal Torch's 14
+- **Blocks hostile Nether mobs from spawning within 5 blocks**
+- A single Soul Torch is not enough to shut down a Monster Spawner; **five placed on the spawner itself** will seal it
+- They are an alternative to walling a Fortress corridor off entirely
+
+#### Nether Dungeon
+
+Rather than add an entirely new structure, this reuses the Overworld dungeon layout and rebuilds it out of Nether materials.
+
+<img src="docs/images/nether-dungeon-1.png" alt="A Nether Dungeon" width="420">
+<img src="docs/images/nether-dungeon-2.png" alt="Inside a Nether Dungeon" width="420">
+
+- Generates carved into Netherrack, with **8 attempts per chunk**
+- Walls and floor are a per-block mix of Cobbled Netherstone, Netherstone Bricks and Cracked Netherstone Bricks, so no two look the same
+- It is currently the only way to obtain Netherstone
+- Always contains a **Netherskull spawner**, never a Guard spawner
+- Contains up to **two chests**, the same as an Overworld dungeon
+- Allows far more open walls than an Overworld dungeon, because Nether caverns rarely give it a closed pocket to sit in
+
+<details>
+<summary>Chest contents</summary>
+
+Chests draw **8 times** from a **15-slot** table. Ancient Scrap is left out on purpose, because handing it out in chests would skip the mining the whole Nethersteel tier is built around.
+
+| Contents | Notes |
+| --- | --- |
+| Ash | 1-3 |
+| Coal | Charcoal makes no sense in a dimension with no trees |
+| Bone, Rotten Flesh, Gunpowder | Standard dungeon fare |
+| Nether Wart, Soul Sand | The Nether's own materials |
+| Obsidian | Enough to matter for a portal repair, never enough for a full one |
+| Gold equipment | The only gear a Netherskull would have carried, occasionally enchanted |
+| Empty Bucket, Saddle | Uncommon utility |
+| Tarot of Death | The rarest slot, at well under 1% |
+
+</details>
+
+#### Part 4 achievements
+
+Part 4 adds three achievements rather than one per new item, following the same rule the earlier Parts use: a node marks a step in progression.
+
+<img src="docs/images/new-achievements-nether-example.png" alt="Nether achievement branches" width="430">
+
+| Achievement | Parent | Unlock |
+| --- | --- | --- |
+| `One Man's Trash...` | `We Need to Go Deeper` | Dig Ancient Scrap out of the Nether |
+| `Hellforged` | `One Man's Trash...` | Refine a Nethersteel Ingot |
+| `One of Us` | `Into Fire` | Take the helm from a Netherskull Guard |
+
+`One of Us` uses the special achievement frame. The Nethersteel line hangs off `We Need to Go Deeper` rather than `DIAMONDS!`, so the material ladder runs through the ore you have to find first. `One of Us` hangs off `Into Fire`, since that is the node that means you have reached a Fortress.
+
+---
+
 ## Credits
 
 - Copper armor item sprites are based on axy's Traditional Armour
@@ -1206,5 +1449,7 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 - Backpack close sound: [Bag Drop and Remove](https://pixabay.com/sound-effects/film-special-effects-bag-drop-and-remove-70142/) on Pixabay
 
 - Quiver and Crystal Arrow visuals are recolored/retextured from existing Minecraft assets
+- Netherskull and Netherskull Guard textures are heavily based on and inspired by [this NovaSkin skin](https://minecraft.novaskin.me/post/4644643339763712/gggggg) and [this NovaSkin skeleton](https://minecraft.novaskin.me/post/4625788724838400/skeleton-2), both by the same creator
+- Ash, Netherstone and Nethersteel visuals are recolored/retextured vanilla Minecraft assets
 
 If an original creator would prefer an inspired, adapted or recolored asset not be used here, I am happy to change or remove it.
