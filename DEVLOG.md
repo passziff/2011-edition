@@ -556,7 +556,7 @@ The Grindstone adds a dedicated repair and disenchanting workstation alongside t
 | Crafting grid | Remaining durability of both items + **5%** of maximum durability | Removed | Removed | Free basic repair |
 | Grindstone | Remaining durability of both items + **10%** of maximum durability | Removed; XP is returned | Upper item's name is kept | Dedicated destructive repair / disenchanting |
 | Anvil, item + item | Remaining durability of both items + **12%** of maximum durability | Preserved and compatible enchantments can be combined | Preserved / can be changed | Costs XP, Steel Hammer durability and Anvil wear |
-| Anvil, item + material | Up to **25%** of maximum durability per material | Preserved | Preserved / can be changed | Only the materials actually needed are consumed |
+| Anvil, item + material | Up to **25%** of maximum durability per material, or **10%** for the Netherskull Helmet | Preserved | Preserved / can be changed | Only the materials actually needed are consumed |
 
 Current Anvil repair materials:
 
@@ -575,6 +575,8 @@ Current Anvil repair materials:
 | Gold equipment | Gold Ingot |
 | Diamond equipment | Diamond |
 | Flint and Steel / Steel Hammer | Steel Ingot |
+| Nethersteel equipment | Nethersteel Ingot |
+| Netherskull Helmet | Nethersteel Ingot, at a reduced rate |
 
 </details>
 
@@ -1336,7 +1338,7 @@ The Guard's helm is the only piece of Netherskull equipment a player can wear, a
 - Adds **15% knockback resistance** and turns aside **15% of explosion damage**, which stacks with a Nethersteel set
 - While it is worn, **Netherskulls stay neutral** until you strike one
 - Striking a Netherskull angers every Netherskull within **16 blocks**, helm or not, though their anger does fade
-- Has low durability and can only be repaired with another Netherskull Helmet
+- Has low durability. Two helms combine for a full repair, and a Nethersteel Ingot patches it at **a tenth** of maximum durability per ingot instead of the usual quarter
 - Enchantability **18**, the highest of any armor in the mod
 
 <details>
