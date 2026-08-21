@@ -1409,7 +1409,7 @@ Chests draw **8 times** from a **15-slot** table.
 
 #### Part 4 achievements
 
-Part 4 adds three achievements rather than one per new item, following the same rule the earlier Parts use: a node marks a step in progression.
+Part 4 adds three achievements to guide the new progression.
 
 <img src="docs/images/new-achievements-nether-example.png" alt="Nether achievement branches" width="430">
 
