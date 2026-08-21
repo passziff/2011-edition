@@ -1160,7 +1160,7 @@ The Tarot of Death is my version/backport of the modern Totem of Undying, adapte
 - Uses a dedicated activation animation rising from the hotbar, green and gold particles, and sound
 - Does not protect against void damage
 
-There is currently no way to obtain the Tarot of Death in Survival.
+Currently the only way to obtain the Tarot of Death is in a Nether Dungeon chest.
 
 <details>
 <summary>More Tarot of Death views</summary>
@@ -1201,7 +1201,7 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 
 <img src="docs/images/ores-beyond-banner.png" alt="Ores Beyond" width="650">
 
-Ores Beyond carries progression past Diamond and out into the dimensions. This first installment covers the Nether: a new material tier above Diamond, the mobs that guard it, and the blocks and structures that come with them.
+Ores Beyond carries progression past Diamond and out into other dimensions. The first installment covers the Nether: a new material tier above Diamond, new hostile mobs, and the blocks and structures that come with them.
 
 #### Netherstone
 
@@ -1212,13 +1212,12 @@ Netherstone gives the Nether the same complete building set Stone gives the Over
 - Netherstone, Cobbled Netherstone, Netherstone Bricks and Cracked Netherstone Bricks
 - Slabs for Netherstone, Cobbled Netherstone and Netherstone Bricks
 - Stairs for Cobbled Netherstone and Netherstone Bricks
-- Naming follows the vanilla Stone family: `Netherstone Bricks` as a block, but `Netherstone Brick Slab` and `Netherstone Brick Stairs` for what is built from it
 
 Netherstone can currently only be obtained from the Nether Dungeon.
 
 #### Ancient Scrap
 
-Ancient Scrap gates the entire Nethersteel line the way Diamond Ore gates the tier below it. It is meant to be found rarely and worked slowly.
+Ancient Scrap is my take on the modern Ancient Debris. It is meant to be found rarely and worked slowly.
 
 <img src="docs/images/ancient-scrap-and-dust.png" alt="Ancient Scrap and Ancient Dust" width="380">
 
@@ -1249,7 +1248,7 @@ Nethersteel is the first conventional tier above Diamond. Refining it is the slo
 
 <img src="docs/images/nethersteel-tools-rplus.png" alt="Nethersteel tools, Release+ style" width="420">
 
-- Mines everything Diamond can, plus Ancient Scrap and the Block of Nethersteel
+- Mines everything Diamond can and more
 - **2000 uses**, against Diamond's 1561
 - Deals **one more damage point** than the Diamond equivalent
 - Mines faster than Diamond, though Gold keeps its own speed record
@@ -1283,7 +1282,7 @@ Nethersteel tools, armor and the worn set all have a Release+ design and a plain
 
 #### Nether Gold Ore
 
-Gold in the Nether gives the dimension a reason to be mined before Nethersteel is reachable, and gives Zombie Pigmen something to be protective of.
+Gold in the Nether just makes sense, and gives Zombie Pigmen something to be protective of.
 
 <img src="docs/images/nethergoldore.png" alt="Nether Gold Ore in Netherrack" width="440">
 
@@ -1293,21 +1292,21 @@ Gold in the Nether gives the dimension a reason to be mined before Nethersteel i
 - Mining it angers every Zombie Pigman within **8 blocks**
 - Wearing **any single piece of Gold armor** exempts you from that entirely
 
-It is called Nether Gold Ore rather than being given a new name of its own, because it is the same metal in different rock, and that is how Minecraft has always handled it.
 
 #### Netherskulls
 
-The Fortress previously held nothing but Blazes and wandering Pigmen. Netherskulls give it a garrison of its own.
+The first mobs added by R+!
+The Nether Fortress previously held nothing but Blazes and wandering Pigmen. Netherskulls are my version of the Wither Skeletons and give it a garrison of its own.
 
 <img src="docs/images/fortress-groupof-netherskulls-and-guards.png" alt="Netherskulls and Guards on a Fortress bridge" width="500">
 
 - Spawn in Nether Fortresses in packs, and are immune to fire
 - **20 health**, dealing **3 damage** unarmed
-- Move at Skeleton speed rather than Zombie speed
+- Move at Skeleton speed
 - Up to **8 can spawn per chunk** where most mobs allow 4, so a Fortress holds a real population
 - Drop **0-2 Ash**, and Coal about a third of the time
 - Count as undead, so Smite applies and healing potions harm them
-- Have their own idle, hurt and death sounds
+- Use more modern Wither Skeleton idle, hurt and death sounds
 
 <details>
 <summary>More Netherskull views</summary>
@@ -1356,7 +1355,6 @@ Ash is what a Netherskull leaves behind, and the Nether's own source of grey dye
 
 - Dropped by Netherskulls and found in Nether Dungeon chests
 - One Ash crafts into **2 Grey Dye**, which previously required Bone Meal and Ink Sacs
-- Netherskulls drop Ash rather than Bone on purpose, since Bone means Bone Meal, which belongs to Overworld farming
 
 #### Bone Bush
 
@@ -1374,7 +1372,7 @@ Ash is what a Netherskull leaves behind, and the Nether's own source of grey dye
 - Crafted from a Torch and a block of Soul Sand
 - Burns with its own blue flame and particles, and gives **light level 9** against a normal Torch's 14
 - **Blocks hostile Nether mobs from spawning within 5 blocks**
-- A single Soul Torch is not enough to shut down a Monster Spawner; **five placed on the spawner itself** will seal it
+- Blaze spawners can now only be blocked by placing Soul Torches around and on top of them
 - They are an alternative to walling a Fortress corridor off entirely
 
 #### Nether Dungeon
@@ -1394,7 +1392,7 @@ Rather than add an entirely new structure, this reuses the Overworld dungeon lay
 <details>
 <summary>Chest contents</summary>
 
-Chests draw **8 times** from a **15-slot** table. Ancient Scrap is left out on purpose, because handing it out in chests would skip the mining the whole Nethersteel tier is built around.
+Chests draw **8 times** from a **15-slot** table.
 
 | Contents | Notes |
 | --- | --- |
@@ -1421,7 +1419,6 @@ Part 4 adds three achievements rather than one per new item, following the same 
 | `Hellforged` | `One Man's Trash...` | Refine a Nethersteel Ingot |
 | `One of Us` | `Into Fire` | Take the helm from a Netherskull Guard |
 
-`One of Us` uses the special achievement frame. The Nethersteel line hangs off `We Need to Go Deeper` rather than `DIAMONDS!`, so the material ladder runs through the ore you have to find first. `One of Us` hangs off `Into Fire`, since that is the node that means you have reached a Fortress.
 
 ---
 
