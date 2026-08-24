@@ -53,7 +53,7 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Tarot of Death](#tarot-of-death)
     - [Part 3 achievements](#part-3-achievements)
   - [Part 4](#part-4)
-    - [Netherstone](#netherstone)
+    - [Nether Stone](#nether-stone)
     - [Ancient Scrap](#ancient-scrap)
     - [Nethersteel](#nethersteel)
       - [Nethersteel tools](#nethersteel-tools)
@@ -66,6 +66,19 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Bone Bush](#bone-bush)
     - [Soul Torch](#soul-torch)
     - [Nether Dungeon](#nether-dungeon)
+    - [End terrain](#end-terrain)
+    - [Amethyst](#amethyst)
+      - [Amethyst tools](#amethyst-tools)
+      - [Amethyst armor](#amethyst-armor)
+    - [End Stone](#end-stone)
+    - [Purple Stone](#purple-stone)
+    - [Voidstone](#voidstone)
+    - [End Spire](#end-spire)
+    - [Ender Shade](#ender-shade)
+    - [End Forest](#end-forest)
+      - [End Wood](#end-wood)
+      - [End vegetation](#end-vegetation)
+      - [Ender Berries](#ender-berries)
     - [Part 4 achievements](#part-4-achievements)
 - [Credits](#credits)
 
@@ -73,7 +86,7 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
 
 <img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
 
-**Status:** In development. Parts 1, 2 and 3 are feature-complete for now, and Part 4 is feature-complete for the Nether. Tested in singleplayer. Not tested in multiplayer.
+**Status:** In development. Parts 1, 2 and 3 are feature-complete for now. Part 4 is still in development; its current Nether and End passes have been implemented and tested in singleplayer. Not tested in multiplayer.
 
 Proper Progression rebuilds early-game progression, expands it with utility equipment that still feels at home in Release 1.0, and then carries it past Diamond and out into the dimensions.
 
@@ -574,6 +587,7 @@ Current Anvil repair materials:
 | Iron equipment and Shears | Iron Ingot |
 | Gold equipment | Gold Ingot |
 | Diamond equipment | Diamond |
+| Amethyst equipment | Amethyst |
 | Flint and Steel / Steel Hammer | Steel Ingot |
 | Nethersteel equipment | Nethersteel Ingot |
 | Netherskull Helmet | Nethersteel Ingot, at a reduced rate |
@@ -1011,7 +1025,7 @@ The Recipe Book is an early-game reference item for learning what items are and 
 - The following pages show applicable **Smelting Recipes** and **Crafting Recipes**, including recipes that make the inspected item and recipes that use it
 - Empty recipe categories are omitted
 - Alternative ingredients and valid smelting fuels cycle in place; hovering pauses them and the mouse wheel can browse the available options
-- The displayed recipes use the game's current recipe data, including interchangeable ingredients such as Cobblestone and Cobbled Netherstone
+- The displayed recipes use the game's current recipe data, including supported interchangeable ingredient groups such as normal and End Wooden Planks
 - Opening, closing and turning pages use dedicated book sounds
 
 <details>
@@ -1160,7 +1174,7 @@ The Tarot of Death is my version/backport of the modern Totem of Undying, adapte
 - Uses a dedicated activation animation rising from the hotbar, green and gold particles, and sound
 - Does not protect against void damage
 
-Currently the only way to obtain the Tarot of Death is in a Nether Dungeon chest.
+The Tarot of Death remains extremely rare in Survival. It can be found in Nether Dungeon and End Spire chests, and Ender Shades have a very small chance to drop one.
 
 <details>
 <summary>More Tarot of Death views</summary>
@@ -1201,19 +1215,18 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 
 <img src="docs/images/ores-beyond-banner.png" alt="Ores Beyond" width="650">
 
-Ores Beyond carries progression past Diamond and out into other dimensions. The first installment covers the Nether: a new material tier above Diamond, new hostile mobs, and the blocks and structures that come with them.
+Ores Beyond carries progression past Diamond and gives the Nether and End more of their own materials, structures and reasons to stay. The Nether introduces the durable post-Diamond Nethersteel path, while the End adds a brittle enchantment-oriented Amethyst alternative, extended terrain, ruins and a small native forest biome.
 
-#### Netherstone
+#### Nether Stone
 
-Netherstone gives the Nether the same complete building set Stone gives the Overworld, instead of leaving Netherrack and Nether Brick as the only options down there.
+Nether Stone gives the Nether a rough stone building family of its own instead of leaving Netherrack and Nether Brick as the only options down there.
 
-<img src="docs/images/netherstone.png" alt="Netherstone building set" width="560">
+<img src="docs/images/netherstone.png" alt="Nether Stone building set" width="560">
 
-- Netherstone, Cobbled Netherstone, Netherstone Bricks and Cracked Netherstone Bricks
-- Slabs for Netherstone, Cobbled Netherstone and Netherstone Bricks
-- Stairs for Cobbled Netherstone and Netherstone Bricks
-
-Netherstone can currently only be obtained from the Nether Dungeon.
+- **Nether Stone**, **Nether Moss Stone**, **Nether Stone Bricks** and **Cracked Nether Stone Bricks**
+- Slabs for Nether Stone and Nether Stone Bricks
+- Stairs for Nether Stone and Nether Stone Bricks
+- Nether Stone can currently only be obtained in Survival by mining a Nether Dungeon
 
 #### Ancient Scrap
 
@@ -1239,7 +1252,7 @@ Nethersteel is the first conventional tier above Diamond. Refining it is the slo
 - This only works in a Blast Furnace, and only while it burns a **Blaze Rod** or a **Lava Bucket**; Charcoal is enough for Steel but not for Nethersteel
 - Nine Nuggets craft into a Nethersteel Ingot, and an Ingot splits back into nine Nuggets
 - Nine Ingots craft into a Block of Nethersteel and can be crafted back
-- Dropped Nethersteel survives fire and lava and floats on the surface instead of burning away, so dying in the Nether does not cost a full set
+- Dropped Nethersteel survives fire and lava and floats on the surface instead of burning away
 - Ancient Dust is not fireproof, since it has not been through the furnace yet
 
 <img src="docs/images/nethersteelblock-nexttodiamondblock.png" alt="Block of Nethersteel beside a Block of Diamond" width="440">
@@ -1248,21 +1261,21 @@ Nethersteel is the first conventional tier above Diamond. Refining it is the slo
 
 <img src="docs/images/nethersteel-tools-rplus.png" alt="Nethersteel tools, Release+ style" width="420">
 
-- Mines everything Diamond can and more
+- Harvest level **6**, above Diamond's 5
 - **2000 uses**, against Diamond's 1561
+- Mining speed **10.0**, against Diamond's 8.0; Gold keeps its speed record at 12.0
 - Deals **one more damage point** than the Diamond equivalent
-- Mines faster than Diamond, though Gold keeps its own speed record
-- Enchantability stays at Diamond's 10, so Gold remains the enchantment-oriented material
+- Enchantability stays at Diamond's **10**
 
 ##### Nethersteel armor
 
 <img src="docs/images/nethersteel-armor-rplus.png" alt="Nethersteel armor, Release+ style" width="420">
 <img src="docs/images/nethersteel-worn-rplus.png" alt="Nethersteel armor worn" width="300">
 
-- Protection values are identical to Diamond. The tier shows in durability and resistance instead of armor points
-- Roughly **20% more durable** than Diamond armor
+- Protection values are identical to Diamond; the tier shows in durability and resistance instead of armor points
+- Durability multiplier **40**, against Diamond's 33
 - Each piece worn gives **10% knockback resistance**, so a full set gives **40%**
-- Knockback resistance applies to explosion knockback as well as melee, which matters most against Ghasts
+- Knockback resistance applies to explosion knockback as well as melee
 
 <details>
 <summary>Optional textures</summary>
@@ -1292,21 +1305,19 @@ Gold in the Nether just makes sense, and gives Zombie Pigmen something to be pro
 - Mining it angers every Zombie Pigman within **8 blocks**
 - Wearing **any single piece of Gold armor** exempts you from that entirely
 
-
 #### Netherskulls
 
-The first mobs added by R+!
-The Nether Fortress previously held nothing but Blazes and wandering Pigmen. Netherskulls are my version of the Wither Skeletons and give it a garrison of its own.
+The first mobs added by R+! The Nether Fortress previously held nothing but Blazes and wandering Pigmen. Netherskulls are my version of the Wither Skeletons and give it a garrison of its own.
 
 <img src="docs/images/fortress-groupof-netherskulls-and-guards.png" alt="Netherskulls and Guards on a Fortress bridge" width="500">
 
-- Spawn in Nether Fortresses in packs, and are immune to fire
+- Spawn in Nether Fortresses in packs and are immune to fire
 - **20 health**, dealing **3 damage** unarmed
 - Move at Skeleton speed
 - Up to **8 can spawn per chunk** where most mobs allow 4, so a Fortress holds a real population
 - Drop **0-2 Ash**, and Coal about a third of the time
 - Count as undead, so Smite applies and healing potions harm them
-- Use more modern Wither Skeleton idle, hurt and death sounds
+- Use later vanilla Wither Skeleton-style idle, hurt and death sounds
 
 <details>
 <summary>More Netherskull views</summary>
@@ -1322,7 +1333,7 @@ The Nether Fortress previously held nothing but Blazes and wandering Pigmen. Net
 
 - An uncommon elite version that spawns in much smaller packs alongside ordinary Netherskulls
 - Carries a **Stone Sword** and deals **5 damage** with it
-- Has **4 points of natural armor**, which no other Release 1.0 mob has
+- Has **4 points of natural armor**
 - Worth **10 experience** instead of the usual 5
 - Wears a helm, which it can rarely drop
 
@@ -1332,13 +1343,13 @@ The Guard's helm is the only piece of Netherskull equipment a player can wear, a
 
 <img src="docs/images/netherskull-worn-rplus.png" alt="Netherskull Helmet worn" width="300">
 
-- Drops from a Netherskull Guard **roughly 1 time in 50**, and never intact. It arrives **30-60% worn**
+- Drops from a Netherskull Guard **roughly 1 time in 50**, and never intact; it arrives **30-60% worn**
 - Gives the same **3 protection** as a Diamond Helmet
-- Adds **15% knockback resistance** and turns aside **15% of explosion damage**, which stacks with a Nethersteel set
+- Adds **15% knockback resistance** and reduces explosion damage by **15%**, which stacks with Nethersteel
 - While it is worn, **Netherskulls stay neutral** until you strike one
 - Striking a Netherskull angers every Netherskull within **16 blocks**, helm or not, though their anger does fade
-- Has low durability. Two helms combine for a full repair, and a Nethersteel Ingot patches it at **a tenth** of maximum durability per ingot instead of the usual quarter
-- Enchantability **18**, the highest of any armor in the mod
+- Has low durability. Two helms combine for a full repair, and a Nethersteel Ingot repairs **a tenth** of maximum durability per ingot instead of the usual quarter
+- Enchantability **18**, above Diamond but below Gold and Amethyst
 
 <details>
 <summary>Optional texture</summary>
@@ -1363,17 +1374,17 @@ Ash is what a Netherskull leaves behind, and the Nether's own source of grey dye
 - A dry scrub that generates on Soul Sand, with two random variants
 - Drops **0-1 Bone** when broken
 - Unlike Dead Bush it has no light or sky requirement, so it survives anywhere in the Nether
-- Gives Soul Sand something to grow, and gives the Nether a renewable Bone source
+- Bone Bushes currently do **not** spread or grow; natural world generation is their only source
 
 #### Soul Torch
 
 <img src="docs/images/soultorch.png" alt="Soul Torch beside a normal Torch" width="400">
 
 - Crafted from a Torch and a block of Soul Sand
-- Burns with its own blue flame and particles, and gives **light level 9** against a normal Torch's 14
-- **Blocks hostile Nether mobs from spawning within 5 blocks**
-- Blaze spawners can now only be blocked by placing Soul Torches around and on top of them
-- They are an alternative to walling a Fortress corridor off entirely
+- Burns with its own blue flame and particles, and gives **light level 10** against a normal Torch's 14
+- **Blocks hostile Nether mobs from naturally spawning within 5 blocks**
+- A Mob Spawner is sealed only by placing **five Soul Torches**: one on top and one on each of its four horizontal sides
+- This gives Fortresses and Nether Dungeons a deliberate spawn-control tool without letting ordinary torchlight shut their spawners down
 
 #### Nether Dungeon
 
@@ -1383,33 +1394,222 @@ Rather than add an entirely new structure, this reuses the Overworld dungeon lay
 <img src="docs/images/nether-dungeon-2.png" alt="Inside a Nether Dungeon" width="420">
 
 - Generates carved into Netherrack, with **8 attempts per chunk**
-- Walls and floor are a per-block mix of Cobbled Netherstone, Netherstone Bricks and Cracked Netherstone Bricks, so no two look the same
-- It is currently the only way to obtain Netherstone
+- Uses **Nether Stone walls** over a **Nether Moss Stone floor**, mirroring the Overworld dungeon's Cobblestone and Moss Stone layout
+- It is currently the **only Survival source of Nether Stone**
 - Always contains a **Netherskull spawner**, never a Guard spawner
 - Contains up to **two chests**, the same as an Overworld dungeon
-- Allows far more open walls than an Overworld dungeon, because Nether caverns rarely give it a closed pocket to sit in
+- Allows more open walls than an Overworld dungeon so it can generate beside the Nether's much larger caverns
 
 <details>
 <summary>Chest contents</summary>
 
-Chests draw **8 times** from a **15-slot** table.
+Chests draw **8 times** from a **15-slot** table; many of the rarer slots can still roll empty.
 
 | Contents | Notes |
 | --- | --- |
 | Ash | 1-3 |
-| Coal | Charcoal makes no sense in a dimension with no trees |
 | Bone, Rotten Flesh, Gunpowder | Standard dungeon fare |
-| Nether Wart, Soul Sand | The Nether's own materials |
-| Obsidian | Enough to matter for a portal repair, never enough for a full one |
-| Gold equipment | The only gear a Netherskull would have carried, occasionally enchanted |
-| Empty Bucket, Saddle | Uncommon utility |
-| Tarot of Death | The rarest slot, at well under 1% |
+| Gold Nuggets, Gold Ingots | Nether-native valuables |
+| Coal, Glowstone Dust | Common Nether resources |
+| Nether Wart | A second way to find the Nether's crop |
+| Obsidian | 1-2, useful for emergency portal repair |
+| Empty Bucket, Flint and Steel | Uncommon utility |
+| Blaze Powder | Rare |
+| Enchanted Gold equipment | Very rare |
+| Tarot of Death | The rarest slot |
 
 </details>
 
+#### End terrain
+
+The central dragon island remains the original Release 1.0 arena, but the End no longer stops at its coast. Beyond it, End Stone land continues in broad concentric rings separated by traversable void gaps.
+
+<img src="docs/images/end-terrain-rings.png" alt="Expanded End terrain with outer land rings" width="650">
+
+- The original central island remains unchanged as the Dragon arena
+- The first gap beyond it is roughly **48 blocks** wide
+- Outer land rings are roughly **64 blocks** wide, separated by **32-block void gaps**
+- The gaps are deliberately sized around Ender Pearl travel rather than normal jumping
+- Obsidian spikes and Ender Crystals remain restricted to the central island
+- Outer terrain continues using the same old End density style rather than introducing modern End islands
+
+#### Amethyst
+
+Amethyst is the End's gem tier: a faster and far more enchantable cousin of Diamond that gives up most of Diamond's durability in return. It sits beside Nethersteel rather than above it.
+
+<img src="docs/images/amethysts-dropped-block.png" alt="Amethyst and a Block of Amethyst" width="400">
+<img src="docs/images/amethyst-ore-generated.png" alt="Amethyst Ore generated in End Stone" width="420">
+
+- Amethyst Ore replaces End Stone between roughly **Y 20 and Y 64**
+- **5 generation attempts** per chunk, in veins of up to **5**; many attempts naturally miss because so much of the End is open air
+- Requires a **Diamond Pickaxe** or better
+- Drops one Amethyst, with Fortune applying like other gem ores
+- Nine Amethysts craft into a Block of Amethyst and can be crafted back
+- Amethyst Ore and the storage block have hardness **8.0**
+
+##### Amethyst tools
+
+<img src="docs/images/amethyst-tools-r+.png" alt="Amethyst tools, Release+ style" width="420">
+
+- Same harvest level and damage bonus as Diamond
+- Only **300 uses**, against Diamond's 1561
+- Mining speed **11.0**, faster than Diamond and Nethersteel but still below Gold's 12.0
+- Enchantability **25**, matching Gold and far above Diamond's 10
+
+##### Amethyst armor
+
+<img src="docs/images/amethyst-armor-r+.png" alt="Amethyst armor, Release+ style" width="420">
+
+- Protection values are identical to Diamond
+- Durability multiplier **20**, against Diamond's 33
+- Enchantability **25**
+
+<details>
+<summary>Vanilla-styled Amethyst equipment</summary>
+
+Amethyst tools and armor have both Release+ and plainer vanilla-styled variants under the same `Texture Style` option used by Nethersteel and the Netherskull Helmet.
+
+<img src="docs/images/amethyst-tools-vanilla.png" alt="Amethyst tools, vanilla style" width="420">
+<img src="docs/images/amethyst-armor-vanilla.png" alt="Amethyst armor, vanilla style" width="420">
+
+</details>
+
+#### End Stone
+
+The vanilla End Stone block now has the building family it never received in Release 1.0.
+
+<img src="docs/images/end-stone-lineup.png" alt="End Stone building set" width="560">
+
+- **End Stone Bricks** and **Cracked End Stone Bricks**
+- Slabs and stairs for both End Stone and End Stone Bricks
+- The worked blocks keep End Stone's hardness and resistance
+
+#### Purple Stone
+
+Purple Stone is the masonry of the End Spires and currently exists only through those ruins.
+
+<img src="docs/images/purplestone-lineup.png" alt="Purple Stone building set" width="560">
+
+- **Purple Stone**, **Purple Stone Bricks** and **Cracked Purple Stone Bricks**
+- Slabs and stairs for both raw Purple Stone and Purple Stone Bricks
+- **Purple Stone Bricks Pillars** provide a vertical carved column block
+- Purple Stone is currently obtained by mining End Spires rather than normal terrain
+
+#### Voidstone
+
+Voidstone is the End's counterpart to Glowstone: a full-strength light material tied to the Spires rather than another ore vein.
+
+<img src="docs/images/voidstone-block-dust-lamp.png" alt="Voidstone, Voidstone Dust and a Voidstone Lamp" width="480">
+
+- Emits full light and has the same **0.3 hardness** as Glowstone
+- Breaking Voidstone drops **2-4 Voidstone Dust**; Fortune can increase the amount up to 4
+- Four Dust craft back into one Voidstone
+- Voidstone Dust is also a brewing ingredient for **Leaping**
+- **Voidstone Lamps** are shallow half-block lights made from Voidstone and Purple Stone Slabs
+- Lamps can mount on floors, walls or ceilings and naturally light End Spires
+- Voidstone Dust is found through End Spire loot; raw Voidstone does not generate as an ordinary End ore
+
+#### End Spire
+
+End Spires are ruined Purple Stone towers scattered across the outer End. They act as landmarks across the void as much as they do structures to loot.
+
+<img src="docs/images/end-spire.png" alt="An End Spire" width="520">
+
+- Generate only beyond the central island and first void gap
+- Use a region-based placement system so neighbouring towers cannot bunch together
+- Roughly **18-30 blocks tall** with a **7×7** footprint
+- Built from Purple Stone masonry with a continuous spiral stairway, damaged walls and eroded upper floors
+- Voidstone Lamps hang beneath the surviving floors
+- An **Ender Shade spawner** sits on the floor below the summit when the tower is tall enough
+- The top floor contains **one or two loot chests**
+
+<details>
+<summary>Current Spire loot</summary>
+
+Each chest makes eight draws. The table is intentionally sparse and can return empty slots.
+
+- Ender Pearls
+- Voidstone Dust
+- Rare Amethyst
+- Rare Bottles o' Enchanting
+- Rare heavily worn Amethyst tools or armor
+- Very rare Tarot of Death
+
+</details>
+
+#### Ender Shade
+
+The Ender Shade is a flying ranged hostile mob found naturally in the outer End and in much greater numbers around Spire spawners. Its fight is built around distance and teleportation rather than melee.
+
+<img src="docs/images/ender-shade.png" alt="An Ender Shade" width="420">
+
+- **20 health**, with no melee attack
+- Prefers to fight from roughly **10 blocks** away and teleports out when the player gets too close
+- Can blink away from indirect attacks when its teleport cooldown is available
+- Every shot has a visible **30-tick charge-up**, followed by a short period where the Shade cannot immediately blink away
+- Its Ender Charge deals **2 damage**, does **not** knock the target backward, and applies **Levitation for 3 seconds**
+- Ender Shades themselves ignore Levitation
+- Natural End Shades spawn in ones and twos alongside Endermen; Spire-born Shades use a much shorter leash so the spawner's normal population limit still works
+- Drops Ender Pearls and has a **1 in 200** chance to drop a Tarot of Death; Looting does not improve the Tarot chance
+
+#### End Forest
+
+End Forests are a small flavour biome on the outer rings: a sparse patch of life rather than a full modern End overhaul.
+
+<img src="docs/images/endforest-showcase.png" alt="An End Forest" width="650">
+
+- Generate only across the outer End, never on the central Dragon island
+- Use broad, seed-stable biome regions rather than chunk-by-chunk placement
+- The living surface is **End Grass Block**, mixed into normal End Stone through **End Moss Stone** transition patches
+- End Grass Block slowly spreads onto suitable exposed End Stone and returns End Stone when mined normally; Silk Touch preserves the Grass Block
+- End Grass Blocks emit a subtle End-colored drifting particle effect
+- Endermen and Ender Shades use the same spawn lists inside the biome as the normal End
+- End Spires can still generate inside End Forests
+
+##### End Wood
+
+The forest's tree is an Amaranth-inspired tree translated into the old Minecraft tree system. Its living blocks reuse the fourth Wood/Leaves/Sapling metadata slot alongside Oak, Spruce and Birch.
+
+<img src="docs/images/ender-wood-lineup.png" alt="End Wood building set" width="500">
+<img src="docs/images/ender-sapling-grassblock-leaves.png" alt="End Sapling, End Grass Block and End Leaves" width="440">
+
+- Logs are named **End Wood**, with matching **End Leaves** and **End Saplings**
+- End Leaves use the normal Leaves texture with their own washed-out dark green foliage tint
+- End Saplings grow only on End Grass Block
+- End Wood crafts into **End Wooden Planks**
+- End Wooden Planks count as normal Wooden Planks in general crafting recipes
+- Dedicated **End Wooden Slab**, **End Wooden Stairs**, **End Fence** and **End Fence Gate** complete the building set
+
+##### End vegetation
+
+<img src="docs/images/new-end-flowers.png" alt="End Forest vegetation" width="460">
+
+The forest floor stays intentionally simple instead of turning the End into a lush modern biome.
+
+- **End Grass** is the short native grass variant and grows only on End Grass Block
+- **End Rose** crafts into **2 Purple Dye**
+- **End Flower** crafts into **2 Cyan Dye**
+- Both flowers generate in small, independent scattered patches and grow only on End Grass Block
+- Normal Overworld vegetation and End vegetation use their own ground types rather than growing interchangeably
+
+##### Ender Berries
+
+Ender Berries are the End Forest's crop, combining a modern berry-bush growth loop with the End's teleportation theme.
+
+<img src="docs/images/ender-berries.png" alt="Ender Berry Bushes" width="480">
+
+- Mature bushes generate in occasional natural patches inside End Forests
+- Ender Berries plant a new age-0 bush on **End Grass Block**
+- Bushes have **four growth stages**, grow through random ticks and can be advanced with Bone Meal
+- Right-clicking a berry-bearing bush harvests it and returns it to an earlier growth stage
+- Age 2 bushes give **1-2 berries**; fully grown bushes give **2-3**
+- Bushes slow entities passing through them and grown bushes deal thorn damage to moving living entities
+- Mob pathfinding treats the bushes as undesirable rather than completely impassable, so mobs normally route around them when a comparable path exists
+- Ender Berries restore **2 hunger**, can be eaten even while full, and attempt a safe random teleport within roughly **8 blocks** without dealing Ender Pearl damage
+
 #### Part 4 achievements
 
-Part 4 adds three achievements to guide the new progression.
+Part 4 currently adds three achievements to guide the Nether progression.
 
 <img src="docs/images/new-achievements-nether-example.png" alt="Nether achievement branches" width="430">
 
@@ -1449,6 +1649,9 @@ Part 4 adds three achievements to guide the new progression.
 
 - Quiver and Crystal Arrow visuals are recolored/retextured from existing Minecraft assets
 - Netherskull and Netherskull Guard textures are heavily based on and inspired by [this NovaSkin skin](https://minecraft.novaskin.me/post/4644643339763712/gggggg) and [this NovaSkin skeleton](https://minecraft.novaskin.me/post/4625788724838400/skeleton-2), both by the same creator
-- Ash, Netherstone and Nethersteel visuals are recolored/retextured vanilla Minecraft assets
+- Many Release+ backports and dimensional counterparts intentionally adapt, recolor or rework visuals and sounds from vanilla Minecraft and later Minecraft versions; Part 4 particularly uses this approach for Ancient Scrap/Nethersteel, Amethyst equipment, Nether/End building materials, Voidstone and Ender Berry Bush assets and sounds
+- Ash, Nether Stone and Nethersteel visuals are recolored/retextured vanilla Minecraft assets
+- Ender Berry Bush visuals and sounds are adapted/recolored from the later vanilla Minecraft Sweet Berry Bush
+- Ender Shade texture is heavily based on and inspired by [this NovaSkin Ghost / Entity 303 skin](https://minecraft.novaskin.me/post/3524473209/ghost-entity-303)
 
 If an original creator would prefer an inspired, adapted or recolored asset not be used here, I am happy to change or remove it.
