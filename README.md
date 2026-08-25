@@ -4,15 +4,13 @@
 
 
 An unofficial alternative continuation of Minecraft Java Edition, built from Release 1.0.0.
-
 ## Status
 
 Early development. No public build is available yet.
 
-The first update, **Proper Progression Update**, is in development. Parts 1, 2 and 3 are feature-complete for now, and Part 4 is feature-complete for the Nether. Tested in singleplayer. Not tested in multiplayer.
+The first update, **Proper Progression Update**, is in development. Parts 1, 2, 3 and 4 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
 
 Current progress is tracked in [DEVLOG.md](DEVLOG.md).
-
 ## Repository
 
 This repository contains the project files, assets and patches. It does not include Minecraft source code or a Minecraft JAR.

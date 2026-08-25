@@ -53,6 +53,9 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Tarot of Death](#tarot-of-death)
     - [Part 3 achievements](#part-3-achievements)
   - [Part 4](#part-4)
+    - [Regional Gemstones](#regional-gemstones)
+      - [Gemstone tools](#gemstone-tools)
+      - [Gemstone armor](#gemstone-armor)
     - [Nether Stone](#nether-stone)
     - [Ancient Scrap](#ancient-scrap)
     - [Nethersteel](#nethersteel)
@@ -86,7 +89,7 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
 
 <img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
 
-**Status:** In development. Parts 1, 2 and 3 are feature-complete for now. Part 4 is still in development; its current Nether and End passes have been implemented and tested in singleplayer. Not tested in multiplayer.
+**Status:** In development. Parts 1, 2, 3 and 4 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
 
 Proper Progression rebuilds early-game progression, expands it with utility equipment that still feels at home in Release 1.0, and then carries it past Diamond and out into the dimensions.
 
@@ -151,7 +154,7 @@ A nightmare locks sleeping again until daytime. A Glowstone Lamp on the Bedside 
 
 <img src="docs/images/part-2-flint-copper.png" alt="Flint & Copper" width="650">
 
-This part rebuilds the early mining ladder around Flint, Stone and Copper, while tightening the progression into Iron, Gold and Diamond.
+This part rebuilds the early mining ladder around Flint, Stone and Copper, while tightening the progression into Iron and Diamond.
 
 #### Flint progression
 
@@ -223,9 +226,10 @@ Cobblestone must be smelted into Stone before any Stone tools can be crafted.
 | Flint | 0 | Stone / basic mining |
 | Stone | 1 | Copper |
 | Copper | 2 | Iron |
-| Iron | 3 | Gold |
-| Gold | 4 | Diamond |
-| Diamond | 5 | Obsidian |
+| Iron / Gold | 3 | Gold and the regional gemstones |
+| Emerald / Ruby / Sapphire | 4 | Diamond |
+| Diamond / Amethyst | 5 | Obsidian, Ancient Scrap and Amethyst Ore |
+| Nethersteel | 6 | All current mineable blocks |
 
 </details>
 
@@ -333,18 +337,17 @@ These are the current generation values after the first progression balance pass
 | Iron, main | 9 attempts/chunk | 8 | Y 0-55 |
 | Iron, rare upper | 25% chance/chunk, 1 attempt | 4 | Y 56-95 |
 | Gold, main | 2 attempts/chunk | 8 | Y 0-31 |
-| Gold, rare upper | 25% chance/chunk, 1 attempt | 3 | Y 32-47 |
 | Redstone | 8 attempts/chunk | 7 | Y 0-15 |
 | Diamond | 1 attempt/chunk | 7 | Y 0-15 |
 | Lapis | Vanilla | Vanilla | Vanilla |
 
-Rare upper Iron generation is limited by the local terrain height.
+Rare upper Iron generation is limited by the local terrain height. Gold's former Release+ upper pass has been removed, restoring the Overworld Gold distribution to Release 1.0's normal two size-8 attempts below Y 32.
 
 </details>
 
 #### Armor progression
 
-Gold has been rebalanced into a real post-Iron armor tier while intentionally keeping its low durability and high enchantability.
+Gold equipment has been returned to its Release 1.0 specialist balance instead of remaining a mandatory post-Iron tier. Gold tools keep their extreme speed, very low durability and high enchantability, while Gold armor is back to **11 total protection**. Release+ keeps one deliberate exception: the Gold Pickaxe has Iron-level harvest capability, so it can mine Iron, Gold and the regional gemstones, but not Diamond.
 
 Armor visuals also received a consistency pass:
 
@@ -371,9 +374,12 @@ Armor visuals also received a consistency pass:
 | --- | ---: | ---: | ---: |
 | Leather | 7 | 5 | 15 |
 | Copper | 9 | 10 | 12 |
+| Gold | 11 | 7 | 25 |
 | Chainmail | 12 | 15 | 12 |
 | Iron | 15 | 15 | 9 |
-| Gold | 16 | 7 | 25 |
+| Sapphire | 16 | 28 | 12 |
+| Emerald | 17 | 22 | 12 |
+| Ruby | 18 | 18 | 12 |
 | Diamond | 20 | 33 | 10 |
 
 </details>
@@ -446,14 +452,15 @@ Eggs can now be cooked into a small renewable food source.
 
 The achievement tree now guides the changed progression and sleeping mechanics without requiring an outside guide.
 
-<img src="docs/images/achievements-showcase.png" alt="Updated achievement progression" width="620">
+<img src="docs/images/gem-achievements.png" alt="Gemstone progression achievement branch" width="520">
 
 Main progression:
 
-`Time to Mine!` → `Hot Topic` → `Getting an Upgrade` → `Copper Age` → `Acquire Hardware` → `Gold Rush` → `DIAMONDS!`
+`Time to Mine!` → `Hot Topic` → `Getting an Upgrade` → `Copper Age` → `Acquire Hardware` → `Harder, Faster, Stronger` → `DIAMONDS!`
 
 Side achievements:
 
+- `It's Triplets!` branches from `Harder, Faster, Stronger` and rewards finding all three regional gemstones
 - `Home Sweet Home` branches from `Benchmarking`
 - `Bedside Manners` branches from `DIAMONDS!`
 - `Sweet Dreams` branches from `We Need to Go Deeper`
@@ -586,6 +593,9 @@ Current Anvil repair materials:
 | Copper equipment | Copper Ingot |
 | Iron equipment and Shears | Iron Ingot |
 | Gold equipment | Gold Ingot |
+| Emerald equipment | Emerald |
+| Ruby equipment | Ruby |
+| Sapphire equipment | Sapphire |
 | Diamond equipment | Diamond |
 | Amethyst equipment | Amethyst |
 | Flint and Steel / Steel Hammer | Steel Ingot |
@@ -1215,7 +1225,69 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 
 <img src="docs/images/ores-beyond-banner.png" alt="Ores Beyond" width="650">
 
-Ores Beyond carries progression past Diamond and gives the Nether and End more of their own materials, structures and reasons to stay. The Nether introduces the durable post-Diamond Nethersteel path, while the End adds a brittle enchantment-oriented Amethyst alternative, extended terrain, ruins and a small native forest biome.
+Ores Beyond reshapes the upper half of progression across the Overworld, Nether and End. Three rare regional gemstones form alternative steps between Iron and Diamond, the Nether introduces the durable post-Diamond Nethersteel path, and the End adds a brittle Amethyst alternative alongside extended terrain, ruins and a small native forest biome.
+
+#### Regional Gemstones
+
+Emerald, Ruby and Sapphire are three equal sibling materials between Iron and Diamond. None is intended to be rarer or higher-tier than the others; the region a player explores determines which route they are most likely to find first.
+
+<img src="docs/images/new-gems-banner.png" alt="Emerald, Ruby and Sapphire equipment" width="650">
+
+<img src="docs/images/gem-ores.png" alt="Emerald, Ruby and Sapphire Ores" width="560">
+
+- **Emerald Ore** generates only beneath **Extreme Hills**
+- **Ruby Ore** generates only beneath **Desert** terrain
+- **Sapphire Ore** generates beneath **Taiga, Ice Plains and Ice Mountains**
+- All three use the same local rarity: **one placement attempt per eligible chunk** between **Y 4 and Y 32**
+- Finds are normally a single Ore block, with a **25% chance** to extend into one adjacent block when suitable Stone is available
+- All three have hardness **3.0** and require an **Iron or Gold Pickaxe** or better
+- Each Ore drops one matching gemstone; Fortune affects the drop and Silk Touch preserves the Ore block
+- Nine gems craft into the matching storage block and each storage block can be split back into nine gems
+
+<img src="docs/images/gems-and-blocks.png" alt="Emerald, Ruby and Sapphire with their storage blocks" width="520">
+
+##### Gemstone tools
+
+All three gemstones use the normal five tool recipes and share harvest level **4**, making any one of them the bridge from Iron to Diamond. Their identities come from ordinary Release 1.0 tool statistics rather than special effects.
+
+<img src="docs/images/emerald-tools.png" alt="Emerald tools" width="300">
+<img src="docs/images/ruby-tools.png" alt="Ruby tools" width="300">
+<img src="docs/images/sapphire-tools.png" alt="Sapphire tools" width="300">
+
+| Material | Uses | Mining speed | Material damage bonus | Enchantability |
+| --- | ---: | ---: | ---: | ---: |
+| Emerald | 400 | **8.0** | 2 | 12 |
+| Ruby | **300** | 7.0 | **3** | 12 |
+| Sapphire | **650** | 7.0 | 2 | 12 |
+
+- **Emerald** is the speed-focused set, matching Diamond's mining speed while giving up Diamond's durability and damage
+- **Ruby** is the power-focused set, matching Diamond's material damage bonus but wearing out fastest of the three
+- **Sapphire** is the durability-focused set and lasts substantially longer than the other gemstones
+
+##### Gemstone armor
+
+The armor sets use the same standard recipes and form the same shared progression rung. Ruby favors protection, Sapphire favors longevity and Emerald sits between them.
+
+<img src="docs/images/emerald-armor.png" alt="Emerald armor items" width="260">
+<img src="docs/images/ruby-armor.png" alt="Ruby armor items" width="260">
+<img src="docs/images/sapphire-armor.png" alt="Sapphire armor items" width="260">
+
+| Material | Full-set protection | Durability multiplier | Enchantability |
+| --- | ---: | ---: | ---: |
+| Emerald | **17** | 22 | 12 |
+| Ruby | **18** | 18 | 12 |
+| Sapphire | **16** | **28** | 12 |
+
+Each gemstone repairs its own tools and armor at the Anvil using the normal material-repair rate.
+
+<details>
+<summary>Worn gemstone armor</summary>
+
+<img src="docs/images/emerald-armor-worn.png" alt="Emerald armor worn" width="280">
+<img src="docs/images/ruby-armor-worn.png" alt="Ruby armor worn" width="280">
+<img src="docs/images/sapphire-armor-worn.png" alt="Sapphire armor worn" width="280">
+
+</details>
 
 #### Nether Stone
 
@@ -1609,15 +1681,23 @@ Ender Berries are the End Forest's crop, combining a modern berry-bush growth lo
 
 #### Part 4 achievements
 
-Part 4 currently adds three achievements to guide the Nether progression.
+Part 4 adds a small set of progression and discovery achievements across the gemstones, Nether and End. `Gold Rush` has been removed from the main mining chain; finding any one regional gemstone now advances the player toward Diamond.
 
+<img src="docs/images/gem-achievements.png" alt="Gemstone achievement branch" width="500">
 <img src="docs/images/new-achievements-nether-example.png" alt="Nether achievement branches" width="430">
+<img src="docs/images/end-achievements.png" alt="End achievement branches" width="430">
 
 | Achievement | Parent | Unlock |
 | --- | --- | --- |
+| `Harder, Faster, Stronger` | `Acquire Hardware` | Obtain an Emerald, Ruby or Sapphire |
+| `It's Triplets!` | `Harder, Faster, Stronger` | Obtain an Emerald, a Ruby and a Sapphire |
 | `One Man's Trash...` | `We Need to Go Deeper` | Dig Ancient Scrap out of the Nether |
 | `Hellforged` | `One Man's Trash...` | Refine a Nethersteel Ingot |
 | `One of Us` | `Into Fire` | Take the helm from a Netherskull Guard |
+| `Purple Reign` | `The End?` | Obtain an Amethyst |
+| `Still Getting Wood` | `The End?` | Attack a tree in the End until a block of wood pops out |
+
+`It's Triplets!` remembers each gemstone the player has obtained, so the three do not need to be held at the same time. `Purple Reign` and `Still Getting Wood` use the special End-style achievement border.
 
 
 ---
@@ -1650,6 +1730,7 @@ Part 4 currently adds three achievements to guide the Nether progression.
 - Quiver and Crystal Arrow visuals are recolored/retextured from existing Minecraft assets
 - Netherskull and Netherskull Guard textures are heavily based on and inspired by [this NovaSkin skin](https://minecraft.novaskin.me/post/4644643339763712/gggggg) and [this NovaSkin skeleton](https://minecraft.novaskin.me/post/4625788724838400/skeleton-2), both by the same creator
 - Many Release+ backports and dimensional counterparts intentionally adapt, recolor or rework visuals and sounds from vanilla Minecraft and later Minecraft versions; Part 4 particularly uses this approach for Ancient Scrap/Nethersteel, Amethyst equipment, Nether/End building materials, Voidstone and Ender Berry Bush assets and sounds
+- Emerald, Ruby and Sapphire ores, gems, storage blocks, tools and armor are recolored/retextured from vanilla Minecraft assets
 - Ash, Nether Stone and Nethersteel visuals are recolored/retextured vanilla Minecraft assets
 - Ender Berry Bush visuals and sounds are adapted/recolored from the later vanilla Minecraft Sweet Berry Bush
 - Ender Shade texture is heavily based on and inspired by [this NovaSkin Ghost / Entity 303 skin](https://minecraft.novaskin.me/post/3524473209/ghost-entity-303)
