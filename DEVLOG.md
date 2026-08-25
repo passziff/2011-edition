@@ -1666,7 +1666,7 @@ The forest floor stays intentionally simple instead of turning the End into a lu
 
 ##### Ender Berries
 
-Ender Berries are the End Forest's crop, combining a modern berry-bush growth loop with the End's teleportation theme.
+Ender Berries are the End Forest's crop, combining a modern berry-bush growth loop with the modern Chorus Fruit teleportation theme.
 
 <img src="docs/images/ender-berries.png" alt="Ender Berry Bushes" width="480">
 
@@ -1681,7 +1681,7 @@ Ender Berries are the End Forest's crop, combining a modern berry-bush growth lo
 
 #### Part 4 achievements
 
-Part 4 adds a small set of progression and discovery achievements across the gemstones, Nether and End. `Gold Rush` has been removed from the main mining chain; finding any one regional gemstone now advances the player toward Diamond.
+Part 4 adds a small set of progression and discovery achievements across the gemstones, Nether and End. Finding any one regional gemstone now advances the player toward Diamond.
 
 <img src="docs/images/gem-achievements.png" alt="Gemstone achievement branch" width="500">
 <img src="docs/images/new-achievements-nether-example.png" alt="Nether achievement branches" width="430">
@@ -1697,12 +1697,13 @@ Part 4 adds a small set of progression and discovery achievements across the gem
 | `Purple Reign` | `The End?` | Obtain an Amethyst |
 | `Still Getting Wood` | `The End?` | Attack a tree in the End until a block of wood pops out |
 
-`It's Triplets!` remembers each gemstone the player has obtained, so the three do not need to be held at the same time. `Purple Reign` and `Still Getting Wood` use the special End-style achievement border.
 
 
 ---
 
 ## Credits
+
+(Many Release+ backports and features adapt, recolor or rework visuals and sounds from vanilla Minecraft and later Minecraft versions)
 
 - Copper armor item sprites are based on axy's Traditional Armour
 - Copper ingot and block textures are based on artwork by JM140628
@@ -1729,7 +1730,7 @@ Part 4 adds a small set of progression and discovery achievements across the gem
 
 - Quiver and Crystal Arrow visuals are recolored/retextured from existing Minecraft assets
 - Netherskull and Netherskull Guard textures are heavily based on and inspired by [this NovaSkin skin](https://minecraft.novaskin.me/post/4644643339763712/gggggg) and [this NovaSkin skeleton](https://minecraft.novaskin.me/post/4625788724838400/skeleton-2), both by the same creator
-- Many Release+ backports and dimensional counterparts intentionally adapt, recolor or rework visuals and sounds from vanilla Minecraft and later Minecraft versions; Part 4 particularly uses this approach for Ancient Scrap/Nethersteel, Amethyst equipment, Nether/End building materials, Voidstone and Ender Berry Bush assets and sounds
+
 - Emerald, Ruby and Sapphire ores, gems, storage blocks, tools and armor are recolored/retextured from vanilla Minecraft assets
 - Ash, Nether Stone and Nethersteel visuals are recolored/retextured vanilla Minecraft assets
 - Ender Berry Bush visuals and sounds are adapted/recolored from the later vanilla Minecraft Sweet Berry Bush
