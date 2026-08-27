@@ -12,8 +12,10 @@ The first update, **Proper Progression Update**, is in development. Parts 1, 2, 
 
 Current progress is tracked in [DEVLOG.md](DEVLOG.md).
 ## Repository
+
 This repository contains the project files, assets and patches. It does not include Minecraft source code or a Minecraft JAR.
 Some backported assets are based on assets from modern Minecraft.
+
 ## License
 
 Licensed under the MIT License.
