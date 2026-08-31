@@ -1,11 +1,10 @@
 # Development Log
 
-Minecraft: Release+, continued through larger updates and smaller feature parts. This log follows the project by update, then by feature.
+Minecraft: 2011 Edition, continued through larger updates and smaller feature parts. This log follows the project by update, then by feature.
 
 ## Contents
 
 - [Update #1](#update-1)
-
   - [Part 1](#part-1)
     - [Bedside Table](#bedside-table)
     - [Glowstone Lamp](#glowstone-lamp)
@@ -33,7 +32,7 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
       - [Crystal Arrows](#crystal-arrows)
     - [Brightvision Goggles](#brightvision-goggles)
     - [Spyglass](#spyglass)
-    - [Release+ Features](#release-features)
+    - [2011 Edition Features](#2011-edition-features)
     - [Pouch](#pouch)
     - [Hard Leather](#hard-leather)
     - [Fishing Hat](#fishing-hat)
@@ -91,18 +90,25 @@ Minecraft: Release+, continued through larger updates and smaller feature parts.
     - [Amulets](#amulets)
       - [Amulet slot](#amulet-slot)
       - [Amulet effects](#amulet-effects)
-
+  - [Part 6](#part-6)
+    - [Daggers](#daggers)
+    - [Shurikens](#shurikens)
+    - [Blackpowder Bombs](#blackpowder-bombs)
+      - [Blackpowder](#blackpowder)
+      - [Fire Charge](#fire-charge)
+    - [Crossbow](#crossbow)
+      - [Crossbow enchantments](#crossbow-enchantments)
+    - [Flute](#flute)
+      - [Flute enchantments](#flute-enchantments)
 - [Credits](#credits)
 
 ## Update #1
 
 <img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
 
-**Status:** In development. Parts 1, 2, 3, 4 and 5 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
+**Status:** In development. Parts 1, 2, 3, 4, 5 and 6 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
 
 Proper Progression rebuilds early-game progression, expands it with utility equipment that still feels at home in Release 1.0, and then carries it past Diamond and out into the dimensions.
-
-<img src="docs/images/player-equipment-showcase.png" alt="Release+ equipment showcase" width="300">
 
 ---
 
@@ -123,7 +129,6 @@ The Bedside Table is the main requirement for sleeping and sits beside the head 
 
 <img src="docs/images/bedside-table.png" alt="Bedside Table" width="430">
 
-
 <details>
 <summary>Recipe</summary>
 
@@ -136,7 +141,6 @@ The Bedside Table is the main requirement for sleeping and sits beside the head 
 A Glowstone Lamp placed on the Bedside Table prevents nightmares.
 
 <img src="docs/images/glowstonelamp-on-bedsidetable.png" alt="Glowstone Lamp on a Bedside Table" width="430">
-
 
 <details>
 <summary>Recipe</summary>
@@ -173,7 +177,6 @@ Flint forms the first tool tier before Stone. Only Flint Pickaxes and Axes repla
 
 <img src="docs/images/flint-rocks-1.png" alt="Flint Pebbles on different surfaces" width="520">
 
-
 - Flint can be placed as small pebbles
 - Flint Pebbles generate naturally on the surface and around exposed underground sediment
 - Breaking a Flint Pebble returns one Flint
@@ -189,15 +192,14 @@ There are three variants for visual diversity.
 
 - Shoreline Flint is limited to 25% of eligible shoreline chunks
 - Underground Flint is limited to at most 2 pebbles per chunk
-- Underground generation favors gravel, then dirt/sand and sediment-adjacent stone
-- Isolated ordinary cave stone does not generate Flint Pebbles
+- Underground generation favors Gravel, then Dirt/Sand and sediment-adjacent Stone
+- Isolated ordinary cave Stone does not generate Flint Pebbles
 
 </details>
 
 ##### Flint tools
 
 <img src="docs/images/flint-tools-dropped.png" alt="Dropped Flint tools" width="460">
-
 
 <details>
 <summary>Tool views and recipes</summary>
@@ -212,8 +214,6 @@ There are three variants for visual diversity.
 
 <details>
 <summary>Flint tool stats</summary>
-
-Flint keeps the old Wood-tier statistics:
 
 | Stat | Flint |
 | --- | ---: |
@@ -250,19 +250,11 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 
 <img src="docs/images/copper-comparing.png" alt="Copper compared with existing metal blocks and ores" width="470">
 
-
 - Copper Ore drops itself and smelts into one Copper Ingot
 - Nine Copper Ingots craft into a Block of Copper and can be crafted back
 - Copper Ore requires a Stone Pickaxe or better
 - Copper tools are stronger than Stone and weaker than Iron
 - Copper armor sits between Leather and Chainmail
-
-<details>
-<summary>More Copper visuals</summary>
-
-<img src="docs/images/copper-iron-dropped-compared.png" alt="Copper and Iron Ingots" width="260">
-
-</details>
 
 ##### Copper tools
 
@@ -292,7 +284,6 @@ Copper forms a complete tool and armor tier between Stone and Iron.
 
 <img src="docs/images/copper-armor.png" alt="Copper armor equipped" width="340">
 
-
 <details>
 <summary>More Copper armor visuals</summary>
 
@@ -315,18 +306,6 @@ Copper armor uses a durability multiplier of 10 and enchantability of 12.
 
 </details>
 
-<details>
-<summary>Copper block hardness</summary>
-
-| Block | Hardness |
-| --- | ---: |
-| Copper Ore | 2.5 |
-| Iron Ore | 3.0 |
-| Block of Copper | 4.0 |
-| Block of Iron | 5.0 |
-
-</details>
-
 #### Ore generation
 
 Copper and the existing ores were rebalanced around the new progression.
@@ -334,11 +313,8 @@ Copper and the existing ores were rebalanced around the new progression.
 <img src="docs/images/copperore-gen-1.png" alt="Copper Ore generation" width="340">
 <img src="docs/images/copperore-gen-2.png" alt="Copper in a cave" width="340">
 
-
 <details>
 <summary>Current ore generation values</summary>
-
-These are the current generation values after the first progression balance pass:
 
 | Ore | Attempts / chance | Vein size | Height |
 | --- | --- | ---: | --- |
@@ -348,26 +324,20 @@ These are the current generation values after the first progression balance pass
 | Iron, main | 9 attempts/chunk | 8 | Y 0-55 |
 | Iron, rare upper | 25% chance/chunk, 1 attempt | 4 | Y 56-95 |
 | Gold, main | 2 attempts/chunk | 8 | Y 0-31 |
+| Gold, rare upper | 25% chance/chunk, 1 attempt | 3 | Y 32-47 |
 | Redstone | 8 attempts/chunk | 7 | Y 0-15 |
 | Diamond | 1 attempt/chunk | 7 | Y 0-15 |
 | Lapis | Vanilla | Vanilla | Vanilla |
 
-Rare upper Iron generation is limited by the local terrain height. Gold's former Release+ upper pass has been removed, restoring the Overworld Gold distribution to Release 1.0's normal two size-8 attempts below Y 32.
+Rare upper Iron generation is limited by the local terrain height.
 
 </details>
 
 #### Armor progression
 
-Gold equipment has been returned to its Release 1.0 specialist balance instead of remaining a mandatory post-Iron tier. Gold tools keep their extreme speed, very low durability and high enchantability, while Gold armor is back to **11 total protection**. Release+ keeps one deliberate exception: the Gold Pickaxe has Iron-level harvest capability, so it can mine Iron, Gold and the regional gemstones, but not Diamond.
-
-Armor visuals also received a consistency pass:
-
-- The Leather Helmet no longer shows the nose guard used by the heavier helmets
-- Iron, Gold, Diamond and Copper helmet item sprites were adjusted to better match their worn shapes and the Release 1.0 item style
-- Leather armor was recolored to match normal Leather more closely and distinguish it from Hard Leather
+Gold was rebalanced back toward an old-Minecraft role: low durability and excellent enchantability, while the new gemstone sets bridge Iron to Diamond.
 
 <img src="docs/images/leather-armor-new-color.png" alt="Updated Leather armor color" width="320">
-
 
 <details>
 <summary>More armor visual changes</summary>
@@ -375,23 +345,6 @@ Armor visuals also received a consistency pass:
 <img src="docs/images/helmet-visuals-fixed.png" alt="Updated helmet item sprites" width="320">
 <img src="docs/images/leatherhelmet-model-fix.png" alt="Leather Helmet worn without nose guard" width="240">
 <img src="docs/images/copper-armor-sprites-1.0-like.png" alt="Updated Copper armor item sprites" width="320">
-
-</details>
-
-<details>
-<summary>Current armor progression</summary>
-
-| Material | Full-set protection | Durability multiplier | Enchantability |
-| --- | ---: | ---: | ---: |
-| Leather | 7 | 5 | 15 |
-| Copper | 9 | 10 | 12 |
-| Gold | 11 | 7 | 25 |
-| Chainmail | 12 | 15 | 12 |
-| Iron | 15 | 15 | 9 |
-| Sapphire | 16 | 28 | 12 |
-| Emerald | 17 | 22 | 12 |
-| Ruby | 18 | 18 | 12 |
-| Diamond | 20 | 33 | 10 |
 
 </details>
 
@@ -450,7 +403,7 @@ Eggs can now be cooked into a small renewable food source.
 - A raw Egg smelts into one Cooked Egg in a normal Furnace
 - Cooked Eggs restore **2 hunger points** with **0.6 saturation**
 - Cooked Eggs stack to 64; raw Eggs remain limited to 16 because they are throwable
-- Thrown Eggs now burst into Egg fragments instead of reusing Snowball fragments
+- Thrown Eggs burst into Egg fragments instead of reusing Snowball fragments
 
 <details>
 <summary>Smelting recipe</summary>
@@ -461,7 +414,7 @@ Eggs can now be cooked into a small renewable food source.
 
 #### Achievements
 
-The achievement tree now guides the changed progression and sleeping mechanics without requiring an outside guide.
+The achievement tree guides the changed progression and sleeping mechanics without requiring an outside guide.
 
 <img src="docs/images/gem-achievements.png" alt="Gemstone progression achievement branch" width="520">
 
@@ -469,12 +422,7 @@ Main progression:
 
 `Time to Mine!` → `Hot Topic` → `Getting an Upgrade` → `Copper Age` → `Acquire Hardware` → `Harder, Faster, Stronger` → `DIAMONDS!`
 
-Side achievements:
-
-- `It's Triplets!` branches from `Harder, Faster, Stronger` and rewards finding all three regional gemstones
-- `Home Sweet Home` branches from `Benchmarking`
-- `Bedside Manners` branches from `DIAMONDS!`
-- `Sweet Dreams` branches from `We Need to Go Deeper`
+Side achievements include `It's Triplets!`, `Home Sweet Home`, `Bedside Manners` and `Sweet Dreams`.
 
 ---
 
@@ -486,15 +434,15 @@ New equipment, workshop systems and utility items for different playstyles, incl
 
 #### Steel progression
 
-Steel adds a workshop-focused step beyond Iron without becoming another tool or armor tier.
+Steel adds a workshop-focused step beyond Iron without becoming another conventional tool or armor tier.
 
 <img src="docs/images/steel-iron-ingot-comparison.png" alt="Steel and Iron Ingots" width="400">
 <img src="docs/images/steel-block-comparison.png" alt="Block of Steel beside other metal blocks" width="520">
 
 - Iron Ingots can be turned into Steel Ingots in a Blast Furnace
 - Nine Steel Ingots craft into a Block of Steel and can be crafted back
-- Flint and Steel now uses a Steel Ingot instead of Iron and has a matching Steel-colored sprite
-- The Cauldron now uses Steel Ingots instead of Iron Ingots
+- Flint and Steel uses a Steel Ingot instead of Iron and has a matching Steel-colored sprite
+- The Cauldron uses Steel Ingots instead of Iron Ingots
 - Steel is used for workshop equipment including the Anvil and Steel Hammer
 
 <details>
@@ -520,10 +468,8 @@ The Blast Furnace is the main way to make Steel and a faster furnace for ores.
 - Ores smelt at twice the speed of a normal Furnace
 - Iron Ingots become Steel Ingots only while the Blast Furnace is burning Charcoal, a Blaze Rod or a Lava Bucket
 - A Lava Bucket used for Steel leaves its empty Bucket behind
-- Charcoal has a distinct Release+ texture to separate it from Coal
-- Furnaces and Blast Furnaces have operating sounds that can be disabled in `Release+ Features`
-
-<img src="docs/images/charcoal-comparison.png" alt="Release+ Charcoal compared with Coal" width="400">
+- Charcoal has a distinct optional texture to separate it from Coal
+- Furnaces and Blast Furnaces have operating sounds that can be disabled in `2011 Edition Features`
 
 <details>
 <summary>Recipe and GUI</summary>
@@ -582,12 +528,12 @@ The Grindstone adds a dedicated repair and disenchanting workstation alongside t
 <details>
 <summary>Current repair system</summary>
 
-| Method | Repair amount | Enchantments | Custom name | Cost / role |
+| Method | Repair | Enchantments | Name | Notes |
 | --- | --- | --- | --- | --- |
-| Crafting grid | Remaining durability of both items + **5%** of maximum durability | Removed | Removed | Free basic repair |
-| Grindstone | Remaining durability of both items + **10%** of maximum durability | Removed; XP is returned | Upper item's name is kept | Dedicated destructive repair / disenchanting |
+| Crafting grid, item + item | Remaining durability of both items + **5%** of maximum durability | Removed | Removed | Free |
+| Grindstone, item + item | Remaining durability of both items + **10%** of maximum durability | Removed; some XP returned | Upper item's name kept | Free |
 | Anvil, item + item | Remaining durability of both items + **12%** of maximum durability | Preserved and compatible enchantments can be combined | Preserved / can be changed | Costs XP, Steel Hammer durability and Anvil wear |
-| Anvil, item + material | Up to **25%** of maximum durability per material, or **10%** for the Netherskull Helmet | Preserved | Preserved / can be changed | Only the materials actually needed are consumed |
+| Anvil, item + material | Up to **25%** of maximum durability per material, or **10%** for the Netherskull Helmet | Preserved | Preserved / can be changed | Only materials actually needed are consumed |
 
 Current Anvil repair materials:
 
@@ -612,12 +558,14 @@ Current Anvil repair materials:
 | Flint and Steel / Steel Hammer | Steel Ingot |
 | Nethersteel equipment | Nethersteel Ingot |
 | Netherskull Helmet | Nethersteel Ingot, at a reduced rate |
+| Crossbow | Steel Ingot |
+| Flute | Stick |
 
 </details>
 
 #### Crystal
 
-Crystal is a new utility material used for gadgets rather than another tool or armor tier.
+Crystal is a utility material used for gadgets rather than another tool or armor tier.
 
 <img src="docs/images/crystals-showcase.png" alt="Crystal Ore and Deposits" width="500">
 
@@ -628,34 +576,6 @@ Crystal is a new utility material used for gadgets rather than another tool or a
 - Fortune affects Crystal Shard drops
 - Four Crystal Shards craft into one Crystal, and a Crystal can be split back into four Shards
 - Crystals can be placed as Crystal Deposits
-- Crystal Deposits can attach to exposed faces and use matching collision
-
-<details>
-<summary>Crystal visuals and recipes</summary>
-
-<img src="docs/images/crystal-generation-banner.png" alt="Natural Crystal Deposit" width="340">
-
-<img src="docs/images/crystal-recipe.png" alt="Crystal recipe" width="280">
-<img src="docs/images/crystalshard-recipe.png" alt="Crystal Shards from a Crystal" width="280">
-
-</details>
-
-<details>
-<summary>Current Crystal generation and drop values</summary>
-
-| Setting | Current value |
-| --- | --- |
-| Ore attempts | 2 per chunk |
-| Maximum vein size | 3 |
-| Generation height | Y 0-96 |
-| Deposit chance on exposed ore | 50% |
-| Crystal Ore drop | 1-2 Crystal Shards |
-| Crystal Deposit drop | 2-4 Crystal Shards |
-| Minimum harvest tier | Copper |
-
-A Deposit only generates into air and at most one is placed per exposed Crystal Ore block. Player-placed Deposits use the same harvesting rules as natural ones.
-
-</details>
 
 ##### Glowing Crystal
 
@@ -666,20 +586,8 @@ Normal Crystal can be infused with Glowstone to create a luminous branch of the 
 - A Crystal surrounded by four Glowstone Dust crafts into one Glowing Crystal
 - Four Glowing Crystal Shards craft into one Glowing Crystal, and a Glowing Crystal splits back into four Shards
 - A Glowing Crystal Shard can be crafted back into Glowstone Dust
-- Placing a Glowing Crystal creates a Glowing Crystal Deposit, using the same attachment and collision rules as normal Crystal Deposits
-- Glowing Crystal Deposits emit **light level 8**
-- They currently do **not** generate naturally
-- Normal harvesting gives **2-4 Glowing Crystal Shards**, Fortune affects the amount, and Silk Touch returns a full Glowing Crystal
-
-<details>
-<summary>Glowing Crystal recipes</summary>
-
-<img src="docs/images/glowing-crystal-infusion-recipe.png" alt="Glowing Crystal infusion recipe" width="360">
-<img src="docs/images/glowing-crystal-shards-recipe.png" alt="Glowing Crystal Shards from a Glowing Crystal" width="320">
-<img src="docs/images/glowing-crystal-recombine-recipe.png" alt="Glowing Crystal recipe from four Shards" width="320">
-<img src="docs/images/glowing-crystal-dust-recipe.png" alt="Glowstone Dust from a Glowing Crystal Shard" width="320">
-
-</details>
+- Glowing Crystal Deposits emit **light level 8** and do not currently generate naturally
+- Normal harvesting gives **2-4 Glowing Crystal Shards**; Fortune and Silk Touch apply
 
 ##### Crystal Arrows
 
@@ -687,12 +595,11 @@ Crystal Arrows are a harder-hitting but less reliable alternative to normal Arro
 
 <img src="docs/images/crystal-flint-arrow-comparison.png" alt="Crystal Arrow and Flint-tipped Arrow" width="400">
 
-- Use the normal Arrow recipe with a Crystal Shard replacing Flint; one recipe makes **4 Crystal Arrows**
-- Deal **2 more damage points** than a normal Arrow at the same Bow draw strength, equal to one additional heart before armor
+- The normal Arrow recipe with a Crystal Shard replacing Flint makes **4 Crystal Arrows**
+- Deal **2 more damage points** than a normal Arrow at the same Bow draw strength
 - Have a **25% chance to shatter on block impact** instead of remaining recoverable
 - A shattered Crystal Arrow produces glass-like break sound and Crystal fragments
 - Bows visibly show whether the selected ammunition is a normal Arrow or Crystal Arrow while being drawn
-- Normal Arrow item, Bow and projectile visuals were also updated to use a more clearly Flint-tipped design
 
 <details>
 <summary>Recipe and Bow view</summary>
@@ -710,81 +617,52 @@ Brightvision Goggles are a zero-armor utility head item that uses Glowstone-infu
 
 - Equip in the helmet slot and provide **0 armor points**
 - Have **100 durability**
-- Brightvision is intentionally weaker than the Night Vision potion effect and falls off with distance
-- The first-person view uses a warm yellow-orange tint and a dark goggle-style vignette around the edges
-- Hiding the HUD with F1 or switching to third person also disables the Brightvision boost, so the visibility benefit cannot be separated from its viewing limitation
-- The Goggles can be repaired with Glowing Crystals at an Anvil
-
-<details>
-<summary>Recipe and Brightvision comparison</summary>
-
-<img src="docs/images/brightvision-goggles-recipe.png" alt="Brightvision Goggles recipe" width="360">
-
-**Without Brightvision**
-
-<img src="docs/images/cave-nogoggles.png" alt="Dark cave without Brightvision Goggles" width="520">
-
-**With Brightvision**
-
-<img src="docs/images/cave-goggles.png" alt="The same cave viewed through Brightvision Goggles" width="520">
-
-</details>
-
-<details>
-<summary>Current Brightvision balance</summary>
-
-- Brightness amplification is currently about **75%** of the full Night Vision-style boost
-- Full effect is concentrated nearby, beginning to fall off around **12 blocks** and largely disappearing by about **24 blocks**
-- Distant darkness is deliberately allowed to become darker again rather than remaining full-bright
-
-These values and the exact visual falloff are still being tuned.
-
-</details>
+- Brightvision is intentionally weaker than Night Vision and falls off with distance
+- The first-person view uses a warm tint and a dark goggle-style vignette
+- Hiding the HUD with F1 or switching to third person disables the Brightvision boost
+- Can be repaired with Glowing Crystals at an Anvil
 
 #### Spyglass
 
-A backport of the modern Spyglass, adapted to the look and controls of Release 1.0.
+The Spyglass backports zooming into Release 1.0 as a simple held utility item.
 
 <img src="docs/images/spyglass-recipe.png" alt="Spyglass recipe" width="300">
 
-- Hold use to zoom through the Spyglass
-- Includes the scope view, use sounds and a dedicated player pose
-- Its held-item appearance can be switched between a flat 1.0-style sprite and the original 3D model
+- Uses a Bow-like hold interaction and a dedicated scope overlay
+- Crafted from Copper and Crystal
+- Can use either the normal sprite presentation or an optional 3D model
 
 <details>
-<summary>Spyglass views</summary>
-
-**First person**
-
-<img src="docs/images/spyglass-1st-sprite-idle.png" alt="Spyglass held in first person" width="320">
-<img src="docs/images/spyglass-1st-sprite-use.png" alt="Spyglass scope" width="320">
-
-**Third-person sprite**
-
-<img src="docs/images/spyglass-3rd-sprite-idle.png" alt="Sprite Spyglass idle" width="240">
-<img src="docs/images/spyglass-3rd-sprite-use.png" alt="Sprite Spyglass in use" width="240">
-
-**Third-person 3D model**
+<summary>Third-person 3D model</summary>
 
 <img src="docs/images/spyglass-3rd-3d-idle.png" alt="3D Spyglass idle" width="240">
 <img src="docs/images/spyglass-3rd-3d-use.png" alt="3D Spyglass in use" width="240">
 
 </details>
 
-#### Release+ Features
+#### 2011 Edition Features
 
-Release+-specific visual and sound options are grouped under `Release+ Features` on the main Options screen.
+2011 Edition-specific visual and sound options are grouped under `2011 Edition Features` on the main Options screen.
 
-<img src="docs/images/release-plus-features.png" alt="Release+ Features settings" width="360">
+<img src="docs/images/2011-edition-features.png" alt="2011 Edition Features settings" width="420">
 
 - Texture Style: Release+ or Vanilla
 - Spyglass: Sprite or 3D
 - Tarot: three cosmetic texture variants
 - Furnace Sounds: ON or OFF
-- Stealth Footsteps: ON or OFF (default ON)
-- Belt Item Display: ON or OFF (default ON)
-- Equipment Silhouettes: ON or OFF (default ON)
-- These settings do not change gameplay
+- Stealth Footsteps: ON or OFF
+- Belt Item Display: ON or OFF
+- Equipment Silhouettes: ON or OFF
+- Bomb Model: Sprite or 3D
+- Flute Model: Sprite or 3D
+- These settings do not change the underlying gameplay mechanics
+
+<details>
+<summary>Options button</summary>
+
+<img src="docs/images/2011-edition-options-button.png" alt="2011 Edition Features button beside Video Settings" width="420">
+
+</details>
 
 #### Pouch
 
@@ -800,24 +678,13 @@ A backport of the modern Bundle for carrying mixed small stacks without adding a
 - Pouches cannot be stored inside other Pouches
 - Backpacks cannot be stored inside Pouches
 
-<img src="docs/images/pouch-usage-visuals.png" alt="Pouch contents" width="520">
-
-
-<details>
-<summary>Recipe</summary>
-
-<img src="docs/images/pouch-recipe.png" alt="Pouch recipe" width="320">
-
-</details>
-
 <details>
 <summary>Current Pouch capacity rules</summary>
 
 - Total capacity is 64 units
-- An item that normally stacks to 64 uses 1 unit each
-- An item that normally stacks to 16 uses 4 units each
+- A 64-stack item uses 1 unit each
+- A 16-stack item uses 4 units each
 - An unstackable item uses the full Pouch capacity
-- The contents preview shows up to 12 stored item types at once, while selection can scroll through all stored types
 
 </details>
 
@@ -827,8 +694,8 @@ Hard Leather is a reinforced form of Leather used for sturdier utility equipment
 
 <img src="docs/images/hard-leather-comparison.png" alt="Leather and Hard Leather" width="360">
 
-- Hard Leather is used by the Backpack, Quiver, Fishing Hat, Belt and Muffled Boots
-- Books now use Hard Leather instead of normal Leather
+- Used by the Backpack, Quiver, Fishing Hat, Belt and Muffled Boots
+- Books use Hard Leather instead of normal Leather
 
 #### Fishing Hat
 
@@ -837,18 +704,9 @@ The Fishing Hat is a reinforced Leather Helmet for players who spend time fishin
 <img src="docs/images/fishing-hat-showcase.png" alt="Fishing Hat worn while fishing" width="390">
 
 - Provides the same armor protection as a Leather Helmet
-- Has **90 durability**, placing it above Leather but below Iron
+- Has **90 durability**
 - A successful catch has a **25% chance not to consume Fishing Rod durability**
-- Uses the normal helmet enchantments available to Leather armor
 - Can be repaired with Hard Leather at an Anvil
-
-<details>
-<summary>Recipe and inventory view</summary>
-
-<img src="docs/images/fishing-hat-recipe.png" alt="Fishing Hat recipe" width="360">
-<img src="docs/images/fishing-hat-inventory.png" alt="Fishing Hat equipped in the inventory" width="360">
-
-</details>
 
 #### Fishing Trap
 
@@ -856,22 +714,13 @@ The Fishing Trap is a passive fishing tool that catches Raw Fish while set in su
 
 <img src="docs/images/fishing-trap-underwater.png" alt="Fishing Trap set underwater" width="430">
 
-- Can be placed dry on solid ground or directly into water, with water occupying the same block as the trap
+- Can be placed dry or directly into water
 - Only catches while waterlogged with water at its open side
 - Stores up to **3 Raw Fish**
-- Bubble bursts show stored catches, and a dedicated catch sound plays when a new fish is caught
+- Bubble bursts and a catch sound show stored catches
 - Right-clicking removes one caught fish at a time
 - Rain improves the catch rate
-- Breaking the trap drops any stored catches
-
-<details>
-<summary>Recipe and more views</summary>
-
-<img src="docs/images/fishing-trap-recipe.png" alt="Fishing Trap recipe" width="360">
-<img src="docs/images/fishing-trap-bubbles.png" alt="Fishing Trap bubbles showing stored catches" width="310">
-<img src="docs/images/fishing-trap-onland-dropped.png" alt="Placed and dropped Fishing Trap" width="310">
-
-</details>
+- Breaking the trap drops stored catches
 
 #### Muffled Boots
 
@@ -879,40 +728,25 @@ Muffled Boots are padded Hard Leather utility boots for quieter movement and eas
 
 <img src="docs/images/muffled-boots.png" alt="Muffled Boots worn by the player" width="500">
 
-- Provide the same **1 armor point** as Leather Boots
+- Provide **1 armor point**
 - Have **105 durability**
-- The recipe accepts any Wool color
+- Recipe accepts any Wool color
 - While sneaking, an ordinary hostile mob's 16-block detection range is reduced to **14 blocks**
-- Use softened versions of the normal surface footstep sounds while worn
-- The custom footsteps can be disabled with `Stealth Footsteps` in `Release+ Features` without changing the stealth effect
-- Can be repaired with Hard Leather at an Anvil
-
-<details>
-<summary>Recipe</summary>
-
-<img src="docs/images/muffled-boots-recipe.png" alt="Muffled Boots recipe" width="360">
-
-</details>
+- Use softened footsteps while worn
+- `Stealth Footsteps` in `2011 Edition Features` can disable the custom sounds without changing stealth
+- Repair with Hard Leather
 
 #### Ninja Boots
 
-Ninja Boots are the Steel-reinforced upgrade to Muffled Boots, trading a little more material investment for stronger stealth and protection.
+Ninja Boots are the Steel-reinforced upgrade to Muffled Boots.
 
 <img src="docs/images/ninja-boots.png" alt="Ninja Boots worn by the player" width="500">
 
 - Provide **2 armor points**
 - Have **125 durability**
 - While sneaking, an ordinary hostile mob's 16-block detection range is reduced to **10 blocks**
-- Use a stronger softened footstep treatment than Muffled Boots
-- Their custom footsteps use the same `Stealth Footsteps` setting
-- Can be repaired with a Steel Ingot at an Anvil
-
-<details>
-<summary>Recipe</summary>
-
-<img src="docs/images/ninja-boots-recipe.png" alt="Ninja Boots recipe" width="360">
-
-</details>
+- Use a stronger softened footstep treatment
+- Repair with a Steel Ingot
 
 #### Belt
 
@@ -922,35 +756,12 @@ The Belt is a lightweight Hard Leather equipment piece that gives up some leg pr
 
 - Equips in the leggings armor slot and provides **1 armor point**
 - Has **123 durability**
-- Holds one Sword, Axe, Pickaxe, Shovel, Hoe, pair of Shears or Steel Hammer
-- Its dedicated inventory panel appears to the **right** of the player inventory and as a separate slot to the left of the hotbar while occupied
-- If a Backpack or Quiver is equipped, the Belt panel automatically moves below that larger right-side panel instead of overlapping it
-- Pressing the configurable Belt key (`B` by default) switches to the stored item; pressing it again returns to the previous hotbar slot
-- A stowed item is visibly carried on the Belt in third person and disappears from the Belt while selected
-- `Belt Item Display` in `Release+ Features` can hide the visible stowed item without changing Belt mechanics
-- Normal item pickups do not automatically fill the Belt slot
-- If the Belt is removed or breaks while carrying an item, the stored item drops into the world
-
-<details>
-<summary>Recipe and inventory</summary>
-
-<img src="docs/images/belt-recipe.png" alt="Belt recipe" width="360">
-<img src="docs/images/belt-inventory-gui.png" alt="Belt equipped with its dedicated inventory slot" width="360">
-<img src="docs/images/belt-inventory-backpack.png" alt="Belt inventory panel below an equipped Backpack" width="420">
-<img src="docs/images/belt-1stperson-hotbar.png" alt="Belt slot beside the hotbar" width="430">
-
-</details>
-
-<details>
-<summary>More worn Belt views</summary>
-
-<img src="docs/images/belt-item-sword.png" alt="Sword stored on the Belt" width="220">
-<img src="docs/images/belt-item-axe.png" alt="Axe stored on the Belt" width="220">
-<img src="docs/images/belt-item-sword-boots.png" alt="Belt worn with boots" width="220">
-<img src="docs/images/belt-item-sword-boots-chestplate.png" alt="Belt worn with boots and a chestplate" width="220">
-<img src="docs/images/belt-item-sword-boots-backpack.png" alt="Belt worn together with a Backpack" width="220">
-
-</details>
+- Holds supported tools and weapons, including the Steel Hammer, Daggers, Shurikens and Flute
+- Its dedicated inventory panel appears to the right of the player inventory and as a slot to the left of the hotbar while occupied
+- If a Backpack or Quiver is equipped, the Belt panel moves below that larger right-side panel
+- The configurable Belt key (`B` by default) switches to the stored item and back
+- A stowed item is visibly carried in third person and disappears from the Belt while selected
+- `Belt Item Display` in `2011 Edition Features` can hide the visible stowed item without changing Belt mechanics
 
 #### Backpack
 
@@ -960,20 +771,11 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 
 - Equips in the chest armor slot and provides no armor protection
 - Adds nine persistent storage slots while worn
-- Worn storage appears as a separate 3×3 panel beside the normal player inventory
+- Worn storage appears as a separate 3×3 panel beside the player inventory
 - If the normal inventory is full, item pickups can overflow into the worn Backpack
 - Can be placed in the world and opened as a 3×3 container
-- Placement follows the player's rotation
-- The placed flap uses a chest-style opening and closing animation with custom bag sounds
-- Breaking or dropping a filled Backpack preserves its contents, including across relogs
+- Breaking or dropping a filled Backpack preserves its contents
 - Backpacks cannot contain other Backpacks
-
-<details>
-<summary>Recipe</summary>
-
-<img src="docs/images/backpack-recipe.png" alt="Backpack recipe" width="360">
-
-</details>
 
 ##### Worn and placed
 
@@ -982,22 +784,8 @@ A wearable and placeable nine-slot container built around a physical Backpack ra
 
 ##### Inventory
 
-The same nine slots stay with the Backpack whether it is worn, carried or placed.
-
 <img src="docs/images/backpack-worn-inventory.png" alt="Worn Backpack inventory" width="360">
 <img src="docs/images/backpack-placed-inventory.png" alt="Placed Backpack inventory" width="310">
-
-
-<details>
-<summary>More Backpack views</summary>
-
-<img src="docs/images/backpack-placed-open.png" alt="Opened placed Backpack" width="330">
-<img src="docs/images/backpack-view-front.png" alt="Backpack worn from the front" width="300">
-
-<img src="docs/images/backpack-render.png" alt="Backpack model render" width="240">
-<img src="docs/images/backpack-render2.png" alt="Backpack model render from another angle" width="240">
-
-</details>
 
 #### Quiver
 
@@ -1006,24 +794,15 @@ The Quiver is a wearable nine-slot ammunition container built specifically for r
 <img src="docs/images/quiver-showcase.png" alt="Quiver worn by the player" width="430">
 
 - Crafts from **8 Hard Leather** in a Chest-shaped recipe
-- Equips in the chest armor slot and provides **0 armor points**, making it an alternative to chest armor or the Backpack
-- Holds **9 stacks of arrow ammunition** and accepts only normal Arrows or Crystal Arrows
-- While worn, its 3×3 inventory panel appears beside the normal player inventory
-- Bows consume ammunition from the worn Quiver in slot order from **1 through 9**, then fall back to normal inventory ammunition
+- Equips in the chest armor slot and provides **0 armor points**
+- Holds **9 stacks** of normal Arrows or Crystal Arrows
+- Bows and Crossbows consume ammunition from the Quiver before normal inventory ammunition
 - Picked-up Arrows and Crystal Arrows prefer available space in the worn Quiver
-- Right-clicking a held Quiver opens its contents without placing it in the world
-- Filled Quivers keep their contents when carried, dropped, unequipped or reloaded
-- The item sprite and worn model share three fullness states: empty, half-full and full
+- Filled Quivers preserve contents when carried, dropped, unequipped or reloaded
+- The item sprite and worn model share empty, half-full and full states
 
 <details>
-<summary>Recipe, inventory and fullness states</summary>
-
-<img src="docs/images/quiver-recipe.png" alt="Quiver recipe" width="300">
-<img src="docs/images/quiver-gui.png" alt="Worn Quiver inventory" width="360">
-
-<img src="docs/images/quiver-dropped-empty.png" alt="Empty Quiver item" width="220">
-<img src="docs/images/quiver-dropped-halffull.png" alt="Half-full Quiver item" width="220">
-<img src="docs/images/quiver-dropped-full.png" alt="Full Quiver item" width="220">
+<summary>Fullness states</summary>
 
 | Stored arrows | Fullness state | Visible model arrows |
 | --- | --- | ---: |
@@ -1035,191 +814,92 @@ The Quiver is a wearable nine-slot ammunition container built specifically for r
 
 #### Recipe Book
 
-The Recipe Book is an early-game reference item for learning what items are and how they fit into the current crafting and smelting systems. Its design is heavily inspired by the Knowledge Book from Minecraft Infinite.
+The Recipe Book is an early-game reference item for learning what items are and how they fit into crafting and smelting.
 
 <img src="docs/images/recipebook-held.png" alt="Recipe Book held by the player" width="300">
 <img src="docs/images/recipe-book-diaaxe-about.png" alt="Recipe Book About page" width="300">
 
-- Right-clicking the held book opens a dedicated Release 1.0-style book interface; it can also be placed on a Lectern and read there
-- Placing an item into the inspection slot shows a short custom description on its About page
-- The following pages show applicable **Smelting Recipes** and **Crafting Recipes**, including recipes that make the inspected item and recipes that use it
-- Empty recipe categories are omitted
-- Alternative ingredients and valid smelting fuels cycle in place; hovering pauses them and the mouse wheel can browse the available options
+- Right-clicking opens a dedicated Release 1.0-style book interface; it can also be read on a Lectern
+- Placing an item into the inspection slot shows a short description on its About page
+- Further pages show applicable Smelting and Crafting Recipes, including recipes that make or use the inspected item
+- Empty categories are omitted
+- Alternative ingredients and fuels cycle in place; hovering pauses them and the mouse wheel can browse options
 - The displayed recipes use the game's current recipe data, including supported interchangeable ingredient groups such as normal and End Wooden Planks
-- Opening, closing and turning pages use dedicated book sounds
-
-<details>
-<summary>Recipe and GUI views</summary>
-
-<img src="docs/images/recipe-book-recipe.png" alt="Recipe Book recipe" width="360">
-<img src="docs/images/recipe-book-empty.png" alt="Empty Recipe Book interface" width="300">
-<img src="docs/images/recipe-book-diaaxe-crafting.png" alt="Recipe Book crafting recipe page" width="300">
-<img src="docs/images/recipe-book-smelting.png" alt="Recipe Book smelting recipe page" width="300">
-<img src="docs/images/recipe-book-multitooltip.png" alt="Recipe Book multiple-option ingredient tooltip" width="320">
-
-</details>
+- Opening, closing and page turns use dedicated sounds
 
 #### Recipe Compendium
 
-The Recipe Compendium is a gilded upgrade to the Recipe Book that builds its own browsable index from items the player has inspected.
+The Recipe Compendium is a gilded upgrade to the Recipe Book that builds its own browsable index from inspected items.
 
 <img src="docs/images/compendium-held.png" alt="Recipe Compendium held by the player" width="300">
 <img src="docs/images/compendium-index.png" alt="Recipe Compendium Index" width="300">
 
-- The Compendium can only be opened while placed on a Lectern
-- **Inspect** works like the Recipe Book: inserting an item opens its About and recipe pages and automatically records that item in that physical Compendium
-- **Index** shows remembered items in a **6×3 grid**, with 18 entries per page
-- The Index can be searched and filtered through **All, Natural, Building, Utility, Equipment, Food** and **Materials** categories
-- Entries can be sorted by **Newest, Oldest, A-Z** or **Z-A**
-- Selecting a remembered entry opens its About page first, followed by the same crafting and smelting pages used by Inspect
-- Remembered entries are stored on the Compendium itself, so its index survives world saves and follows the book between Lecterns
-- The physical Inspect item is returned when the interface closes; only the remembered entry remains in the Compendium
-
-<details>
-<summary>Recipe and GUI views</summary>
-
-<img src="docs/images/compendium-recipe.png" alt="Recipe Compendium recipe" width="360">
-<img src="docs/images/compendium-inspect-empty.png" alt="Empty Recipe Compendium Inspect page" width="300">
-<img src="docs/images/compendium-inspect-item.png" alt="Recipe Compendium inspecting an item" width="300">
-<img src="docs/images/compendium-index-category.png" alt="Recipe Compendium category filter" width="300">
-
-</details>
+- Can only be opened while placed on a Lectern
+- Inspecting an item records that item in that physical Compendium
+- Index uses a **6×3 grid**, 18 entries per page
+- Search/filter categories: **All, Natural, Building, Utility, Equipment, Food, Materials**
+- Sort modes: **Newest, Oldest, A-Z, Z-A**
+- Remembered entries persist on the physical Compendium
+- The physical inspection item is returned when the interface closes
 
 #### Lectern
 
-The Lectern is a dedicated reading stand for the Recipe Book and the Recipe Compendium.
+The Lectern is a dedicated reading stand for the Recipe Book and Recipe Compendium.
 
 <img src="docs/images/lectern-compendium.png" alt="Recipe Compendium resting on a Lectern" width="430">
 
-- Right-clicking an empty Lectern with a Recipe Book or Recipe Compendium places that exact book on the stand, including any Compendium index data
-- Right-clicking an occupied Lectern opens the book resting on it
-- Recipe Books remain usable by hand, while Recipe Compendiums require a Lectern
-- The book is rendered physically on the sloped stand; opening the interface and moving forward or backward through pages visibly animates the placed book
-- Closing the interface flips the book back toward its beginning
-- Each page turn produces a short **2-tick redstone pulse** from the Lectern
-- Punching an occupied Lectern knocks its book off toward the player, while breaking the Lectern drops the stored book normally
-- The stored book and its data persist through world saves
-
-<details>
-<summary>Recipe and book states</summary>
-
-<img src="docs/images/lectern-recipe.png" alt="Lectern recipe" width="300">
-<img src="docs/images/lectern-empty.png" alt="Empty Lectern" width="320">
-<img src="docs/images/lectern-recipebook.png" alt="Recipe Book on a Lectern" width="320">
-<img src="docs/images/lectern-compendium.png" alt="Recipe Compendium on a Lectern" width="320">
-
-</details>
+- Right-clicking an empty Lectern with a supported book places that exact book on the stand
+- Right-clicking an occupied Lectern opens it
+- The book is rendered physically on the stand and page turns animate it
+- Each page turn produces a short **2-tick redstone pulse**
+- Punching an occupied Lectern knocks its book off; breaking it drops the stored book
+- Stored book data persists through world saves
 
 #### Stone of Return
 
-The Stone of Return is an endgame utility item that turns Ender teleportation into a long-range way home.
+The Stone of Return turns Ender teleportation into a long-range way home.
 
 <img src="docs/images/stone-of-return-banner.png" alt="Stone of Return" width="500">
 
 - Crafted from End Stone, Ender Pearls and an Eye of Ender
-- The crafted stone is inert until it is calibrated at an Enchanting Table
-- Calibration I, II and III cost 10, 20 and 30 levels and improve the accuracy of the return
-- Using a calibrated stone instantly returns the player toward their current respawn point, with accuracy determined by its Calibration level
-- Departure and arrival use Ender-style portal clouds and teleport sounds
-- The teleport deals the same damage as an Ender Pearl
-- Every calibrated Stone of Return is single-use
-- If the player's bed is no longer valid, the return falls back to world spawn
+- Must be calibrated at an Enchanting Table
+- Calibration I, II and III cost 10, 20 and 30 levels
+- Teleports toward the current respawn point and deals Ender Pearl damage
+- Every calibrated Stone is single-use
+- Invalid beds fall back to world spawn
 
-<details>
-<summary>Recipe</summary>
-
-<img src="docs/images/stone-of-return-recipe.png" alt="Stone of Return recipe" width="360">
-
-</details>
-
-<details>
-<summary>Calibration</summary>
-
-<img src="docs/images/stone-of-return-enchantment.png" alt="Stone of Return calibration" width="360">
-
-| Enchantment | Cost | Bookshelves | Return accuracy |
-| --- | ---: | ---: | --- |
-| Calibration I | 10 levels | 0 | Safe position within 256 blocks of the respawn point |
-| Calibration II | 20 levels | 15 | Safe position within 64 blocks of the respawn point |
-| Calibration III | 30 levels | 30 | Exact respawn point |
-
-</details>
-
-<details>
-<summary>More Stone of Return views</summary>
-
-<img src="docs/images/stone-of-return-first-person.png" alt="Stone of Return held in first person" width="520">
-
-</details>
+| Enchantment | Cost | Return accuracy |
+| --- | ---: | --- |
+| Calibration I | 10 | Safe position within 256 blocks |
+| Calibration II | 20 | Safe position within 64 blocks |
+| Calibration III | 30 | Exact respawn point |
 
 #### Bottle o' Enchanting
 
-The Bottle o' Enchanting has also been backported as a throwable source of experience. It is currently Creative-only; a place in Survival progression has not been decided yet.
-
-<img src="docs/images/bottle-o-enchanting.png" alt="Bottle o' Enchanting" width="300">
+The Bottle o' Enchanting has been backported as a throwable source of experience. It is currently Creative-only.
 
 #### Rope
 
-Rope is a placeable climbing tool that hangs downward from existing terrain.
+Rope is a simple climbable utility block/item, designed to fit the older building language rather than introduce a modern movement system.
 
 <img src="docs/images/rope-placed.png" alt="Placed Rope" width="500">
 
-- Three String craft into two Rope
-- Rope can hang from full blocks and bottom slabs
-- Using its support or an existing Rope segment extends the line downward
-- Rope can be climbed like a Ladder and uses cloth step sounds while climbing
-- The lowest segment automatically uses a distinct loose-end texture
-- Breaking its support drops the hanging Rope chain
-
-<details>
-<summary>Item and recipe</summary>
-
-<img src="docs/images/rope-gui-item.png" alt="Rope item" width="260">
-<img src="docs/images/rope-recipe.png" alt="Rope recipe" width="360">
-
-</details>
-
 #### Tarot of Death
 
-The Tarot of Death is my version/backport of the modern Totem of Undying, adapted for Release 1.0. It takes a fatal hit in the player's place.
+The Tarot of Death is a cosmetic alternate form of the Totem of Undying concept, adapted into the project's older visual language.
 
 <img src="docs/images/tarot-in-animation.png" alt="Tarot of Death activation" width="620">
 
-- Works from any of the nine hotbar slots, not only the currently held one
-- On activation, one Tarot is consumed and the player survives at 1 health
-- Clears current status effects and extinguishes the player
-- Gives Regeneration II and Fire Resistance for 10 seconds
-- Uses a dedicated activation animation rising from the hotbar, green and gold particles, and sound
-- Does not protect against void damage
-
-The Tarot of Death remains extremely rare in Survival. It can be found in Nether Dungeon and End Spire chests, and Ender Shades have a very small chance to drop one.
-
-<details>
-<summary>More Tarot of Death views</summary>
-
-**Held**
-
-<img src="docs/images/tarot-1stperson.png" alt="Tarot of Death held in first person" width="500">
-<img src="docs/images/tarot-holding-3rdperson.png" alt="Tarot of Death held in third person" width="300">
-
-**Optional textures**
-
-<img src="docs/images/tarot-uno-redcard.png" alt="Red Uno-Card Tarot texture" width="250">
-<img src="docs/images/tarot-uno-mcstyle.png" alt="Minecraft Uno-Card Tarot texture" width="250">
-
-</details>
+The Tarot remains extremely rare in Survival through dimensional loot and Ender Shade drops. Its cosmetic texture can be changed through `2011 Edition Features`.
 
 #### Part 3 achievements
 
-Part 3 extends the existing Release 1.0 achievement tree with a small set of progression and gadget milestones rather than giving every new item its own achievement.
-
-<img src="docs/images/new-achievements-steel-example.png" alt="Steel and Crystal achievement branches" width="390">
-<img src="docs/images/new-achievements-recipes-example.png" alt="Recipe Book and equipment achievement branches" width="390">
+Part 3 extends the Release 1.0 achievement tree with workshop and gadget milestones.
 
 | Achievement | Parent | Unlock |
 | --- | --- | --- |
 | `Steel Yourself` | `Acquire Hardware` | Take a Steel Ingot from a Blast Furnace |
-| `Hammer Time!` | `Steel Yourself` | Complete a successful Anvil operation using a Steel Hammer |
+| `Hammer Time!` | `Steel Yourself` | Complete an Anvil operation using a Steel Hammer |
 | `Crystal Clear` | `Copper Age` | Obtain a Crystal Shard |
 | `A Closer Look` | `Crystal Clear` | Look through a Spyglass |
 | `Pack Rat` | `Cow Tipper` | Craft a Backpack |
@@ -1233,30 +913,25 @@ Part 3 extends the existing Release 1.0 achievement tree with a small set of pro
 
 <img src="docs/images/ores-beyond-banner.png" alt="Ores Beyond" width="650">
 
-Ores Beyond reshapes the upper half of progression across the Overworld, Nether and End. Three rare regional gemstones form alternative steps between Iron and Diamond, the Nether introduces the durable post-Diamond Nethersteel path, and the End adds a brittle Amethyst alternative alongside extended terrain, ruins and a small native forest biome.
+Ores Beyond carries progression past Diamond and gives the Nether and End more of their own materials, structures and reasons to stay.
 
 #### Regional Gemstones
 
-Emerald, Ruby and Sapphire are three equal sibling materials between Iron and Diamond. None is intended to be rarer or higher-tier than the others; the region a player explores determines which route they are most likely to find first.
+Emerald, Ruby and Sapphire are equal sibling materials between Iron and Diamond. Region determines which route a player is most likely to find first.
 
 <img src="docs/images/new-gems-banner.png" alt="Emerald, Ruby and Sapphire equipment" width="650">
-
 <img src="docs/images/gem-ores.png" alt="Emerald, Ruby and Sapphire Ores" width="560">
 
 - **Emerald Ore** generates only beneath **Extreme Hills**
 - **Ruby Ore** generates only beneath **Desert** terrain
 - **Sapphire Ore** generates beneath **Taiga, Ice Plains and Ice Mountains**
-- All three use the same local rarity: **one placement attempt per eligible chunk** between **Y 4 and Y 32**
-- Finds are normally a single Ore block, with a **25% chance** to extend into one adjacent block when suitable Stone is available
-- All three have hardness **3.0** and require an **Iron or Gold Pickaxe** or better
-- Each Ore drops one matching gemstone; Fortune affects the drop and Silk Touch preserves the Ore block
-- Nine gems craft into the matching storage block and each storage block can be split back into nine gems
-
-<img src="docs/images/gems-and-blocks.png" alt="Emerald, Ruby and Sapphire with their storage blocks" width="520">
+- One placement attempt per eligible chunk between **Y 4 and Y 32**
+- Finds are normally one block, with a **25% chance** to extend into one adjacent block
+- Hardness **3.0**, requiring an **Iron or Gold Pickaxe** or better
+- Fortune affects gemstone drops and Silk Touch preserves Ore
+- Nine gems craft into a matching storage block and back
 
 ##### Gemstone tools
-
-All three gemstones use the normal five tool recipes and share harvest level **4**, making any one of them the bridge from Iron to Diamond. Their identities come from ordinary Release 1.0 tool statistics rather than special effects.
 
 <img src="docs/images/emerald-tools.png" alt="Emerald tools" width="300">
 <img src="docs/images/ruby-tools.png" alt="Ruby tools" width="300">
@@ -1268,13 +943,7 @@ All three gemstones use the normal five tool recipes and share harvest level **4
 | Ruby | **300** | 7.0 | **3** | 12 |
 | Sapphire | **650** | 7.0 | 2 | 12 |
 
-- **Emerald** is the speed-focused set, matching Diamond's mining speed while giving up Diamond's durability and damage
-- **Ruby** is the power-focused set, matching Diamond's material damage bonus but wearing out fastest of the three
-- **Sapphire** is the durability-focused set and lasts substantially longer than the other gemstones
-
 ##### Gemstone armor
-
-The armor sets use the same standard recipes and form the same shared progression rung. Ruby favors protection, Sapphire favors longevity and Emerald sits between them.
 
 <img src="docs/images/emerald-armor.png" alt="Emerald armor items" width="260">
 <img src="docs/images/ruby-armor.png" alt="Ruby armor items" width="260">
@@ -1286,424 +955,287 @@ The armor sets use the same standard recipes and form the same shared progressio
 | Ruby | **18** | 18 | 12 |
 | Sapphire | **16** | **28** | 12 |
 
-Each gemstone repairs its own tools and armor at the Anvil using the normal material-repair rate.
-
-<details>
-<summary>Worn gemstone armor</summary>
-
-<img src="docs/images/emerald-armor-worn.png" alt="Emerald armor worn" width="280">
-<img src="docs/images/ruby-armor-worn.png" alt="Ruby armor worn" width="280">
-<img src="docs/images/sapphire-armor-worn.png" alt="Sapphire armor worn" width="280">
-
-</details>
-
 #### Nether Stone
 
-Nether Stone gives the Nether a rough stone building family of its own instead of leaving Netherrack and Nether Brick as the only options down there.
+Nether Stone gives the Nether a rough stone building family of its own.
 
 <img src="docs/images/netherstone.png" alt="Nether Stone building set" width="560">
 
-- **Nether Stone**, **Nether Moss Stone**, **Nether Stone Bricks** and **Cracked Nether Stone Bricks**
-- Slabs for Nether Stone and Nether Stone Bricks
-- Stairs for Nether Stone and Nether Stone Bricks
-- Nether Stone can currently only be obtained in Survival by mining a Nether Dungeon
+- Nether Stone, Nether Moss Stone, Nether Stone Bricks and Cracked Nether Stone Bricks
+- Slabs and stairs for Nether Stone and Nether Stone Bricks
+- Survival source is Nether Dungeons
 
 #### Ancient Scrap
 
-Ancient Scrap is my take on the modern Ancient Debris. It is meant to be found rarely and worked slowly.
+Ancient Scrap is the slow, rare starting point of Nethersteel.
 
 <img src="docs/images/ancient-scrap-and-dust.png" alt="Ancient Scrap and Ancient Dust" width="380">
 
-- Generates fully buried in Netherrack, never exposed to open air or lava
-- Two passes per chunk: a denser low band around **Y 8-22** and a sparser one across **Y 8-119**
-- Remnants are **1 to 3 blocks**, never a full vein
-- Requires a **Diamond Pickaxe** or better
-- Drops **3-5 Ancient Dust**, and Fortune applies
-- Hardness **37.5**, so it is slow to break even with a Diamond Pickaxe
+- Generates fully buried in Netherrack
+- Two passes per chunk: a denser band around **Y 8-22** and a sparser pass across **Y 8-119**
+- Remnants are **1-3 blocks**
+- Requires a Diamond Pickaxe or better
+- Drops **3-5 Ancient Dust**, with Fortune
+- Hardness **37.5**
 
 #### Nethersteel
 
-Nethersteel is the first conventional tier above Diamond. Refining it is the slowest part of the chain. Ancient Dust only becomes metal in a Blast Furnace, and only while that furnace burns a fuel from the Nether.
+Nethersteel is the conventional tier above Diamond, refined slowly from Ancient Dust.
 
 <img src="docs/images/nethersteel-nugget-ingot.png" alt="Nethersteel Nugget and Ingot" width="300">
 <img src="docs/images/ancientdust-smelting.png" alt="Ancient Dust smelting into a Nethersteel Nugget" width="200">
 
-- Ancient Dust smelts into a **Nethersteel Nugget**, one nugget per dust
-- This only works in a Blast Furnace, and only while it burns a **Blaze Rod** or a **Lava Bucket**; Charcoal is enough for Steel but not for Nethersteel
-- Nine Nuggets craft into a Nethersteel Ingot, and an Ingot splits back into nine Nuggets
-- Nine Ingots craft into a Block of Nethersteel and can be crafted back
-- Dropped Nethersteel survives fire and lava and floats on the surface instead of burning away
-- Ancient Dust is not fireproof, since it has not been through the furnace yet
-
-<img src="docs/images/nethersteelblock-nexttodiamondblock.png" alt="Block of Nethersteel beside a Block of Diamond" width="440">
+- Ancient Dust smelts into a Nethersteel Nugget only in a Blast Furnace burning a **Blaze Rod or Lava Bucket**
+- Nine Nuggets craft an Ingot; nine Ingots craft a Block
+- Refined Nethersteel survives fire and lava and floats instead of burning away
 
 ##### Nethersteel tools
 
-<img src="docs/images/nethersteel-tools-rplus.png" alt="Nethersteel tools, Release+ style" width="420">
+<img src="docs/images/nethersteel-tools-rplus.png" alt="Nethersteel tools" width="420">
 
-- Harvest level **6**, above Diamond's 5
-- **2000 uses**, against Diamond's 1561
-- Mining speed **10.0**, against Diamond's 8.0; Gold keeps its speed record at 12.0
-- Deals **one more damage point** than the Diamond equivalent
-- Enchantability stays at Diamond's **10**
+- Harvest level **6**
+- **2000 uses**
+- Mining speed **10.0**
+- One more damage point than Diamond equivalents
+- Enchantability **10**
 
 ##### Nethersteel armor
 
-<img src="docs/images/nethersteel-armor-rplus.png" alt="Nethersteel armor, Release+ style" width="420">
+<img src="docs/images/nethersteel-armor-rplus.png" alt="Nethersteel armor" width="420">
 <img src="docs/images/nethersteel-worn-rplus.png" alt="Nethersteel armor worn" width="300">
 
-- Protection values are identical to Diamond; the tier shows in durability and resistance instead of armor points
-- Durability multiplier **40**, against Diamond's 33
-- Each piece worn gives **10% knockback resistance**, so a full set gives **40%**
-- Knockback resistance applies to explosion knockback as well as melee
-
-<details>
-<summary>Optional textures</summary>
-
-Nethersteel tools, armor and the worn set all have a Release+ design and a plainer vanilla-styled variant, switched with the `Texture Style` option.
-
-**Tools**
-
-<img src="docs/images/nethersteel-tools-vanilla.png" alt="Nethersteel tools, vanilla style" width="420">
-
-**Armor**
-
-<img src="docs/images/nethersteel-armor-vanilla.png" alt="Nethersteel armor, vanilla style" width="420">
-<img src="docs/images/nethersteel-worn-vanilla.png" alt="Nethersteel armor worn, vanilla style" width="300">
-
-</details>
+- Diamond-level protection with greater durability and resistance
+- Each piece contributes knockback resistance, including against explosions
+- Optional plainer vanilla-styled textures are available under the Texture Style option
 
 #### Nether Gold Ore
 
-Gold in the Nether just makes sense, and gives Zombie Pigmen something to be protective of.
+Gold in the Nether gives Zombie Pigmen something to protect.
 
-<img src="docs/images/nethergoldore.png" alt="Nether Gold Ore in Netherrack" width="440">
+<img src="docs/images/nethergoldore.png" alt="Nether Gold Ore" width="440">
 
-- **3 veins of up to 8** per chunk, between **Y 10 and Y 117**
-- Requires an **Iron Pickaxe** or better, the same as Overworld Gold Ore
-- Smelts into a Gold Ingot in a normal Furnace or a Blast Furnace
-- Mining it angers every Zombie Pigman within **8 blocks**
-- Wearing **any single piece of Gold armor** exempts you from that entirely
+- **3 veins of up to 8** per chunk, **Y 10-117**
+- Requires an Iron Pickaxe or better
+- Smelts into a Gold Ingot
+- Mining it angers Zombie Pigmen within **8 blocks**
+- Wearing any one piece of Gold armor prevents that reaction
 
 #### Netherskulls
 
-The first mobs added by R+! The Nether Fortress previously held nothing but Blazes and wandering Pigmen. Netherskulls are my version of the Wither Skeletons and give it a garrison of its own.
+Netherskulls give Nether Fortresses a garrison of their own.
 
-<img src="docs/images/fortress-groupof-netherskulls-and-guards.png" alt="Netherskulls and Guards on a Fortress bridge" width="500">
+<img src="docs/images/fortress-groupof-netherskulls-and-guards.png" alt="Netherskulls and Guards" width="500">
 
 - Spawn in Nether Fortresses in packs and are immune to fire
-- **20 health**, dealing **3 damage** unarmed
+- **20 health**, **3 damage** unarmed
 - Move at Skeleton speed
-- Up to **8 can spawn per chunk** where most mobs allow 4, so a Fortress holds a real population
-- Drop **0-2 Ash**, and Coal about a third of the time
-- Count as undead, so Smite applies and healing potions harm them
-- Use later vanilla Wither Skeleton-style idle, hurt and death sounds
-
-<details>
-<summary>More Netherskull views</summary>
-
-<img src="docs/images/fortress-netherskull.png" alt="A Netherskull inside a Fortress" width="520">
-
-</details>
+- Drop **0-2 Ash**, with Coal around a third of the time
+- Count as undead and use later vanilla Wither Skeleton-style sounds
 
 ##### Netherskull Guard
 
-<img src="docs/images/fortress-netherskullguard.png" alt="A Netherskull Guard" width="290">
-<img src="docs/images/fortress-netherskullguards.png" alt="Two Netherskull Guards" width="360">
+<img src="docs/images/fortress-netherskullguard.png" alt="Netherskull Guard" width="290">
 
-- An uncommon elite version that spawns in much smaller packs alongside ordinary Netherskulls
-- Carries a **Stone Sword** and deals **5 damage** with it
+- Uncommon elite version
+- Carries a Stone Sword and deals **5 damage**
 - Has **4 points of natural armor**
-- Worth **10 experience** instead of the usual 5
-- Wears a helm, which it can rarely drop
+- Worth **10 experience**
+- Wears a helm that can rarely drop
 
 ##### Netherskull Helmet
 
-The Guard's helm is the only piece of Netherskull equipment a player can wear, and the only way to make the Fortress stop treating you as an intruder.
-
 <img src="docs/images/netherskull-worn-rplus.png" alt="Netherskull Helmet worn" width="300">
 
-- Drops from a Netherskull Guard **roughly 1 time in 50**, and never intact; it arrives **30-60% worn**
-- Gives the same **3 protection** as a Diamond Helmet
-- Adds **15% knockback resistance** and reduces explosion damage by **15%**, which stacks with Nethersteel
-- While it is worn, **Netherskulls stay neutral** until you strike one
-- Striking a Netherskull angers every Netherskull within **16 blocks**, helm or not, though their anger does fade
-- Has low durability. Two helms combine for a full repair, and a Nethersteel Ingot repairs **a tenth** of maximum durability per ingot instead of the usual quarter
-- Enchantability **18**, above Diamond but below Gold and Amethyst
-
-<details>
-<summary>Optional texture</summary>
-
-<img src="docs/images/netherskull-worn-vanilla.png" alt="Netherskull Helmet worn, vanilla style" width="300">
-
-</details>
+- Drops roughly **1 in 50** from Guards, arriving **30-60% worn**
+- Gives **3 protection**, matching a Diamond Helmet
+- Adds **15% knockback resistance** and reduces explosion damage by **15%**
+- Makes Netherskulls neutral until attacked
+- Angering one Netherskull alerts others within **16 blocks**
+- Repair rate is reduced: a Nethersteel Ingot repairs only **10%** of maximum durability
+- Enchantability **18**
 
 #### Ash
-
-Ash is what a Netherskull leaves behind, and the Nether's own source of grey dye.
 
 <img src="docs/images/ash-dropped.png" alt="Dropped Ash" width="240">
 
 - Dropped by Netherskulls and found in Nether Dungeon chests
-- One Ash crafts into **2 Grey Dye**, which previously required Bone Meal and Ink Sacs
+- One Ash crafts into **2 Grey Dye**
 
 #### Bone Bush
 
-<img src="docs/images/boneshrubs.png" alt="Bone Bushes growing on Soul Sand" width="440">
+<img src="docs/images/boneshrubs.png" alt="Bone Bushes" width="440">
 
-- A dry scrub that generates on Soul Sand, with two random variants
-- Drops **0-1 Bone** when broken
-- Unlike Dead Bush it has no light or sky requirement, so it survives anywhere in the Nether
-- Bone Bushes currently do **not** spread or grow; natural world generation is their only source
+- Generates on Soul Sand with two random variants
+- Drops **0-1 Bone**
+- Has no light or sky requirement
+- Does not spread or grow
 
 #### Soul Torch
 
-<img src="docs/images/soultorch.png" alt="Soul Torch beside a normal Torch" width="400">
+<img src="docs/images/soultorch.png" alt="Soul Torch" width="400">
 
-- Crafted from a Torch and a block of Soul Sand
-- Burns with its own blue flame and particles, and gives **light level 10** against a normal Torch's 14
-- **Blocks hostile Nether mobs from naturally spawning within 5 blocks**
-- A Mob Spawner is sealed only by placing **five Soul Torches**: one on top and one on each of its four horizontal sides
-- This gives Fortresses and Nether Dungeons a deliberate spawn-control tool without letting ordinary torchlight shut their spawners down
+- Crafted from a Torch and Soul Sand
+- Blue flame, **light level 10**
+- Blocks hostile Nether mob natural spawning within **5 blocks**
+- A spawner is sealed only when five Soul Torches cover its top and four sides
 
 #### Nether Dungeon
 
-Rather than add an entirely new structure, this reuses the Overworld dungeon layout and rebuilds it out of Nether materials.
+The Overworld dungeon layout is reused with Nether materials.
 
-<img src="docs/images/nether-dungeon-1.png" alt="A Nether Dungeon" width="420">
+<img src="docs/images/nether-dungeon-1.png" alt="Nether Dungeon" width="420">
 <img src="docs/images/nether-dungeon-2.png" alt="Inside a Nether Dungeon" width="420">
 
-- Generates carved into Netherrack, with **8 attempts per chunk**
-- Uses **Nether Stone walls** over a **Nether Moss Stone floor**, mirroring the Overworld dungeon's Cobblestone and Moss Stone layout
-- It is currently the **only Survival source of Nether Stone**
-- Always contains a **Netherskull spawner**, never a Guard spawner
-- Contains up to **two chests**, the same as an Overworld dungeon
-- Allows more open walls than an Overworld dungeon so it can generate beside the Nether's much larger caverns
-
-<details>
-<summary>Chest contents</summary>
-
-Chests draw **8 times** from a **15-slot** table; many of the rarer slots can still roll empty.
-
-| Contents | Notes |
-| --- | --- |
-| Ash | 1-3 |
-| Bone, Rotten Flesh, Gunpowder | Standard dungeon fare |
-| Gold Nuggets, Gold Ingots | Nether-native valuables |
-| Coal, Glowstone Dust | Common Nether resources |
-| Nether Wart | A second way to find the Nether's crop |
-| Obsidian | 1-2, useful for emergency portal repair |
-| Empty Bucket, Flint and Steel | Uncommon utility |
-| Blaze Powder | Rare |
-| Enchanted Gold equipment | Very rare |
-| Tarot of Death | The rarest slot |
-
-</details>
+- **8 attempts per chunk**
+- Nether Stone walls over a Nether Moss Stone floor
+- Only Survival source of Nether Stone
+- Always contains a Netherskull spawner
+- Up to two chests
 
 #### End terrain
 
-The central dragon island remains the original Release 1.0 arena, but the End no longer stops at its coast. Beyond it, End Stone land continues in broad concentric rings separated by traversable void gaps.
+The central Dragon island stays original; beyond it, End Stone continues in broad rings separated by traversable void gaps.
 
-<img src="docs/images/end-terrain-rings.png" alt="Expanded End terrain with outer land rings" width="650">
+<img src="docs/images/end-terrain-rings.png" alt="Expanded End terrain" width="650">
 
-- The original central island remains unchanged as the Dragon arena
-- The first gap beyond it is roughly **48 blocks** wide
-- Outer land rings are roughly **64 blocks** wide, separated by **32-block void gaps**
-- The gaps are deliberately sized around Ender Pearl travel rather than normal jumping
-- Obsidian spikes and Ender Crystals remain restricted to the central island
-- Outer terrain continues using the same old End density style rather than introducing modern End islands
+- First gap roughly **48 blocks** wide
+- Outer rings roughly **64 blocks** wide, separated by **32-block gaps**
+- Gaps are sized around Ender Pearl travel
+- Obsidian spikes and Ender Crystals remain on the central island
 
 #### Amethyst
 
-Amethyst is the End's gem tier: a faster and far more enchantable cousin of Diamond that gives up most of Diamond's durability in return. It sits beside Nethersteel rather than above it.
+Amethyst is the End's brittle, fast and highly enchantable alternative to Diamond.
 
-<img src="docs/images/amethysts-dropped-block.png" alt="Amethyst and a Block of Amethyst" width="400">
-<img src="docs/images/amethyst-ore-generated.png" alt="Amethyst Ore generated in End Stone" width="420">
+<img src="docs/images/amethysts-dropped-block.png" alt="Amethyst and Block" width="400">
+<img src="docs/images/amethyst-ore-generated.png" alt="Amethyst Ore" width="420">
 
-- Amethyst Ore replaces End Stone between roughly **Y 20 and Y 64**
-- **5 generation attempts** per chunk, in veins of up to **5**; many attempts naturally miss because so much of the End is open air
-- Requires a **Diamond Pickaxe** or better
-- Drops one Amethyst, with Fortune applying like other gem ores
-- Nine Amethysts craft into a Block of Amethyst and can be crafted back
-- Amethyst Ore and the storage block have hardness **8.0**
+- Generates in End Stone around **Y 20-64**
+- **5 attempts** per chunk, veins up to **5**
+- Requires Diamond Pickaxe or better
+- Fortune applies; nine Amethysts craft into a Block
+- Ore and Block hardness **8.0**
 
 ##### Amethyst tools
 
-<img src="docs/images/amethyst-tools-r+.png" alt="Amethyst tools, Release+ style" width="420">
+<img src="docs/images/amethyst-tools-r+.png" alt="Amethyst tools" width="420">
 
-- Same harvest level and damage bonus as Diamond
-- Only **300 uses**, against Diamond's 1561
-- Mining speed **11.0**, faster than Diamond and Nethersteel but still below Gold's 12.0
-- Enchantability **25**, matching Gold and far above Diamond's 10
+- Same harvest level and material damage bonus as Diamond
+- **300 uses**
+- Mining speed **11.0**
+- Enchantability **25**
 
 ##### Amethyst armor
 
-<img src="docs/images/amethyst-armor-r+.png" alt="Amethyst armor, Release+ style" width="420">
+<img src="docs/images/amethyst-armor-r+.png" alt="Amethyst armor" width="420">
 
-- Protection values are identical to Diamond
-- Durability multiplier **20**, against Diamond's 33
+- Diamond protection values
+- Durability multiplier **20**
 - Enchantability **25**
-
-<details>
-<summary>Vanilla-styled Amethyst equipment</summary>
-
-Amethyst tools and armor have both Release+ and plainer vanilla-styled variants under the same `Texture Style` option used by Nethersteel and the Netherskull Helmet.
-
-<img src="docs/images/amethyst-tools-vanilla.png" alt="Amethyst tools, vanilla style" width="420">
-<img src="docs/images/amethyst-armor-vanilla.png" alt="Amethyst armor, vanilla style" width="420">
-
-</details>
 
 #### End Stone
 
-The vanilla End Stone block now has the building family it never received in Release 1.0.
-
 <img src="docs/images/end-stone-lineup.png" alt="End Stone building set" width="560">
 
-- **End Stone Bricks** and **Cracked End Stone Bricks**
-- Slabs and stairs for both End Stone and End Stone Bricks
-- The worked blocks keep End Stone's hardness and resistance
+- End Stone Bricks and Cracked End Stone Bricks
+- Slabs and stairs for End Stone and End Stone Bricks
 
 #### Purple Stone
 
-Purple Stone is the masonry of the End Spires and currently exists only through those ruins.
-
 <img src="docs/images/purplestone-lineup.png" alt="Purple Stone building set" width="560">
 
-- **Purple Stone**, **Purple Stone Bricks** and **Cracked Purple Stone Bricks**
-- Slabs and stairs for both raw Purple Stone and Purple Stone Bricks
-- **Purple Stone Bricks Pillars** provide a vertical carved column block
-- Purple Stone is currently obtained by mining End Spires rather than normal terrain
+- Purple Stone, Purple Stone Bricks and Cracked Purple Stone Bricks
+- Slabs, stairs and carved pillar blocks
+- Obtained primarily from End Spires
 
 #### Voidstone
 
-Voidstone is the End's counterpart to Glowstone: a full-strength light material tied to the Spires rather than another ore vein.
+<img src="docs/images/voidstone-block-dust-lamp.png" alt="Voidstone, Dust and Lamp" width="480">
 
-<img src="docs/images/voidstone-block-dust-lamp.png" alt="Voidstone, Voidstone Dust and a Voidstone Lamp" width="480">
-
-- Emits full light and has the same **0.3 hardness** as Glowstone
-- Breaking Voidstone drops **2-4 Voidstone Dust**; Fortune can increase the amount up to 4
-- Four Dust craft back into one Voidstone
-- Voidstone Dust is also a brewing ingredient for **Leaping**
-- **Voidstone Lamps** are shallow half-block lights made from Voidstone and Purple Stone Slabs
-- Lamps can mount on floors, walls or ceilings and naturally light End Spires
-- Voidstone Dust is found through End Spire loot; raw Voidstone does not generate as an ordinary End ore
+- Full-strength light material with Glowstone-like hardness **0.3**
+- Breaking drops **2-4 Voidstone Dust**, with Fortune limited to the same upper range
+- Four Dust craft a Voidstone
+- Dust brews **Leaping**
+- Voidstone Lamps are shallow, mountable lights used by End Spires
 
 #### End Spire
 
-End Spires are ruined Purple Stone towers scattered across the outer End. They act as landmarks across the void as much as they do structures to loot.
+<img src="docs/images/end-spire.png" alt="End Spire" width="520">
 
-<img src="docs/images/end-spire.png" alt="An End Spire" width="520">
-
-- Generate only beyond the central island and first void gap
-- Use a region-based placement system so neighbouring towers cannot bunch together
-- Roughly **18-30 blocks tall** with a **7×7** footprint
-- Built from Purple Stone masonry with a continuous spiral stairway, damaged walls and eroded upper floors
-- Voidstone Lamps hang beneath the surviving floors
-- An **Ender Shade spawner** sits on the floor below the summit when the tower is tall enough
-- The top floor contains **one or two loot chests**
-
-<details>
-<summary>Current Spire loot</summary>
-
-Each chest makes eight draws. The table is intentionally sparse and can return empty slots.
-
-- Ender Pearls
-- Voidstone Dust
-- Rare Amethyst
-- Rare Bottles o' Enchanting
-- Rare heavily worn Amethyst tools or armor
-- Very rare Tarot of Death
-
-</details>
+- Generate beyond the central island and first void gap
+- Region-based placement prevents bunching
+- Roughly **18-30 blocks tall**, **7×7** footprint
+- Purple Stone ruins with spiral stairs and Voidstone Lamps
+- Ender Shade spawner below the summit when tall enough
+- One or two loot chests at the top
 
 #### Ender Shade
 
-The Ender Shade is a flying ranged hostile mob found naturally in the outer End and in much greater numbers around Spire spawners. Its fight is built around distance and teleportation rather than melee.
+<img src="docs/images/ender-shade.png" alt="Ender Shade" width="420">
 
-<img src="docs/images/ender-shade.png" alt="An Ender Shade" width="420">
-
-- **20 health**, with no melee attack
-- Prefers to fight from roughly **10 blocks** away and teleports out when the player gets too close
-- Can blink away from indirect attacks when its teleport cooldown is available
-- Every shot has a visible **30-tick charge-up**, followed by a short period where the Shade cannot immediately blink away
-- Its Ender Charge deals **2 damage**, does **not** knock the target backward, and applies **Levitation for 3 seconds**
-- Ender Shades themselves ignore Levitation
-- Natural End Shades spawn in ones and twos alongside Endermen; Spire-born Shades use a much shorter leash so the spawner's normal population limit still works
-- Drops Ender Pearls and has a **1 in 200** chance to drop a Tarot of Death; Looting does not improve the Tarot chance
+- **20 health**, no melee attack
+- Prefers roughly **10 blocks** of distance and teleports away when crowded
+- Every shot has a visible **30-tick charge-up**
+- Ender Charge deals **2 damage**, no knockback, and applies **Levitation for 3 seconds**
+- Ender Shades ignore Levitation
+- Drops Ender Pearls and has a **1 in 200** Tarot of Death chance, unaffected by Looting
 
 #### End Forest
 
-End Forests are a small flavour biome on the outer rings: a sparse patch of life rather than a full modern End overhaul.
+End Forests are sparse outer-End flavour biomes rather than a modern lush overhaul.
 
-<img src="docs/images/endforest-showcase.png" alt="An End Forest" width="650">
+<img src="docs/images/endforest-showcase.png" alt="End Forest" width="650">
 
-- Generate only across the outer End, never on the central Dragon island
-- Use broad, seed-stable biome regions rather than chunk-by-chunk placement
-- The living surface is **End Grass Block**, mixed into normal End Stone through **End Moss Stone** transition patches
-- End Grass Block slowly spreads onto suitable exposed End Stone and returns End Stone when mined normally; Silk Touch preserves the Grass Block
-- End Grass Blocks emit a subtle End-colored drifting particle effect
-- Endermen and Ender Shades use the same spawn lists inside the biome as the normal End
-- End Spires can still generate inside End Forests
+- Outer End only
+- Broad seed-stable biome regions
+- End Grass Block mixed through End Moss Stone transitions
+- End Grass spreads onto suitable End Stone and uses Silk Touch preservation
+- End-colored particles drift from the surface
+- Endermen and Ender Shades keep normal End spawn lists
+- End Spires can generate inside the biome
 
 ##### End Wood
 
-The forest's tree is an Amaranth-inspired tree translated into the old Minecraft tree system. Its living blocks reuse the fourth Wood/Leaves/Sapling metadata slot alongside Oak, Spruce and Birch.
-
 <img src="docs/images/ender-wood-lineup.png" alt="End Wood building set" width="500">
-<img src="docs/images/ender-sapling-grassblock-leaves.png" alt="End Sapling, End Grass Block and End Leaves" width="440">
+<img src="docs/images/ender-sapling-grassblock-leaves.png" alt="End Sapling, Grass Block and Leaves" width="440">
 
-- Logs are named **End Wood**, with matching **End Leaves** and **End Saplings**
-- End Leaves use the normal Leaves texture with their own washed-out dark green foliage tint
-- End Saplings grow only on End Grass Block
-- End Wood crafts into **End Wooden Planks**
-- End Wooden Planks count as normal Wooden Planks in general crafting recipes
-- Dedicated **End Wooden Slab**, **End Wooden Stairs**, **End Fence** and **End Fence Gate** complete the building set
+- End Wood, End Leaves and End Saplings reuse the fourth old Wood metadata slot
+- Saplings grow only on End Grass Block
+- End Wood crafts End Wooden Planks
+- End Wooden Planks work in general plank recipes
+- Dedicated Slab, Stairs, Fence and Fence Gate
 
 ##### End vegetation
 
 <img src="docs/images/new-end-flowers.png" alt="End Forest vegetation" width="460">
 
-The forest floor stays intentionally simple instead of turning the End into a lush modern biome.
-
-- **End Grass** is the short native grass variant and grows only on End Grass Block
-- **End Rose** crafts into **2 Purple Dye**
-- **End Flower** crafts into **2 Cyan Dye**
-- Both flowers generate in small, independent scattered patches and grow only on End Grass Block
-- Normal Overworld vegetation and End vegetation use their own ground types rather than growing interchangeably
+- End Grass grows only on End Grass Block
+- End Rose crafts into **2 Purple Dye**
+- End Flower crafts into **2 Cyan Dye**
+- End and Overworld vegetation keep separate ground rules
 
 ##### Ender Berries
 
-Ender Berries are the End Forest's crop, combining a modern berry-bush growth loop with the modern Chorus Fruit teleportation theme.
-
 <img src="docs/images/ender-berries.png" alt="Ender Berry Bushes" width="480">
 
-- Mature bushes generate in occasional natural patches inside End Forests
-- Ender Berries plant a new age-0 bush on **End Grass Block**
-- Bushes have **four growth stages**, grow through random ticks and can be advanced with Bone Meal
-- Right-clicking a berry-bearing bush harvests it and returns it to an earlier growth stage
-- Age 2 bushes give **1-2 berries**; fully grown bushes give **2-3**
-- Bushes slow entities passing through them and grown bushes deal thorn damage to moving living entities
-- Mob pathfinding treats the bushes as undesirable rather than completely impassable, so mobs normally route around them when a comparable path exists
-- Ender Berries restore **2 hunger**, can be eaten even while full, and attempt a safe random teleport within roughly **8 blocks** without dealing Ender Pearl damage
+- Four growth stages, random growth and Bone Meal support
+- Right-click harvests berry-bearing bushes
+- Age 2: **1-2 berries**; mature: **2-3**
+- Bushes slow entities; grown bushes deal thorn damage to moving living entities
+- Mobs normally path around them when a comparable route exists
+- Berries restore **2 hunger**, can be eaten while full, and attempt a safe random teleport within roughly **8 blocks** without Ender Pearl damage
 
 #### Part 4 achievements
-
-Part 4 adds a small set of progression and discovery achievements across the gemstones, Nether and End. Finding any one regional gemstone now advances the player toward Diamond.
-
-<img src="docs/images/gem-achievements.png" alt="Gemstone achievement branch" width="500">
-<img src="docs/images/new-achievements-nether-example.png" alt="Nether achievement branches" width="430">
-<img src="docs/images/end-achievements.png" alt="End achievement branches" width="430">
 
 | Achievement | Parent | Unlock |
 | --- | --- | --- |
 | `Harder, Faster, Stronger` | `Acquire Hardware` | Obtain an Emerald, Ruby or Sapphire |
-| `It's Triplets!` | `Harder, Faster, Stronger` | Obtain an Emerald, a Ruby and a Sapphire |
+| `It's Triplets!` | `Harder, Faster, Stronger` | Obtain all three regional gemstones |
 | `One Man's Trash...` | `We Need to Go Deeper` | Dig Ancient Scrap out of the Nether |
 | `Hellforged` | `One Man's Trash...` | Refine a Nethersteel Ingot |
 | `One of Us` | `Into Fire` | Take the helm from a Netherskull Guard |
 | `Purple Reign` | `The End?` | Obtain an Amethyst |
-| `Still Getting Wood` | `The End?` | Attack a tree in the End until a block of wood pops out |
+| `Still Getting Wood` | `The End?` | Obtain wood in the End |
 
 ---
 
@@ -1711,137 +1243,286 @@ Part 4 adds a small set of progression and discovery achievements across the gem
 
 <img src="docs/images/part-5-chains-on-chains.png" alt="Chains on Chains" width="650">
 
-Chains on Chains expands the existing metal progression into smaller components and building pieces, then uses those materials for a dedicated Amulet equipment system. The new metal parts follow familiar vanilla rules rather than becoming a separate crafting system, while Amulets add small equipment bonuses without replacing armor or turning the inventory into a full accessory screen.
+Chains on Chains expands the metal progression into smaller components and building pieces, then uses those materials for a dedicated Amulet equipment system.
 
 #### Nuggets
 
-Iron, Copper and Steel now have Nuggets alongside the existing Gold and Nethersteel Nuggets.
+Iron, Copper and Steel now have Nuggets alongside Gold and Nethersteel Nuggets.
 
 <img src="docs/images/metal-nuggets.png" alt="Iron, Copper and Steel Nuggets" width="420">
 
-- Iron, Copper and Steel Ingots can each be split into **9 Nuggets**
-- **9 matching Nuggets** craft back into one Ingot
-- This gives all of the current metal progressions the same small-unit crafting language already used by Gold and Nethersteel
+- Iron, Copper and Steel Ingots split into **9 Nuggets**
+- **9 matching Nuggets** craft back into an Ingot
 
 #### Chains
 
-Copper Chain, Iron Chain, Golden Chain, Steel Chain and Nethersteel Chain backport the later vanilla Chain block into the current metal progression.
+Copper Chain, Iron Chain, Golden Chain, Steel Chain and Nethersteel Chain backport the later vanilla Chain block across the current metal progression.
 
 <img src="docs/images/chains-vertical.png" alt="Metal Chains placed vertically" width="620">
-<img src="docs/images/chains-horizontal-dropped.png" alt="Metal Chains placed horizontally and dropped" width="620">
+<img src="docs/images/chains-horizontal-dropped.png" alt="Metal Chains horizontal and dropped" width="620">
 
-- The blocks use the later vanilla crossed-plane Chain shape and chain sounds
-- Placement can orient a Chain vertically or horizontally depending on the face used
-- Each material uses hardness and resistance matching its corresponding metal storage block
-- Chain Links remain useful beyond Chainmail by acting as an alternative crafting ingredient for Chains
+- Later vanilla crossed-plane Chain shape and chain sounds
+- Vertical or horizontal placement depending on used face
+- Hardness/resistance follows the matching storage block
+- Chain Links can substitute for Nuggets in crafting
 
 <details>
 <summary>Chain recipes</summary>
 
-The normal recipe uses a matching Nugget above and below the matching Ingot.
-
 <img src="docs/images/chain-recipe-nuggets.png" alt="Chain recipe using Nuggets" width="360">
-
-Chain Links can replace the two Nuggets in the same recipe.
-
 <img src="docs/images/chain-recipe-links.png" alt="Chain recipe using Chain Links" width="360">
 
 </details>
 
 #### Bars
 
-Copper, Golden, Steel and Nethersteel Bars extend vanilla Iron Bars across the current metal set.
+Copper, Golden, Steel and Nethersteel Bars extend vanilla Iron Bars across the metal set.
 
-<img src="docs/images/metal-bars.png" alt="Metal Bars placed and dropped" width="650">
+<img src="docs/images/metal-bars.png" alt="Metal Bars" width="650">
 
-- All five metal Bar types connect to each other, including vanilla Iron Bars
-- They otherwise keep normal Iron Bars placement and pane behavior
-- Hardness and resistance follow the matching metal storage block
-- Six matching Ingots craft **16 Bars**, following the vanilla Iron Bars recipe
-
-<details>
-<summary>Example recipe</summary>
-
-<img src="docs/images/bars-recipe.png" alt="Metal Bars recipe" width="360">
-
-</details>
+- All five metal Bar types connect to each other
+- Otherwise use normal Iron Bars placement and pane behavior
+- Hardness/resistance follows matching storage block
+- Six matching Ingots craft **16 Bars**
 
 #### Amulets
 
-Amulets are a new small equipment category with one dedicated slot. They use ordinary durability and repair rules, and each one provides a focused passive or proc-based benefit rather than another layer of armor points.
+Amulets are a small equipment category with one dedicated slot. Each provides a focused passive or proc-based benefit rather than more armor points.
 
-<img src="docs/images/amulets.png" alt="Release+ Amulets" width="650">
+<img src="docs/images/amulets.png" alt="2011 Edition Amulets" width="650">
 
-- Ruby, Sapphire, Emerald, Diamond, Amethyst and Nether Amulets are available through Survival progression
-- Gemstone Amulets use **5 Golden Chains** and the matching gemstone in a necklace-shaped recipe
-- The Nether Amulet instead uses **5 Nethersteel Chains**, two Blaze Powder and a Ghast Tear
-- The experimental Ender Amulet remains in the game but has **no Survival recipe** and is currently Creative-only
-- Every Amulet has its own durability, uses the normal durability bar and can be repaired at an Anvil
-- Amulets currently use no special proc particles or sounds; their gameplay feedback comes from the effect itself
+- Ruby, Sapphire, Emerald, Diamond, Amethyst and Nether Amulets are available through Survival
+- Gemstone Amulets use **5 Golden Chains** and the matching gemstone
+- Nether Amulet uses **5 Nethersteel Chains**, two Blaze Powder and a Ghast Tear
+- Experimental Ender Amulet remains Creative-only
+- All use ordinary durability and Anvil repair rules
+
+##### Amulet slot
+
+<img src="docs/images/amulet-inventory-popup.png" alt="Expanded Chestplate and Amulet slots" width="360">
+<img src="docs/images/amulet-chestplate-worn.png" alt="Amulet worn over Chestplate" width="280">
+
+- Attached to the Chestplate slot rather than a permanent extra inventory column
+- Hovering the Chestplate expands a small two-slot group
+- Shift-clicking an Amulet can equip it directly
+- Equipped Amulets render on the torso with fit adjustments for armor and Quiver
+- Normal equipped-item save, death and drop behavior
+- `Equipment Silhouettes` in `2011 Edition Features` controls slot silhouettes only
+
+The interaction is heavily based on the [Trinkets](https://www.curseforge.com/minecraft/mc-mods/trinkets) equipment-slot presentation, reimplemented around the Release 1.0 inventory.
+
+##### Amulet effects
+
+| Amulet | Durability | Effect | Anvil repair |
+| --- | ---: | --- | --- |
+| Ruby | 108 | Successful melee hits have a **25% chance** to deal **1 additional damage point**; durability is spent only on a proc. | Ruby |
+| Sapphire | 168 | Eligible held equipment/armor has a **25% chance** to redirect 1 durability damage to the Amulet. | Sapphire |
+| Emerald | 132 | Correct tools break blocks about **10% faster**; qualifying blocks have a **25% chance** to cost Amulet durability. | Emerald |
+| Diamond | 198 | Reduces suitable incoming damage by **5%**; durability is spent only when damage is prevented. | Diamond |
+| Amethyst | 108 | Collected XP can be diverted into repairing damaged held/equipped gear; diverted XP is consumed and costs Amulet durability. | Amethyst |
+| Nether | 240 | Direct melee attackers are ignited for **2 seconds**. | Ghast Tear |
+| Ender *(Creative-only)* | 64 | Suitable incoming damage has a **25% chance** to be avoided through an Enderman-style defensive teleport; cannot trigger while wet or against void damage. | Ender Pearl |
+
+---
+
+### Part 6
+
+<img src="docs/images/steves-armory-banner.png" alt="Steve's Armory" width="650">
+
+Steve's Armory expands combat with simple melee, thrown and ranged alternatives that still use Release 1.0's straightforward item rules. The Flute closes the part as a deliberately non-combat side item: a playable instrument with a small set of utility enchantments.
+
+#### Daggers
+
+Daggers are cheaper, weaker alternatives to Swords that can also be thrown.
+
+<img src="docs/images/daggers-showcase.png" alt="Dagger material variants stuck in a tree" width="520">
+
+- Available across the current material progression, with matching tier recipes, durability and damage
+- Use normal melee attacks and can be thrown instantly with right-click
+- A thrown Dagger sticks into blocks and can be recovered
+- On an entity hit, it deals damage once, deflects a short distance, then falls or lodges in the next surface
+- It can already be recovered while deflecting or falling after an entity hit
+- Enchantments apply to thrown hits where relevant
+- Work from Dispensers and can be carried on the Belt
+
+**Return** is a rare Dagger-only enchantment. After an enchanted Dagger hits, deflects or lodges, it waits briefly, loosens with a wobble and flies back hilt-first toward its original thrower.
+
+<details>
+<summary>Recipe and more Dagger views</summary>
+
+<img src="docs/images/dagger-recipe.png" alt="Iron Dagger example recipe" width="360">
+<img src="docs/images/daggers-dropped.png" alt="Dropped Daggers" width="600">
+<img src="docs/images/dagger-first-person.png" alt="Dagger held in first person" width="520">
+<img src="docs/images/dagger-third-person.png" alt="Dagger held in third person" width="250">
+
+</details>
+
+#### Shurikens
+
+Shurikens are lightweight ranged-only throwables built around fast repeated throws instead of Bow-style charging.
+
+<img src="docs/images/shuriken-showcase.png" alt="Shurikens stuck in a cactus" width="480">
+
+- Available in **Iron, Steel and Nethersteel**
+- Four matching Nuggets in a diamond pattern craft Shurikens
+- Stack to **16**
+- Right-click throws one instantly
+- Deal less damage than Daggers
+- Spin in flight
+- Hitting an entity consumes the Shuriken; missing leaves it stuck and recoverable
+- If the supporting block is removed, it falls rather than restarting its throwing spin
+- No enchantments and no Quiver support
+- Work from Dispensers and can be carried on the Belt
 
 <details>
 <summary>Example recipe</summary>
 
-<img src="docs/images/amulet-recipe.png" alt="Gemstone Amulet recipe" width="420">
+<img src="docs/images/shuriken-recipe.png" alt="Iron Shuriken example recipe" width="360">
 
 </details>
 
-##### Amulet slot
+#### Blackpowder Bombs
 
-The player inventory now has one dedicated Amulet slot attached to the Chestplate slot rather than another permanently visible inventory column.
+Blackpowder Bombs are small throwable explosives: mobile and easier to place than TNT, but deliberately worse at demolition.
 
-<img src="docs/images/amulet-inventory-popup.png" alt="Expanded Chestplate and Amulet slots" width="360">
-<img src="docs/images/amulet-chestplate-worn.png" alt="An Amulet worn over a Chestplate" width="280">
+<img src="docs/images/bomb-3d-thrown.png" alt="Lit 3D Blackpowder Bomb" width="310">
 
-- The normal collapsed armor column still shows the Chestplate slot in its vanilla position
-- Hovering that slot expands a small two-slot group containing the Chestplate and Amulet slots
-- Only Amulets can be placed in the Amulet slot, and shift-clicking an Amulet can equip it directly
-- The equipped Amulet is rendered on the player and follows the torso, with fit adjustments for chest armor and the Quiver
-- The slot follows normal equipped-item save, death and drop behavior
-- `Equipment Silhouettes` in `Release+ Features` controls the equipment-slot silhouettes without changing any mechanics
+- Stack to **16**
+- Right-click throws and lights the Bomb immediately
+- **2 second / 40 tick fuse**
+- Short, heavy throw with gravity and modest bouncing
+- Cannot be recovered once lit
+- TNT-style fuse smoke, flashing and final swelling before detonation
+- Terrain explosion strength **2.0**, against TNT's 4.0
+- Entity damage is strengthened separately so close hits remain dangerous
+- Do not create fire
+- Water uses the normal vanilla explosion protection rules
+- Work from Dispensers
+- Do not fit the Belt
+- Held, thrown and dropped appearances can use either the sprite or optional 3D model; GUI icons always remain 2D
 
-The expandable equipment-slot interaction and presentation are **heavily based on the [Trinkets](https://www.curseforge.com/minecraft/mc-mods/trinkets) mod's equipment-slot UI/mechanic**, reimplemented here around the Release 1.0 inventory and visual style.
+##### Blackpowder
+
+Blackpowder is the prepared explosive mixture used by Bombs.
+
+- **Gunpowder + Charcoal + Black Ink** is a shapeless recipe for **3 Blackpowder**
+
+<img src="docs/images/blackpowder-recipe.png" alt="Blackpowder recipe" width="360">
+
+##### Fire Charge
+
+The later vanilla Fire Charge is backported as the Bomb's built-in ignition component.
+
+- **Gunpowder + Blaze Powder + Coal or Charcoal** crafts **3 Fire Charges**
+- Using one on a suitable surface places Fire and consumes it
+- A Dispenser launches it as a small fireball
+- Later direct right-click TNT ignition is intentionally not added
+
+<img src="docs/images/fire-charge-recipe.png" alt="Fire Charge recipe" width="360">
+<img src="docs/images/fire-charge-dropped.png" alt="Dropped Fire Charge" width="260">
+
+A Blackpowder Bomb uses **4 Blackpowder, 4 Steel Nuggets and 1 Fire Charge** in the center of its TNT-like checkerboard recipe.
+
+<img src="docs/images/blackpowder-bomb-recipe.png" alt="Blackpowder Bomb recipe" width="360">
 
 <details>
-<summary>Worn Amulets</summary>
+<summary>Sprite and 3D model views</summary>
 
-<img src="docs/images/ruby-amulet-worn.png" alt="Ruby Amulet worn" width="240">
-<img src="docs/images/sapphire-amulet-worn.png" alt="Sapphire Amulet worn" width="240">
-<img src="docs/images/emerald-amulet-worn.png" alt="Emerald Amulet worn" width="240">
-<img src="docs/images/diamond-amulet-worn.png" alt="Diamond Amulet worn" width="240">
-<img src="docs/images/amethyst-amulet-worn.png" alt="Amethyst Amulet worn" width="240">
-<img src="docs/images/nether-amulet-worn.png" alt="Nether Amulet worn" width="240">
+**Sprite**
+
+<img src="docs/images/bomb-sprite-first-person.png" alt="Sprite Bomb first person" width="420">
+<img src="docs/images/bomb-sprite-third-person.png" alt="Sprite Bomb third person" width="220">
+<img src="docs/images/bomb-sprite-thrown.png" alt="Sprite Bomb thrown" width="300">
+
+**3D**
+
+<img src="docs/images/bomb-3d-first-person.png" alt="3D Bomb first person" width="420">
+<img src="docs/images/bomb-3d-third-person.png" alt="3D Bomb third person" width="220">
+<img src="docs/images/bomb-3d-thrown.png" alt="3D Bomb thrown" width="300">
 
 </details>
 
-##### Amulet effects
+#### Crossbow
+
+The Crossbow is a slow-loading counterpart to the Bow, backported from later Minecraft and adapted to the current Steel progression.
+
+<img src="docs/images/crossbow-idle.png" alt="Crossbow held idle" width="260">
+
+- Crafted with **two Sticks, three String and one Steel Ingot**
+- Hold use to load; once loading finishes the Crossbow is cocked and ready
+- A loaded Crossbow keeps its shot indefinitely, including while put away, and fires on the next use
+- Loading slows the player; a fully loaded Crossbow does not
+- Uses fixed launch power of **3.5 blocks/tick** instead of the Bow's variable draw
+- Uses ordinary Arrows and Crystal Arrows, including ammunition supplied by the Quiver
+- Loaded and charging states use dedicated staged sprites and loading sounds
+- **465 durability** and **1 enchantability**
+- Can be repaired with a **Steel Ingot** or another Crossbow
+
+<img src="docs/images/crossbow-recipe.png" alt="Crossbow recipe" width="360">
 
 <details>
-<summary>Current Amulet effects, durability and repairs</summary>
+<summary>Loaded and dropped views</summary>
 
-| Amulet | Durability | Effect | Anvil repair |
-| --- | ---: | --- | --- |
-| Ruby | 108 | Successful melee hits against living targets have a **25% chance** to deal **1 additional damage point**. The Amulet loses 1 durability only when this triggers. | Ruby |
-| Sapphire | 168 | After normal Unbreaking handling, eligible held tools/weapons or equipped armor have a **25% chance** to redirect 1 durability damage to the Amulet instead. | Sapphire |
-| Emerald | 132 | Breaks blocks about **10% faster** when using the correct harvest-capable tool. Each qualifying block has a **25% chance** to cost the Amulet 1 durability. | Emerald |
-| Diamond | 198 | Reduces suitable incoming damage by **5%** after normal armor/enchantment protection. Durability is consumed only when damage is actually prevented. | Diamond |
-| Amethyst | 108 | Each collected XP point has a **50% chance** to be diverted into repairing 1 durability on a random eligible damaged held tool/weapon or armor piece. Diverted XP is not gained, and the Amulet loses 1 durability per point repaired. | Amethyst |
-| Nether | 240 | A direct melee attacker is ignited for **2 seconds**. Already-burning or fire-immune attackers do not waste Amulet durability. | Ghast Tear |
-| Ender *(Creative-only)* | 64 | Suitable incoming damage has a **25% chance** to be completely avoided by an Enderman-style random defensive teleport. It cannot trigger while wet or against void damage. | Ender Pearl |
+<img src="docs/images/crossbow-loaded.png" alt="Loaded Crossbow" width="260">
+<img src="docs/images/crossbow-dropped.png" alt="Dropped Crossbows" width="320">
 
 </details>
+
+##### Crossbow enchantments
+
+- **Quick Charge I-III** reduces loading time. Quick Charge III cannot be rolled directly at the Enchanting Table and is obtained by combining lower levels at the Anvil
+- **Piercing I-IV** lets a fired Arrow pass through targets and continue flying
+- **Multishot I** fires three Arrows in a spread for one piece of ammunition. It costs **3 durability** per shot, and the two outer Arrows cannot be picked up. Multishot and Piercing are mutually exclusive
+- **Unbreaking I-III** can also be applied; 2011 Edition widens Release 1.0's tool-only Unbreaking scope to include the Crossbow
+
+#### Flute
+
+The Flute is a playable instrument with no direct combat use.
+
+<img src="docs/images/flute-sprite-idle.png" alt="Flute held in sprite mode" width="240">
+
+- Crafted from **two Sticks**
+- Right-click plays a note
+- Looking up or down chooses the pitch: nine notes of a **minor pentatonic scale** spread across a 60-degree vertical band
+- Holding use keeps playing at a steady tempo, and looking around can slide through the scale mid-phrase
+- Playing roots the player in place
+- Notes spawn Note Block-style particles colored by pitch
+- **256 durability**, losing one point per played note
+- Repairs with a **Stick** or another Flute
+- Can be stored on the Belt
+- Held and Belt appearance can use the normal sprite or optional 3D model
+
+<img src="docs/images/flute-recipe.png" alt="Flute recipe" width="330">
+
+<details>
+<summary>Flute views</summary>
+
+<img src="docs/images/flute-sprite-use.png" alt="Flute being played in sprite mode" width="240">
+<img src="docs/images/flute-3d-idle.png" alt="3D Flute held idle" width="240">
+<img src="docs/images/flute-3d-use.png" alt="3D Flute being played" width="240">
+
+</details>
+
+##### Flute enchantments
+
+- **Charm I-II** makes nearby passive animals follow while the Flute is played, with ranges of **7 / 10 blocks**
+- **Growth I-II** coaxes nearby crops forward one growth stage at a time while playing
+- **Soothing I-II** heals **half a heart at a time** while the player is actually injured
+- **Unbreaking I-III** can also be applied
+
+Every Flute effect is tied to actual notes being played, and every note still costs durability. Healing, growing crops or charming animals therefore spends the instrument's finite life rather than becoming a free passive aura.
 
 ---
 
 ## Credits
 
-(Many Release+ backports and features adapt, recolor or rework visuals and sounds from vanilla Minecraft and later Minecraft versions)
+(Many 2011 Edition backports and features adapt, recolor or rework visuals and sounds from vanilla Minecraft and later Minecraft versions.)
 
 - Copper armor item sprites are based on axy's Traditional Armour
 - Copper ingot and block textures are based on artwork by JM140628
 - Block of Steel texture is based on [this NovaSkin Steel Block texture](https://minecraft.novaskin.me/post/4893925167/steel-block)
 - Blast Furnace, Anvil and Steel Hammer visuals are recolored/retextured vanilla Minecraft assets
-- Grindstone model, GUI and sounds are adapted from later vanilla Minecraft assets, with its textures reworked/recolored for Release+
+- Grindstone model, GUI and sounds are adapted from later vanilla Minecraft assets, with its textures reworked/recolored for 2011 Edition
 - Fishing Hat item sprite is based on the Angler's Hat from [Artifacts](https://modrinth.com/mod/artifacts)
 - Fishing Trap catch sounds are edited variants of [Bubble in Water](https://pixabay.com/sound-effects/nature-bubble-in-water-422579/) on Pixabay
 - Muffled Boots and Ninja Boots use recolored vanilla boot assets; their optional stealth footsteps are processed variants of vanilla footstep sounds
@@ -1851,7 +1532,7 @@ The expandable equipment-slot interaction and presentation are **heavily based o
 - Pouch, Spyglass and Bottle o' Enchanting assets are based on assets from later Minecraft versions
 - The Recipe Book system is heavily inspired by the Knowledge Book from Minecraft Infinite (formerly Infdev+), part of [Legacy+](https://legacy-plus.dejvoss.cz/) by Yoniko / VesuviusVenox
 - Recipe Book GUI/book visuals are adapted from the vanilla Enchantment Table book, and its open/close/page sounds are adapted from later vanilla Minecraft assets
-- The Lectern is adapted from the later vanilla Minecraft Lectern design and rendering behavior, with custom Release+ textures
+- The Lectern is adapted from the later vanilla Minecraft Lectern design and rendering behavior, with custom 2011 Edition textures
 - Tarot of Death uses an adapted Totem of Undying activation sound from later Minecraft versions
 - Rope item texture is heavily based on and recolored from [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
 - Placed Rope texture is heavily based on and recolored from [this NovaSkin Rope texture](https://minecraft.novaskin.me/post/5166333130/rope)
@@ -1863,9 +1544,14 @@ The expandable equipment-slot interaction and presentation are **heavily based o
 - Netherskull and Netherskull Guard textures are heavily based on and inspired by [this NovaSkin skin](https://minecraft.novaskin.me/post/4644643339763712/gggggg) and [this NovaSkin skeleton](https://minecraft.novaskin.me/post/4625788724838400/skeleton-2), both by the same creator
 - Emerald, Ruby and Sapphire ores, gems, storage blocks, tools and armor are recolored/retextured from vanilla Minecraft assets
 - Ash, Nether Stone and Nethersteel visuals are recolored/retextured vanilla Minecraft assets
-- Chain visuals and sounds are adapted from later vanilla Minecraft assets, with the material variants recolored/reworked for Release+
-- The Amulet equipment-slot interaction and expandable Chestplate/Amulet presentation are heavily based on the [Trinkets](https://www.curseforge.com/minecraft/mc-mods/trinkets) equipment-slot UI/mechanic; the Release+ implementation and 1.0-style presentation are custom
+- Chain visuals and sounds are adapted from later vanilla Minecraft assets, with material variants recolored/reworked for 2011 Edition
+- The Amulet equipment-slot interaction and expandable Chestplate/Amulet presentation are heavily based on the [Trinkets](https://www.curseforge.com/minecraft/mc-mods/trinkets) equipment-slot UI/mechanic; the 2011 Edition implementation and 1.0-style presentation are custom
 - Ender Berry Bush visuals and sounds are adapted/recolored from the later vanilla Minecraft Sweet Berry Bush
 - Ender Shade texture is heavily based on and inspired by [this NovaSkin Ghost / Entity 303 skin](https://minecraft.novaskin.me/post/3524473209/ghost-entity-303)
+- Dagger throw sound is an edited/cut variant of [Knife Throw](https://pixabay.com/sound-effects/film-special-effects-knife-throw-88751/) on Pixabay
+- Dagger impact sound is based on [Knife Throw 1](https://pixabay.com/sound-effects/film-special-effects-knife-throw-1-105221/) on Pixabay
+- Shuriken visuals are heavily based on and retextured from the Shuriken texture shown on [Minecraft Fanon Wiki](https://minecraftfanon.fandom.com/wiki/Shurikens)
+- Crossbow visuals, loading/shoot sounds, Quick Charge sounds and Fire Charge assets are adapted/backported from later vanilla Minecraft assets
+- Flute play sound is based on [Musical Flute](https://pixabay.com/sound-effects/musical-flute-102230/) on Pixabay
 
 If an original creator would prefer an inspired, adapted or recolored asset not be used here, I am happy to change or remove it.
