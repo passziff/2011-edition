@@ -100,13 +100,21 @@ Minecraft: 2011 Edition, continued through larger updates and smaller feature pa
       - [Crossbow enchantments](#crossbow-enchantments)
     - [Flute](#flute)
       - [Flute enchantments](#flute-enchantments)
+  - [Part 7](#part-7)
+    - [Shot](#shot)
+    - [Handcannon](#handcannon)
+    - [Musket](#musket)
+    - [Blunderbuss](#blunderbuss)
+    - [Firearm handling](#firearm-handling)
+    - [Firearm enchantments](#firearm-enchantments)
+    - [Part 7 achievements](#part-7-achievements)
 - [Credits](#credits)
 
 ## Update #1
 
 <img src="docs/images/proper-progression-banner.png" alt="Proper Progression Update" width="620">
 
-**Status:** In development. Parts 1, 2, 3, 4, 5 and 6 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
+**Status:** In development. Parts 1, 2, 3, 4, 5, 6 and 7 are feature-complete for now. Tested in singleplayer. Not tested in multiplayer.
 
 Proper Progression rebuilds early-game progression, expands it with utility equipment that still feels at home in Release 1.0, and then carries it past Diamond and out into the dimensions.
 
@@ -612,7 +620,9 @@ Current Anvil repair materials:
 | Flint and Steel / Steel Hammer | Steel Ingot |
 | Nethersteel equipment | Nethersteel Ingot |
 | Netherskull Helmet | Nethersteel Ingot, at a reduced rate |
-| Crossbow | Steel Ingot |
+| Crossbow | Iron Ingot |
+| Handcannon | Steel Ingot |
+| Musket / Blunderbuss | Nethersteel Ingot |
 | Flute | Stick |
 
 </details>
@@ -932,7 +942,7 @@ The Belt is a lightweight Hard Leather equipment piece that gives up some leg pr
 
 - Equips in the leggings armor slot and provides **1 armor point**
 - Has **123 durability**
-- Holds one Sword, Axe, Pickaxe, Shovel, Hoe, pair of Shears, Steel Hammer, Dagger, Shuriken or Flute
+- Holds one Sword, Axe, Pickaxe, Shovel, Hoe, pair of Shears, Steel Hammer, Dagger, Shuriken, Handcannon or Flute
 - Its dedicated inventory panel appears to the **right** of the player inventory and as a separate slot to the left of the hotbar while occupied
 - If a Backpack or Quiver is equipped, the Belt panel automatically moves below that larger right-side panel instead of overlapping it
 - Pressing the configurable Belt key (`B` by default) switches to the stored item; pressing it again returns to the previous hotbar slot
@@ -1975,11 +1985,11 @@ A Blackpowder Bomb uses **4 Blackpowder, 4 Steel Nuggets and 1 Fire Charge** in 
 
 #### Crossbow
 
-The Crossbow is a slow-loading counterpart to the Bow, backported from later Minecraft and adapted to the current Steel progression.
+The Crossbow is a slow-loading counterpart to the Bow, backported from later Minecraft and adapted to 2011 Edition's ranged progression.
 
 <img src="docs/images/crossbow-idle.png" alt="Crossbow held idle" width="260">
 
-- Crafted with **two Sticks, three String and one Steel Ingot**
+- Crafted with **two Sticks, three String and one Iron Ingot**
 - Hold use to load; once loading finishes the Crossbow is cocked and ready
 - A loaded Crossbow keeps its shot indefinitely, including while put away, and fires on the next use
 - Loading slows the player; a fully loaded Crossbow does not
@@ -1987,7 +1997,7 @@ The Crossbow is a slow-loading counterpart to the Bow, backported from later Min
 - Uses ordinary Arrows and Crystal Arrows, including ammunition supplied by the Quiver
 - Loaded and charging states use dedicated staged sprites and loading sounds
 - **465 durability** and **1 enchantability**
-- Can be repaired with a **Steel Ingot** or another Crossbow
+- Can be repaired with an **Iron Ingot** or another Crossbow
 
 <details>
 <summary>Recipe, loaded and dropped views</summary>
@@ -2043,6 +2053,190 @@ Every Flute effect is tied to actual notes being played, and every note still co
 
 ---
 
+### Part 7
+
+<img src="docs/images/powder-age-banner.png" alt="Powder Age" width="650">
+
+Powder Age introduces three early black-powder firearms, one shared ammunition type and a small set of ranged enchantments. The progression has two tiers: a crude Steel Handcannon first, followed by a Nethersteel choice between the long-ranged Musket and crowd-controlling Blunderbuss.
+
+<img src="docs/images/powder-age-items-dropped.png" alt="Shot, Handcannon, Musket and Blunderbuss dropped together" width="550">
+
+The Handcannon remains useful after that choice because it is the only firearm small enough for the Belt. Nethersteel is both the later weapons' progression gate and the reason for their role: Steel can contain the Handcannon's short barrel, while the longer Musket and broader Blunderbuss require the stronger material.
+
+#### Shot
+
+Shot is the single ammunition type used by all three firearms.
+
+- **1 Blackpowder + 1 Steel Nugget** is a shapeless recipe for **2 Shot**
+- The Handcannon and Musket load one Shot at a time
+- The Blunderbuss can load and fire between one and three Shot, depending on how much ammunition is available
+- Dispensers can fire Shot directly at **12 damage**, slightly faster and more accurately than an Arrow
+- Fired Shot produces an interpolated smoke trail and retains its state when the world is saved
+
+<details>
+<summary>Shot recipe</summary>
+
+<img src="docs/images/shot-recipe.png" alt="Shapeless Shot recipe" width="340">
+
+</details>
+
+#### Handcannon
+
+The Handcannon is a crude close-range Steel firearm and the entry point into Powder Age.
+
+<img src="docs/images/handcannon-idle.png" alt="Handcannon held idle" width="250">
+
+- Crafted from **one Flint, one Steel Ingot and two Sticks**
+- Loads one Shot over **60 ticks**
+- Deals **12-15 damage** with a wide base spread of **8.0**
+- Launches Shot at **4.5 blocks/tick**
+- Has **128 durability** and a firing noise radius of **16 blocks**
+- Its compact shot produces **0.40** player recoil
+- Can be repaired with a **Steel Ingot** or another Handcannon
+- Can be carried on the Belt, making it the sidearm beside either Nethersteel primary weapon
+
+The plain Flint in the recipe represents the Handcannon's simple ignition: unlike the later firearms, it has no lock and is fired directly at the breech.
+
+<details>
+<summary>Recipe and Handcannon views</summary>
+
+<img src="docs/images/handcannon-recipe.png" alt="Handcannon recipe" width="360">
+<img src="docs/images/handcannon-loaded.png" alt="Loaded Handcannon" width="250">
+<img src="docs/images/handcannon-first-person.png" alt="Handcannon held in first person" width="520">
+<img src="docs/images/handcannon-belt.png" alt="Handcannon carried on the Belt" width="240">
+
+</details>
+
+#### Musket
+
+The Musket is the accurate Nethersteel firearm, built for deliberate long-range shots rather than knockback or crowds.
+
+<img src="docs/images/musket-idle.png" alt="Musket held idle" width="240">
+
+- Crafted from **one Flint and Steel, two Nethersteel Ingots and three Sticks**
+- Loads one Shot over **100 ticks**, the slowest reload of the three firearms
+- Deals **14-18 damage** with a base spread of **3.5**
+- Launches Shot at **6.0 blocks/tick**, the fastest firearm projectile
+- Sneaking steadies the Musket and multiplies its remaining spread by **0.6**, after Rifling is applied
+- Accuracy is always floored at the Bow's **1.0** spread, so the Musket never becomes more precise than a fully drawn Bow
+- Has no player recoil, keeping a carefully prepared long shot stable
+- Has **192 durability**, a firing noise radius of **24 blocks**, and repairs with a **Nethersteel Ingot** or another Musket
+
+<details>
+<summary>Recipe and Musket views</summary>
+
+<img src="docs/images/musket-recipe.png" alt="Musket recipe" width="360">
+<img src="docs/images/musket-loaded.png" alt="Loaded Musket" width="240">
+<img src="docs/images/musket-first-person.png" alt="Musket held in first person" width="520">
+
+</details>
+
+#### Blunderbuss
+
+The Blunderbuss is the crowd-control counterpart to the Musket. It accepts an incomplete load, spreads its damage across nearby targets and pushes them back to buy space.
+
+<img src="docs/images/blunderbuss-idle.png" alt="Blunderbuss held idle" width="240">
+
+- Crafted from **one Flint and Steel, two Nethersteel Ingots and two Sticks**
+- Loads over **80 ticks** and fires with any available load of **one to three Shot**
+- The loaded sprite shows how many projectiles have been placed into the barrel
+- Each projectile deals **13-16 damage**, with a broad spread of **30.0** and velocity of **3.5 blocks/tick**
+- Adds **0.55 knockback** to a normal Shot hit and produces **0.75** player recoil
+- Multiple projectiles from one volley do not stack damage on one target during its normal invulnerability window; the extra projectiles are for hitting a wider group
+- Has **192 durability**, a firing noise radius of **20 blocks**, and repairs with a **Nethersteel Ingot** or another Blunderbuss
+
+<details>
+<summary>Recipe and Blunderbuss views</summary>
+
+<img src="docs/images/blunderbuss-recipe.png" alt="Blunderbuss recipe" width="360">
+<img src="docs/images/blunderbuss-loaded.png" alt="Loaded Blunderbuss" width="240">
+<img src="docs/images/blunderbuss-first-person.png" alt="Blunderbuss held in first person" width="520">
+
+</details>
+
+#### Firearm handling
+
+All three firearms use the same deliberate two-step rhythm: reload first, then fire the prepared weapon.
+
+<img src="docs/images/firearm-reload-example.png" alt="A Musket being reloaded" width="260">
+
+- Holding use begins reloading and plays staged loading cues shared across the firearm system
+- Quick Load changes the total reload time, while the first cue is capped at **12 ticks** so slower weapons still give prompt feedback
+- Musket and Blunderbuss recipes accept Flint and Steel with any remaining durability
+- Idle and loaded states have distinct held poses and item sprites
+- Firing creates a loud report, smoke and a strong muzzle flash
+- The three reports share one sound set at different pitches: **0.85** for the deeper Blunderbuss, **1.0** for the Handcannon and **1.15** for the Musket's sharper crack
+- Fired Shot supports Piercing with an already-hit target list, preventing one projectile from damaging the same entity twice
+
+<details>
+<summary>Firing example</summary>
+
+<img src="docs/images/firearm-shooting-example.png" alt="A Handcannon firing" width="650">
+
+</details>
+
+<details>
+<summary>Current firearm balance</summary>
+
+| | Handcannon | Musket | Blunderbuss |
+| --- | ---: | ---: | ---: |
+| Material tier | Steel | Nethersteel | Nethersteel |
+| Reload | 60 ticks | 100 ticks | 80 ticks |
+| Damage | 12-15 | 14-18 | 13-16 per projectile |
+| Projectiles | 1 | 1 | 1-3 |
+| Spread | 8.0 | 3.5 | 30.0 |
+| Velocity | 4.5 blocks/tick | 6.0 blocks/tick | 3.5 blocks/tick |
+| Durability | 128 | 192 | 192 |
+| Noise radius | 16 blocks | 24 blocks | 20 blocks |
+| Player recoil | 0.40 | None | 0.75 |
+| Belt support | Yes | No | No |
+
+</details>
+
+#### Firearm enchantments
+
+Every firearm has enchantability **1**, matching the Crossbow's deliberately poor enchantability.
+
+| Enchantment | Levels | Applies to | Effect |
+| --- | ---: | --- | --- |
+| **Quick Load** | I-III | All firearms | Reduces reload time by **20% per level** |
+| **Rifling** | I-II | Handcannon and Musket | Multiplies spread by **0.8 per level**, with a floor of **1.0** |
+| **Thrift** | I-II | All firearms | Gives a **20% / 35% chance** for a fired load to consume no Shot |
+| **Piercing** | I-IV | Crossbow and all firearms | Lets the projectile pass through one additional body per level |
+| **Multishot** | I | Crossbow and Blunderbuss | Fires **three times** the normal projectile count for extra durability rather than extra ammunition |
+| **Unbreaking** | I-III | All firearms | Uses the normal vanilla durability-saving behavior |
+
+Rifling cannot apply to the smoothbore Blunderbuss. Piercing and Multishot remain mutually exclusive on every compatible ranged weapon.
+
+#### Part 7 achievements
+
+Powder Age adds six achievements, including two that give Steve's Armory its first dedicated achievement branch.
+
+<img src="docs/images/powder-age-achievements.png" alt="Powder Age and Steve's Armory achievement branches" width="500">
+
+| Achievement | Parent | Unlock |
+| --- | --- | --- |
+| `Time to Blast!` | `Steel Yourself` | Craft a Handcannon |
+| `Time to Stab!` | `Time to Strike!` | Craft any Dagger |
+| `Way of the Ninja` ★ | `Time to Stab!` | Kill a monster with a Shuriken while wearing Ninja Boots |
+| `Two Birds` ★ | `Monster Hunter` | Kill two monsters with a single Crossbow shot |
+| `Crowd Pleaser` ★ | `Monster Hunter` | Hit three distinct monsters with one Blunderbuss volley |
+| `Sniper God` ★ | `Sniper Duel` | Kill a Skeleton with a Musket from at least **50 blocks** away |
+
+<details>
+<summary>Design and implementation notes</summary>
+
+- A target's normal post-hit invulnerability makes further equal or weaker projectiles from the same Blunderbuss volley deal no additional damage. Keeping that vanilla rule is what makes the weapon strong across crowds rather than against a single enemy.
+- Firearm spread is applied as `gaussian × 0.0075 × spread` to the normalized heading. The Blunderbuss therefore needed a value of **30.0**, roughly a 13-degree cone, before its projectiles visibly separated at useful combat distances.
+- Rifling originally used a flat reduction, but proportional **×0.8** steps preserve the different identities of the Handcannon and Musket while allowing both to share one rule.
+- The Musket's braced third-person pose exposed the difference between player-space and arm-local translations. Player-relative vertical adjustments have to occur before the arm transform, because local “up” points backward once the arm is rotated.
+- `Time to Stab!` branches below the vanilla `Time to Strike!` achievement. Making it a prerequisite would have blocked several vanilla achievements behind a 2011 Edition weapon because Release 1.0 refuses to award a child before its parent.
+- A bayonet system was prototyped and cut. Although attaching a Dagger to a Musket worked, it introduced an “item modifies item” interaction with no Release 1.0 precedent and added substantial visual complexity to an otherwise straightforward weapon system.
+
+</details>
+
+---
+
 ## Credits
 
 (Many 2011 Edition backports and features adapt, recolor or rework visuals and sounds from vanilla Minecraft and later Minecraft versions)
@@ -2082,5 +2276,9 @@ Every Flute effect is tied to actual notes being played, and every note still co
 - Shuriken visuals are heavily based on and retextured from the Shuriken texture shown on [Minecraft Fanon Wiki](https://minecraftfanon.fandom.com/wiki/Shurikens)
 - Crossbow visuals, loading/shoot sounds, Quick Charge sounds and Fire Charge assets are adapted/backported from later vanilla Minecraft assets
 - Flute play sound is based on [Musical Flute](https://pixabay.com/sound-effects/musical-flute-102230/) on Pixabay
+- Firearm reload-completion sound is based on [Gun Reload 1](https://pixabay.com/sound-effects/film-special-effects-gun-reload-1-395175/) on Pixabay
+- Firearm staged reload sounds are cut from [Brown Bess Musket Sound](https://pixabay.com/sound-effects/film-special-effects-brown-bess-musket-sound-326211/) on Pixabay
+- Shot impact sounds are based on [080998 Bullet Hit](https://pixabay.com/sound-effects/film-special-effects-080998-bullet-hit-39870/) and [080884 Bullet Hit](https://pixabay.com/sound-effects/film-special-effects-080884-bullet-hit-39872/) on Pixabay
+- Firearm firing sounds are based on [Cannonball](https://pixabay.com/sound-effects/film-special-effects-cannonball-89596/) and [Gunshot](https://pixabay.com/sound-effects/gunshot-372470/) on Pixabay
 
 If an original creator would prefer an inspired, adapted or recolored asset not be used here, I am happy to change or remove it.
