@@ -2223,17 +2223,6 @@ Powder Age adds six achievements, including two that give Steve's Armory its fir
 | `Crowd Pleaser` ★ | `Monster Hunter` | Hit three distinct monsters with one Blunderbuss volley |
 | `Sniper God` ★ | `Sniper Duel` | Kill a Skeleton with a Musket from at least **50 blocks** away |
 
-<details>
-<summary>Design and implementation notes</summary>
-
-- A target's normal post-hit invulnerability makes further equal or weaker projectiles from the same Blunderbuss volley deal no additional damage. Keeping that vanilla rule is what makes the weapon strong across crowds rather than against a single enemy.
-- Firearm spread is applied as `gaussian × 0.0075 × spread` to the normalized heading. The Blunderbuss therefore needed a value of **30.0**, roughly a 13-degree cone, before its projectiles visibly separated at useful combat distances.
-- Rifling originally used a flat reduction, but proportional **×0.8** steps preserve the different identities of the Handcannon and Musket while allowing both to share one rule.
-- The Musket's braced third-person pose exposed the difference between player-space and arm-local translations. Player-relative vertical adjustments have to occur before the arm transform, because local “up” points backward once the arm is rotated.
-- `Time to Stab!` branches below the vanilla `Time to Strike!` achievement. Making it a prerequisite would have blocked several vanilla achievements behind a 2011 Edition weapon because Release 1.0 refuses to award a child before its parent.
-- A bayonet system was prototyped and cut. Although attaching a Dagger to a Musket worked, it introduced an “item modifies item” interaction with no Release 1.0 precedent and added substantial visual complexity to an otherwise straightforward weapon system.
-
-</details>
 
 ---
 
